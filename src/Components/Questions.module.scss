@@ -2,7 +2,7 @@
 
 
 .questionWrapper {
-	margin: 10px;
+	margin: 13px;
 	width: 400px;
 }
 
@@ -62,4 +62,21 @@
 	max-height: 0;
 	transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
 	overflow: hidden;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.35rem;
+	margin-bottom: 15px;
+}
+
+.titleWrapper {
+	display: flex;
+
+	button {
+		margin-top: 4px;
+		margin-bottom: 15px;
+		margin-left: 14px;
+		font-size: 1rem;
+	}
 }

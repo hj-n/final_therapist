@@ -4,8 +4,6 @@ import styles from "./Questions.module.scss";
 
 import { provideNewQuestions } from "../Logic/provideNewQuestions";
 
-import * as d3 from "d3";
-
 const Questions = () => {
 
 
@@ -78,12 +76,34 @@ const Questions = () => {
 		}, 500);
 	}
 
+	const addNewQuestions = (e) => {
+		// count the current number of questions
+		const currentNumQuestions = questions.length;
+
+		// add new questions
+		const newQuestions = provideNewQuestions(10 - currentNumQuestions);
+
+		// add new questions to the list
+		setQuestions([...questions, ...newQuestions]);
+		setAnswer([...answer, ...Array(newQuestions.length).fill(null)]);
+
+		const newQuestionIndices = Array(newQuestions.length).fill(0).map((_, i) => currentNumQuestions + i);
+
+		
+	}
+
 	
 
 
 	return (
 		<div className={styles.questionWrapper}>
-			<h3>{"Ask Data Therapist"}</h3>
+			<div className={styles.titleWrapper}>
+				<h3>{"Ask Data Therapist"}</h3>
+				<button
+					onClick={(e) => {addNewQuestions(e)}}
+				>{"Request New Questions"}</button>
+			</div>
+
 			<div id="questionList">
 				{questions.map((q, i) => {
 					const isFading = fadingIndices.includes(i);
