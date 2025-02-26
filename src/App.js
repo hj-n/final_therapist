@@ -6,7 +6,7 @@ import Questions from './Components/Questions';
 import React, { useState } from "react";
 import Upload from './Components/Upload';
 import Table from './Components/Table';
-
+import Annotation from './Components/Annotation';
 
 
 function App() {
@@ -24,7 +24,10 @@ function App() {
 				: 
 				<div className={styles.upper}>
 					<Questions />
-					<Table data={data}/>
+					<div className={styles.right}>
+						<Table data={data}/>
+						<Annotation />
+					</div>
 				</div>
 			}
 
