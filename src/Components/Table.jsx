@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './Table.module.scss';
+import Visualization from './Visualization';
 
 function Table({ data: propData }) {
 	// propData를 2차원 배열로 변환하고, 열 제목(columns)도 별도로 관리합니다.
@@ -393,20 +394,67 @@ function Table({ data: propData }) {
 		setSelectedCols([]);
 	}
 
+
+	const [visInfo, setVisInfo] = useState([])
+
 	/** 새 아이콘 버튼 핸들러 */
 	const handleHistogram = (colIndex, e) => {
 		e.stopPropagation();
 		console.log(`Histogram clicked for column ${colIndex}`);
+	
+
+		const currVisInfo = JSON.parse(JSON.stringify(visInfo));
+		currVisInfo.push({ type: 'histogram', index: colIndex });
+		console.log(currVisInfo);
+		setVisInfo(currVisInfo);
 	};
 
 	const handleScatterX = (colIndex, e) => {
 		e.stopPropagation();
 		console.log(`Scatterplot X clicked for column ${colIndex}`);
-	};
+
+		const currVisInfo = JSON.parse(JSON.stringify(visInfo));
+		const checkIfScatterExists = currVisInfo.filter((x) => x.type === 'scatter');
+		if (checkIfScatterExists.length === 0) {
+			currVisInfo.push({ type: 'scatter', x: colIndex, y: null });
+			console.log(currVisInfo)
+			setVisInfo(currVisInfo);
+		}
+		else {
+			const scatterIndex = currVisInfo.findIndex((x) => x.type === 'scatter');
+			if (currVisInfo[scatterIndex].y !== colIndex) {
+				currVisInfo[scatterIndex].x = colIndex;
+				console.log(currVisInfo)
+				setVisInfo(currVisInfo);
+			}
+			else {
+				alert("Please select a different column for X-axis");
+			}
+		}
+	}
 
 	const handleScatterY = (colIndex, e) => {
 		e.stopPropagation();
 		console.log(`Scatterplot Y clicked for column ${colIndex}`);
+
+		const currVisInfo = JSON.parse(JSON.stringify(visInfo));
+		const checkIfScatterExists = currVisInfo.filter((x) => x.type === 'scatter');
+		if (checkIfScatterExists.length === 0) {
+			currVisInfo.push({ type: 'scatter', x: null, y: colIndex });
+			console.log(currVisInfo)
+			setVisInfo(currVisInfo);
+		}
+		else {
+			const scatterIndex = currVisInfo.findIndex((x) => x.type === 'scatter');
+			if (currVisInfo[scatterIndex].x !== colIndex) {
+				currVisInfo[scatterIndex].y = colIndex;
+				console.log(currVisInfo)
+				setVisInfo(currVisInfo);
+			}
+			else {
+				alert("Please select a different column for Y-axis");
+			}
+		}
 	};
 
 	/** 하이라이트 클래스 */
@@ -439,7 +487,8 @@ function Table({ data: propData }) {
 	}
 
 	return (
-		<div>
+		<div className={styles.finalWrapper}>
+			<div>
 			<div>
 				<div className={styles.topBarContainer}>
 					<h3>Data Table</h3>
@@ -611,6 +660,8 @@ function Table({ data: propData }) {
 					</tbody>
 				</table>
 			</div>
+			</div>
+			<Visualization data={data} visInfo={visInfo} columns={columns} />
 		</div>
 	);
 }

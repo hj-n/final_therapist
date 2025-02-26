@@ -134,6 +134,10 @@
 	z-index: 3;
 }
 
+.finalWrapper {
+	display: flex;
+}
+
 /* 선택(빨강) 통일 */
 .selected {
 	background-color: #ffcccc !important;
