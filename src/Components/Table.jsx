@@ -675,7 +675,12 @@ function Table({ data: propData }) {
 				</table>
 			</div>
 			</div>
-			<Visualization data={data} visInfo={visInfo} columns={columns} />
+			<Visualization 
+				data={data} 
+				visInfo={visInfo} 
+				columns={columns} 
+				setVisInfo={setVisInfo}
+			/>
 		</div>
 	);
 }

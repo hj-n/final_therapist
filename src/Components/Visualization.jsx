@@ -5,15 +5,23 @@ import * as d3 from "d3";
 const Visualization = (props) => {
 	const data = props.data;
 	const visInfo = props.visInfo;
+	const setVisInfo = props.setVisInfo;
 	const columns = props.columns;
 
 	const width = 700;
 	const height = 700;
-	const margin = { top: 50, right: 50, bottom: 50, left: 50, middle: 50 };
+	// 전체 svg의 외부 여백은 그대로 사용하고,
+	// 각 subplot(차트) 내부에 라벨을 위한 여백을 따로 지정합니다.
+	const outerMargin = { top: 0, right: 20, bottom: 20, left: 20, middle: 20 };
+	// 각 subplot 내부의 여백 (라벨 등 표시를 위해 넉넉하게)
+	const subMargin = { top: 40, right: 40, bottom: 60, left: 60 };
 
-	// 공통 inner width/height 정의 (예: 275)
-	const innerWidth = (width - 3 * margin.middle) / 2;
-	const innerHeight = (height - 3 * margin.middle) / 2;
+	// 2 x 2 그리드이므로 각 subplot의 전체 크기
+	const subWidth = width / 2;
+	const subHeight = height / 2;
+	// 각 차트 내부 영역 크기
+	const innerWidth = subWidth - subMargin.left - subMargin.right;
+	const innerHeight = subHeight - subMargin.top - subMargin.bottom;
 
 	const svgRef = useRef();
 
@@ -23,17 +31,22 @@ const Visualization = (props) => {
 		const svg = d3.select(svgRef.current);
 		svg.selectAll("*").remove();
 
+		// add svg/xmarks file in the right corner
+
+
+
+		// 각 subplot의 그룹을 생성할 때, 외부 margin과 subplot 내부 margin을 반영합니다.
 		svg11 = svg.append("g")
-			.attr("transform", `translate(${margin.left}, ${margin.top})`);
+			.attr("transform", `translate(${outerMargin.left + subMargin.left}, ${outerMargin.top + subMargin.top})`);
 
 		svg12 = svg.append("g")
-			.attr("transform", `translate(${width / 2 + margin.middle}, ${margin.top})`);
+			.attr("transform", `translate(${subWidth + outerMargin.middle + subMargin.left}, ${outerMargin.top + subMargin.top})`);
 
 		svg21 = svg.append("g")
-			.attr("transform", `translate(${margin.left}, ${height / 2})`);
+			.attr("transform", `translate(${outerMargin.left + subMargin.left}, ${subHeight + outerMargin.middle + subMargin.top})`);
 
 		svg22 = svg.append("g")
-			.attr("transform", `translate(${width / 2 + margin.middle}, ${height / 2})`);
+			.attr("transform", `translate(${subWidth + outerMargin.middle + subMargin.left}, ${subHeight + outerMargin.middle + subMargin.top})`);
 
 		const drawVisualization = (data, visInfo) => {
 			visInfo.forEach((visInfoItem, itr) => {
@@ -49,6 +62,20 @@ const Visualization = (props) => {
 				}
 
 				const visType = visInfoItem.type;
+
+				currSvg.append("image")
+					.attr("xlink:href", "./svgs/xmark.svg")
+					.attr("width", 30)
+					.attr("height", 30)
+					.attr("x", innerWidth + outerMargin.right - 35)
+					.attr("y", -10)
+					.style("cursor", "pointer")
+					.on("click", () => {
+						const currVisInfo = [...visInfo];
+						currVisInfo.splice(itr, 1);
+						props.setVisInfo(currVisInfo);
+					});
+
 				if (visType === "histogram") {
 					drawHistogram(data, visInfoItem.index, currSvg);
 				}
@@ -94,20 +121,22 @@ const Visualization = (props) => {
 			currSvg.append("g")
 				.call(d3.axisLeft(y));
 
-			// x축 레이블
+			// x축 라벨 (x축 바로 아래)
 			currSvg.append("text")
 				.attr("x", innerWidth / 2)
-				.attr("y", innerHeight + margin.middle)
+				.attr("y", innerHeight + subMargin.bottom - 20)
 				.attr("text-anchor", "middle")
 				.text(columns[index]);
 
-			// y축 레이블
+			// y축 라벨 (왼쪽, 회전)
 			currSvg.append("text")
-				.attr("transform", `translate(${-margin.left + 7}, ${innerHeight / 2}) rotate(-90)`)
+				.attr("transform", "rotate(-90)")
+				.attr("x", -innerHeight / 2)
+				.attr("y", -subMargin.left + 20)
 				.attr("text-anchor", "middle")
 				.text("Count");
 
-			// 브러시 (brush) 설정
+			// 브러시 설정
 			const brushX = d3.brushX()
 				.extent([[0, 0], [innerWidth, innerHeight]])
 				.on("end", brushed)
@@ -142,7 +171,7 @@ const Visualization = (props) => {
 
 				currSvg.append("text")
 					.attr("x", innerWidth / 2)
-					.attr("y", innerHeight + margin.middle)
+					.attr("y", innerHeight + subMargin.bottom - 20)
 					.attr("text-anchor", "middle")
 					.text(columns[xIndex]);
 			}
@@ -155,7 +184,9 @@ const Visualization = (props) => {
 					.call(d3.axisLeft(y));
 
 				currSvg.append("text")
-					.attr("transform", `translate(${-margin.left + 12}, ${innerHeight / 2}) rotate(-90)`)
+					.attr("transform", "rotate(-90)")
+					.attr("x", -innerHeight / 2)
+					.attr("y", -subMargin.left + 20)
 					.attr("text-anchor", "middle")
 					.text(columns[yIndex]);
 			}
@@ -200,9 +231,9 @@ const Visualization = (props) => {
 
 	return (
 		<div className={styles.visualization}>
-			<h3>Visualization</h3>
+			<h3>{"Annotate on Visualizations"}</h3>
 			<div className={styles.chart}>
-				<svg width="650" height="650" ref={svgRef}></svg>
+				<svg width={width} height={height} ref={svgRef}></svg>
 			</div>
 		</div>
 	);
