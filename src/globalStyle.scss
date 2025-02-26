@@ -11,11 +11,11 @@ h3 {
 
 button {
 	padding: 5px;
-	font-size: 0.9rem;
 	background-color:#f3f3f3;
 	border: 1px solid #01153e;
 	border-radius: 5px;
 	margin-top: 10px;
+	font-size: 1rem;
 
 	&:hover {
 		background-color: #01153e;
@@ -46,4 +46,10 @@ textarea {
 	resize: none;
 	// resize font size
 	font-size: 0.7rem;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.35rem;
+	margin-bottom: 15px;
 }

@@ -1,0 +1,195 @@
+@import "../globalStyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+.dropArea {
+	/* 전체 영역에서 드래그 파일 허용 */
+	width: 100%;
+	min-height: 100px;
+}
+
+.topBarContainer {
+	/* 왼쪽 정렬 */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	/* 왼쪽에 붙이기 */
+	gap: 12px;
+	margin: 6px 0;
+
+	h3 {
+		margin-bottom: 3px;
+	}
+}
+
+.fileInputLabel {
+	border: 2px dashed #aaa;
+	border-radius: 4px;
+	padding: 4px 15px;
+	cursor: pointer;
+	color: #666;
+	font-size: 14px;
+	text-align: center;
+	background-color: #f9f9f9;
+}
+
+.fileInputLabel:hover {
+	background-color: #eee;
+}
+
+.hiddenFileInput {
+	display: none;
+}
+
+.topButton {
+	padding: 5px 10px;
+	// margin: 2px;
+	margin-top: 11px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 4px;
+	// transition: background-color 0.2s;
+	// border: 1px solid #ccc;
+}
+
+/* 스크롤 영역 컨테이너 */
+.tableContainer {
+	width: 1000px;
+	height: 600px;
+	// margin: 0 auto;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.table {
+	border-collapse: collapse;
+	user-select: none;
+	/* 드래그 시 텍스트 선택 방지 */
+	table-layout: fixed;
+	width: max-content;
+	font-size: 0.9rem;
+}
+
+/* 헤더(행·열) */
+.header {
+	background-color: #f1f1f1;
+	font-weight: bold;
+	/* 헤더는 가운데 정렬 (수평 중앙) */
+	text-align: center;
+	border: 1px solid #888;
+	cursor: default;
+	white-space: nowrap;
+	width: 100px;
+	/* 기본 높이 25px */
+	height: 25px;
+	// overflow: hidden;
+	cursor: pointer;
+}
+
+/* 실제 데이터 셀 */
+.cell {
+	border: 1px solid #888;
+	/* 본문 셀은 왼쪽 정렬 */
+	text-align: left;
+	/* 가로 폭 고정, 세로는 내용 따라 wrap */
+	width: 100px;
+	height: auto;
+	min-height: 25px;
+	/* 기본 높이 25 */
+	white-space: normal;
+	word-break: break-word;
+	cursor: default;
+	// overflow: hidden;
+
+	font-family: 'PT Mono', monospace;
+}
+
+/* 편집용 input */
+.editCell {
+	background-color: #ffffcc;
+	outline: 1px dashed #888;
+	width: 100%;
+	height: auto;
+	/* 여러 줄 가능 */
+	box-sizing: border-box;
+}
+
+/* Sticky (행/열 헤더 고정) */
+.table thead th {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+.table tbody th {
+	position: sticky;
+	left: 0;
+	z-index: 1;
+	background-color: #f1f1f1;
+}
+
+.table thead th:first-child {
+	left: 0;
+	z-index: 3;
+}
+
+/* 선택(빨강) 통일 */
+.selected {
+	background-color: #ffcccc !important;
+}
+
+.selectedHeader {
+	background-color: #ff8888 !important;
+}
+
+.headerContent,
+.rowHeaderContent {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible; // 혹시 모를 clipping 방지
+}
+
+.iconContainer {
+	display: none;
+	position: absolute;
+	bottom: -40px; // 필요한 만큼 조정
+	right: 0;
+	z-index: 10000; // 다른 요소 위에 표시되도록
+	/* 툴팁 느낌을 주려면 배경 및 테두리 등 추가 가능 */
+}
+
+.headerContent:hover .iconContainer,
+.rowHeaderContent:hover .iconContainer {
+	display: flex;
+	gap: 4px;
+	/* 아이콘들 사이의 간격 */
+}
+
+.headerContent {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible;
+	/* 절대 위치 요소가 잘리지 않도록 */
+}
+
+.headerContent .iconContainer {
+	display: none;
+	position: absolute;
+	top: 10px;
+	/* 열 헤더 위쪽에 표시 */
+	right: 0;
+	z-index: 1000;
+}
+
+.headerContent:hover .iconContainer,
+.headerContent .iconContainer:hover {
+	display: flex;
+	gap: 4px;
+	/* 아이콘 사이 간격 */
+}
+

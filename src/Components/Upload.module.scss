@@ -1,0 +1,66 @@
+@import "../globalStyle.scss";
+
+.inputBox {
+	margin: 7px auto;
+	width: 100%;
+	background-color: white;
+	height: 240px;
+	border-radius: 12px;
+	border-style: solid;
+	border-width: 2.5px;
+	border-color: #01153e;
+	color: gray;
+	margin-top: 15px;
+
+	// adjust contents center and middle
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:hover {
+		cursor: pointer;
+		border: 2.5px solid #01153e;
+		color: black;
+	}
+}
+
+.inputBoxUploaded {
+	margin: 7px auto;
+	width: 100%;
+	background-color: white;
+	height: 240px;
+	border-radius: 12px;
+	border-style: solid;
+	border-width: 2.5px;
+	border-color: #01153e;
+	color: gray;
+	margin-top: 15px;
+
+	// adjust contents center and middle
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: black;
+	font-size: 1.2rem;
+
+}
+
+.fileInput {
+	display: none;
+}
+
+.fileInputWrapper {
+	margin: 13px;
+	width: 400px;
+}
+
+button {
+	font-size: 1.1rem;
+}
+
+.buttonWrapper {
+	display: flex;
+	justify-content: flex-end;
+	width: 400px;
+}
