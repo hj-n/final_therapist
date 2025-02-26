@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './Table.module.scss';
 
 function Table({ data: propData }) {
@@ -15,8 +15,11 @@ function Table({ data: propData }) {
 	const [selectedRows, setSelectedRows] = useState([]);
 	const [selectedCols, setSelectedCols] = useState([]);
 	const [dragState, setDragState] = useState({
-		mode: null, // 'row'|'col'|null
-		startIndex: null,
+		mode: null, // 'row' | 'col' | 'cell' | null
+		startIndex: null, // 기존 row/col 모드에서 사용
+		// 새로 추가된 셀 드래그 선택을 위한 값
+		startRow: null,
+		startCol: null,
 		isDragging: false,
 		shiftKey: false,
 		baseSelectedRows: [],
@@ -25,6 +28,8 @@ function Table({ data: propData }) {
 
 	// 셀 편집 상태
 	const [editingCell, setEditingCell] = useState({ row: null, col: null });
+	// 드래그 중 이동 여부를 체크하기 위한 ref (클릭과 드래그를 구분)
+	const dragMovedRef = useRef(false);
 
 	// propData가 변경되면 data, columns, 정렬 상태 초기화
 	useEffect(() => {
@@ -70,6 +75,8 @@ function Table({ data: propData }) {
 		setDragState({
 			mode: 'row',
 			startIndex: rowIndex,
+			startRow: null,
+			startCol: null,
 			isDragging: true,
 			shiftKey: shiftDown,
 			baseSelectedRows: baseRows,
@@ -113,6 +120,8 @@ function Table({ data: propData }) {
 		setDragState({
 			mode: 'col',
 			startIndex: colIndex,
+			startRow: null,
+			startCol: null,
 			isDragging: true,
 			shiftKey: shiftDown,
 			baseSelectedRows: baseRows,
@@ -138,16 +147,70 @@ function Table({ data: propData }) {
 		}
 	};
 
+	/** 셀 드래그 선택 - 마우스 다운 핸들러 */
+	const handleCellMouseDown = (rowIndex, colIndex, e) => {
+		e.preventDefault();
+		dragMovedRef.current = false;
+		setDragState({
+			mode: 'cell',
+			startIndex: null,
+			startRow: rowIndex,
+			startCol: colIndex,
+			isDragging: true,
+			shiftKey: e.shiftKey,
+			baseSelectedRows: [],
+			baseSelectedCols: [],
+		});
+		// 초기 선택은 해당 셀 하나로 설정
+		setSelectedRows([rowIndex]);
+		setSelectedCols([colIndex]);
+	};
+
+	/** 셀 드래그 선택 - 마우스 엔터 핸들러 */
+	const handleCellMouseEnter = (rowIndex, colIndex, e) => {
+		if (dragState.isDragging && dragState.mode === 'cell') {
+			dragMovedRef.current = true;
+			const { startRow, startCol } = dragState;
+			const minRow = Math.min(startRow, rowIndex);
+			const maxRow = Math.max(startRow, rowIndex);
+			const minCol = Math.min(startCol, colIndex);
+			const maxCol = Math.max(startCol, colIndex);
+			const rowsRange = [];
+			for (let r = minRow; r <= maxRow; r++) {
+				rowsRange.push(r);
+			}
+			const colsRange = [];
+			for (let c = minCol; c <= maxCol; c++) {
+				colsRange.push(c);
+			}
+			setSelectedRows(rowsRange);
+			setSelectedCols(colsRange);
+		}
+	};
+
+	/** 셀 클릭 시 (드래그가 아니면) 선택 해제 */
+	const handleCellClick = () => {
+		// 드래그가 발생한 경우(즉, 이동한 경우)에는 선택 해제하지 않음
+		if (!dragMovedRef.current) {
+			setSelectedRows([]);
+			setSelectedCols([]);
+		}
+	};
+
+	/** 마우스 업 시 드래그 상태 리셋 */
 	const handleMouseUp = () => {
 		if (dragState.isDragging) {
 			setDragState({
 				mode: null,
 				startIndex: null,
+				startRow: null,
+				startCol: null,
 				isDragging: false,
 				shiftKey: false,
 				baseSelectedRows: [],
 				baseSelectedCols: [],
 			});
+			dragMovedRef.current = false;
 		}
 	};
 
@@ -156,12 +219,6 @@ function Table({ data: propData }) {
 		window.addEventListener('mouseup', globalUp);
 		return () => window.removeEventListener('mouseup', globalUp);
 	}, [dragState.isDragging]);
-
-	/** 셀 클릭 시 선택 해제 */
-	const handleCellClick = () => {
-		setSelectedRows([]);
-		setSelectedCols([]);
-	};
 
 	/** 셀 더블클릭 시 편집 모드 */
 	const handleCellDoubleClick = (r, c) => {
@@ -528,6 +585,9 @@ function Table({ data: propData }) {
 										<td
 											key={`cell-${rowIndex}-${colIndex}`}
 											className={`${styles.cell} ${cellClass}`}
+											// 셀에서 마우스 다운/엔터 이벤트를 추가하여 사각형 드래그 선택 구현
+											onMouseDown={(e) => handleCellMouseDown(rowIndex, colIndex, e)}
+											onMouseEnter={(e) => handleCellMouseEnter(rowIndex, colIndex, e)}
 											onClick={handleCellClick}
 											onDoubleClick={() => handleCellDoubleClick(rowIndex, colIndex)}
 										>
