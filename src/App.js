@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import Upload from './Components/Upload';
 import Table from './Components/Table';
 import Annotation from './Components/Annotation';
+import AnnotationList from './Components/AnnotationList';
 
 
 function App() {
@@ -22,11 +23,16 @@ function App() {
 			{data === null ?
 				<Upload setData={setData} setFileName={setFileName}/> 
 				: 
-				<div className={styles.upper}>
-					<Questions />
-					<div className={styles.right}>
-						<Table data={data}/>
-						<Annotation />
+				<div>
+					<div className={styles.upper}>
+						<Questions />
+						<div className={styles.right}>
+							<Table data={data}/>
+							<Annotation />
+						</div>
+					</div>
+					<div>
+						<AnnotationList />
 					</div>
 				</div>
 			}

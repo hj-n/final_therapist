@@ -1,0 +1,43 @@
+.wrapper {
+	background-color: #f2f2f2;
+	/* 전체 회색 박스 */
+	border-radius: 8px;
+	padding: 16px;
+	box-sizing: border-box;
+	width: 2260px;
+	/* 원하는 고정 너비 */
+	height: 300px;
+	margin: 10px;
+	/* 원하는 고정 높이 */
+}
+
+.titleAnnotation {
+	margin-left: 10px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* 3열 그리드 */
+	gap: 16px;
+	height: 100%;
+	/* 부모 요소의 높이를 채움 */
+	overflow-y: auto;
+	/* 세로 스크롤 (내용이 넘칠 경우) */
+}
+
+.card {
+	background-color: #fff;
+	/* 각 카드 내부는 흰색 */
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 12px;
+}
+
+.title {
+	margin: 0 0 8px;
+}
+
+.content {
+	margin: 0;
+}
