@@ -414,14 +414,21 @@ function Table({ data: propData }) {
 		console.log(`Scatterplot X clicked for column ${colIndex}`);
 
 		const currVisInfo = JSON.parse(JSON.stringify(visInfo));
-		const checkIfScatterExists = currVisInfo.filter((x) => x.type === 'scatter');
-		if (checkIfScatterExists.length === 0) {
+		const checkIfScatterExists = currVisInfo.filter((x) => {
+			return x.type === 'scatter'
+		});
+		const checkIfScatterFull = currVisInfo.filter((x) => {
+			return x.type === 'scatter' && x.x !== null && x.y !== null
+		});
+		if (checkIfScatterExists.length === checkIfScatterFull.length) {
 			currVisInfo.push({ type: 'scatter', x: colIndex, y: null });
 			console.log(currVisInfo)
 			setVisInfo(currVisInfo);
 		}
 		else {
-			const scatterIndex = currVisInfo.findIndex((x) => x.type === 'scatter');
+			const scatterIndex = currVisInfo.findIndex((x) => {
+				return x.type === 'scatter' && (x.x === null || x.y === null)
+			});
 			if (currVisInfo[scatterIndex].y !== colIndex) {
 				currVisInfo[scatterIndex].x = colIndex;
 				console.log(currVisInfo)
@@ -438,14 +445,21 @@ function Table({ data: propData }) {
 		console.log(`Scatterplot Y clicked for column ${colIndex}`);
 
 		const currVisInfo = JSON.parse(JSON.stringify(visInfo));
-		const checkIfScatterExists = currVisInfo.filter((x) => x.type === 'scatter');
-		if (checkIfScatterExists.length === 0) {
+		const checkIfScatterExists = currVisInfo.filter((x) => {
+			return x.type === 'scatter'
+		});
+		const checkIfScatterFull = currVisInfo.filter((x) => {
+			return x.type === 'scatter' && x.x !== null && x.y !== null
+		});
+		if (checkIfScatterExists.length === checkIfScatterFull.length) {
 			currVisInfo.push({ type: 'scatter', x: null, y: colIndex });
 			console.log(currVisInfo)
 			setVisInfo(currVisInfo);
 		}
 		else {
-			const scatterIndex = currVisInfo.findIndex((x) => x.type === 'scatter');
+			const scatterIndex = currVisInfo.findIndex((x) => {
+				return x.type === 'scatter' && (x.x === null || x.y === null)
+		});
 			if (currVisInfo[scatterIndex].x !== colIndex) {
 				currVisInfo[scatterIndex].y = colIndex;
 				console.log(currVisInfo)
