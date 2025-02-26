@@ -39,12 +39,11 @@ const Questions = () => {
 	}
 
 	const submitAnswer = (i) => {
-		// function 1: submit and store the answer
+		// function 1: submit and store the answer, inform the DB
 
 		// function 2: remove the question from the list
 		setFadingIndices((prev) => [...prev, i]);
-
-	
+		
 		setTimeout(() => {
 
 			setFadingIndices((prev) => prev.filter((index) => index !== i));
@@ -56,8 +55,27 @@ const Questions = () => {
 			setQuestions(newQuestions);
 			setAnswer(newAnswer);
 		}, 500);
+	}
 
+	const removeQuestion = (e, i) => {
 
+		e.stopPropagation();
+
+		// function 1: remove the question from the list, inform the DB
+
+		// function 2: remove the question from the list
+		setFadingIndices((prev) => [...prev, i]);
+
+		setTimeout(() => {
+			setFadingIndices((prev) => prev.filter((index) => index !== i));
+			const newQuestions = [...questions];
+			newQuestions.splice(i, 1);
+			const newAnswer = [...answer];
+			newAnswer.splice(i, 1);
+
+			setQuestions(newQuestions);
+			setAnswer(newAnswer);
+		}, 500);
 	}
 
 	
@@ -73,7 +91,18 @@ const Questions = () => {
 						<div 
 							key={i} 
 							className={`${styles.question} ${isFading ? styles.fadeOut : ""}`}
-							onClick={(e) => {toggleTextInput(e, i)}}>
+							onClick={(e) => {toggleTextInput(e, i)}}
+						>
+							<div 
+								className={styles.questionX}
+								onClick={(e) => {removeQuestion(e, i)}}
+							>
+								<img 
+									src="./svgs/xmark.svg" 
+									width="20px"
+									alt="xmark"
+								/>
+							</div>
 							<div className={styles.questionText}>
 								<p>{q}</p>
 								<textarea
