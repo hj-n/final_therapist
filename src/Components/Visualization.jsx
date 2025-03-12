@@ -23,6 +23,14 @@ const Visualization = (props) => {
 	const innerWidth = subWidth - subMargin.left - subMargin.right;
 	const innerHeight = subHeight - subMargin.top - subMargin.bottom;
 
+
+	const brushingInfo = {
+		0: new Array(data.length).fill(true),
+		1: new Array(data.length).fill(true),
+		2: new Array(data.length).fill(true),
+		3: new Array(data.length).fill(true)
+	}
+
 	const svgRef = useRef();
 
 	let svg11, svg12, svg21, svg22;
@@ -84,6 +92,74 @@ const Visualization = (props) => {
 				}
 			});
 		};
+
+		const brushLinkVisualizations = (brushingInfo) => {
+
+			const isBrushed = new Array(data.length).fill(false);
+
+			data.forEach((d, idx) => {
+				if (brushingInfo[0][idx] && brushingInfo[1][idx] && brushingInfo[2][idx] && brushingInfo[3][idx]) {
+					isBrushed[idx] = true;
+				}
+			});
+
+			// [0, 1, 2, 3].forEach((iidx) => {
+			// 	brushingInfo[iidx].forEach((d, idx) => {
+			// 		if (d) {
+			// 			isBrushed[idx] = true;
+			// 		}
+			// 	});
+			// });
+			const brushedSvg = [svg11, svg12, svg21, svg22];
+			console.log(brushedSvg);
+			console.log(visInfo);
+			brushedSvg.forEach((currSvg, itr) => {
+				if (visInfo.length <= itr) {
+					return;
+				}
+				const visInfoItem = visInfo[itr];
+				const visType = visInfoItem.type;
+				const visIndex = visInfoItem.index;
+				if (visType === "scatter") {
+					const scatterG = currSvg.select("#scatterG");
+					scatterG.selectAll("circle")
+						.attr("fill", (d, idx) => {
+							return isBrushed[idx] ? "steelblue" : "gray";
+					});
+				}
+				else {
+					const rectG = currSvg.select("#rectG");
+					const dataArr = data.map(d => parseFloat(d[visIndex]));
+
+					const x = d3.scaleLinear()
+						.domain([d3.min(dataArr), d3.max(dataArr)])
+						.range([0, innerWidth]);
+
+					const histogram = d3.bin()
+						.domain(x.domain())
+						.thresholds(x.ticks(20))
+						(dataArr);
+
+					// if isBrushed dataARr points is included in each bin of the histogram, fill it with steelblue
+					const isHistogramBrusehd = new Array(histogram.length).fill(false);
+					dataArr.forEach((d, idx) => {
+						if (isBrushed[idx]) {
+							histogram.forEach((bin, binIdx) => {
+								if (d >= bin.x0 && d <= bin.x1) {
+									isHistogramBrusehd[binIdx] = true;
+								}
+							});
+						}
+
+					});
+
+					rectG.selectAll("rect")
+						.attr("fill", (d, idx) => {
+							return isHistogramBrusehd[idx] ? "steelblue" : "gray";
+						});
+				}
+			})
+		}
 
 		const drawHistogram = (data, index, currSvg) => {
 			const dataArr = data.map(d => parseFloat(d[index]));
@@ -149,8 +225,19 @@ const Visualization = (props) => {
 				const selection = event.selection;
 				if (selection) {
 					const [x0, x1] = selection.map(x.invert);
-					rectG.selectAll("rect")
-						.attr("fill", d => (d.x1 >= x0 && d.x0 <= x1) ? "steelblue" : "gray");
+
+					const isBrushed = data.map(d => {
+						const dx = parseFloat(d[index]);
+						return (dx >= x0 && dx <= x1);
+					});
+					isBrushed.forEach((d, idx) => {
+						brushingInfo[index][idx] = d;
+					});
+
+					brushLinkVisualizations(brushingInfo);
+
+					// rectG.selectAll("rect")
+					// 	.attr("fill", d => (d.x1 >= x0 && d.x0 <= x1) ? "steelblue" : "gray");
 				} else {
 					rectG.selectAll("rect").attr("fill", "steelblue");
 				}
@@ -213,12 +300,15 @@ const Visualization = (props) => {
 					const selection = event.selection;
 					if (selection) {
 						const [[x0, y1], [x1, y0]] = selection.map(d => [x.invert(d[0]), y.invert(d[1])]);
-						scatterG.selectAll("circle")
-							.attr("fill", d => {
-								const dx = parseFloat(d[xIndex]);
-								const dy = parseFloat(d[yIndex]);
-								return (dx >= x0 && dx <= x1 && dy >= y0 && dy <= y1) ? "steelblue" : "gray";
-							});
+						const isBrushed = data.map(d => {
+							const dx = parseFloat(d[xIndex]);
+							const dy = parseFloat(d[yIndex]);
+							return (dx >= x0 && dx <= x1 && dy >= y0 && dy <= y1);
+						});
+						isBrushed.forEach((d, idx) => {
+							brushingInfo[0][idx] = d;
+						});
+						brushLinkVisualizations(brushingInfo);
 					} else {
 						scatterG.selectAll("circle").attr("fill", "steelblue");
 					}

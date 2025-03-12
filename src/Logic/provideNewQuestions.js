@@ -1,6 +1,11 @@
 // 예시: questionCandidates를 20~30개 이상 준비해서
 // questionNum만큼 중복 허용 랜덤으로 뽑는다.
 
+
+export function provideNewQuestionsComplete(questionNum) {
+	
+}
+
 export function provideNewQuestions(questionNum) {
 	const questionCandidates = [
 		"Why is the dataset important?",
