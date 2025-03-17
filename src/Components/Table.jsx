@@ -3,22 +3,23 @@ import styles from './Table.module.scss';
 import Visualization from './Visualization';
 
 function Table({ data: propData }) {
-	// propData를 2차원 배열로 변환하고, 열 제목(columns)도 별도로 관리합니다.
+	// 1) 2차원 배열로 변환
 	const [data, setData] = useState([]);
 	const [originalData, setOriginalData] = useState([]);
 	const [columns, setColumns] = useState([]);
 
-	// 정렬 상태 (각 열에 대해 'asc', 'desc', null)
+	// 2) 정렬 상태
 	const [sortStates, setSortStates] = useState([]);
 	const [originalSort, setOriginalSort] = useState([]);
 
-	// 행/열 선택 및 드래그 상태
+	// 3) 행/열 선택 상태
 	const [selectedRows, setSelectedRows] = useState([]);
 	const [selectedCols, setSelectedCols] = useState([]);
+
+	// 4) 드래그 상태
 	const [dragState, setDragState] = useState({
 		mode: null, // 'row' | 'col' | 'cell' | null
-		startIndex: null, // 기존 row/col 모드에서 사용
-		// 새로 추가된 셀 드래그 선택을 위한 값
+		startIndex: null,
 		startRow: null,
 		startCol: null,
 		isDragging: false,
@@ -27,16 +28,18 @@ function Table({ data: propData }) {
 		baseSelectedCols: [],
 	});
 
-	// 셀 편집 상태
+	// 5) 셀 편집 상태
 	const [editingCell, setEditingCell] = useState({ row: null, col: null });
-	// 드래그 중 이동 여부를 체크하기 위한 ref (클릭과 드래그를 구분)
+
+	// 6) 클릭/드래그 구분 ref
 	const dragMovedRef = useRef(false);
 
-	// propData가 변경되면 data, columns, 정렬 상태 초기화
+	// 7) 초기 데이터 세팅
 	useEffect(() => {
 		if (propData && propData.length > 0) {
 			const keys = Object.keys(propData[0]);
 			setColumns(keys);
+
 			const tableData = propData.map((obj) =>
 				keys.map((key) => (obj[key] !== undefined ? obj[key] : ''))
 			);
@@ -58,9 +61,13 @@ function Table({ data: propData }) {
 	const rowCount = data.length;
 	const colCount = columns.length;
 
-	/** 행 드래그 선택 */
+	/* ---------------------------------------------
+	 * 1) 행 드래그 선택
+	 * -------------------------------------------- */
 	const handleRowMouseDown = (rowIndex, e) => {
-		e.preventDefault();
+		// "버튼" 클릭이 아니면(TH 어디든) → 행 선택 드래그 시작
+		// ※ 굳이 if (e.target !== e.currentTarget) 조건을 쓰면, 자식 div/span 클릭도 막혀버림
+		// => 아래처럼 제거하면 TH 안을 누르면 모두 행 드래그가 가능합니다.
 		const shiftDown = e.shiftKey;
 		const baseRows = [...selectedRows];
 		const baseCols = [...selectedCols];
@@ -103,9 +110,10 @@ function Table({ data: propData }) {
 		}
 	};
 
-	/** 열 드래그 선택 */
+	/* ---------------------------------------------
+	 * 2) 열 드래그 선택
+	 * -------------------------------------------- */
 	const handleColMouseDown = (colIndex, e) => {
-		e.preventDefault();
 		const shiftDown = e.shiftKey;
 		const baseRows = [...selectedRows];
 		const baseCols = [...selectedCols];
@@ -148,10 +156,13 @@ function Table({ data: propData }) {
 		}
 	};
 
-	/** 셀 드래그 선택 - 마우스 다운 핸들러 */
+	/* ---------------------------------------------
+	 * 3) 셀 드래그 선택
+	 * -------------------------------------------- */
 	const handleCellMouseDown = (rowIndex, colIndex, e) => {
-		e.preventDefault();
 		dragMovedRef.current = false;
+		// (굳이 e.preventDefault() 안씀)
+
 		setDragState({
 			mode: 'cell',
 			startIndex: null,
@@ -162,13 +173,12 @@ function Table({ data: propData }) {
 			baseSelectedRows: [],
 			baseSelectedCols: [],
 		});
-		// 초기 선택은 해당 셀 하나로 설정
+		// 셀 하나만 우선 선택
 		setSelectedRows([rowIndex]);
 		setSelectedCols([colIndex]);
 	};
 
-	/** 셀 드래그 선택 - 마우스 엔터 핸들러 */
-	const handleCellMouseEnter = (rowIndex, colIndex, e) => {
+	const handleCellMouseEnter = (rowIndex, colIndex) => {
 		if (dragState.isDragging && dragState.mode === 'cell') {
 			dragMovedRef.current = true;
 			const { startRow, startCol } = dragState;
@@ -189,16 +199,15 @@ function Table({ data: propData }) {
 		}
 	};
 
-	/** 셀 클릭 시 (드래그가 아니면) 선택 해제 */
 	const handleCellClick = () => {
-		// 드래그가 발생한 경우(즉, 이동한 경우)에는 선택 해제하지 않음
+		// 드래그 없이 클릭만 했다면 선택 해제
 		if (!dragMovedRef.current) {
 			setSelectedRows([]);
 			setSelectedCols([]);
 		}
 	};
 
-	/** 마우스 업 시 드래그 상태 리셋 */
+	// 마우스 업 시 드래그 해제
 	const handleMouseUp = () => {
 		if (dragState.isDragging) {
 			setDragState({
@@ -214,14 +223,15 @@ function Table({ data: propData }) {
 			dragMovedRef.current = false;
 		}
 	};
-
 	useEffect(() => {
 		const globalUp = () => handleMouseUp();
 		window.addEventListener('mouseup', globalUp);
 		return () => window.removeEventListener('mouseup', globalUp);
 	}, [dragState.isDragging]);
 
-	/** 셀 더블클릭 시 편집 모드 */
+	/* ---------------------------------------------
+	 * 4) 셀 편집
+	 * -------------------------------------------- */
 	const handleCellDoubleClick = (r, c) => {
 		setEditingCell({ row: r, col: c });
 	};
@@ -241,11 +251,16 @@ function Table({ data: propData }) {
 		if (e.key === 'Enter') e.target.blur();
 	};
 
-	/** 단일 열 정렬 */
+	/* ---------------------------------------------
+	 * 5) 정렬
+	 * -------------------------------------------- */
 	const handleSortClick = (colIndex, e) => {
-		e.stopPropagation();
+		e.stopPropagation(); // 상위로 이벤트가 올라가서 드래그가 시작되지 않도록
+		console.log('Sorting column', colIndex);
+
 		const current = sortStates[colIndex];
 		const newSort = Array(colCount).fill(null);
+
 		let newState;
 		if (current === 'asc') {
 			newState = 'desc';
@@ -268,6 +283,7 @@ function Table({ data: propData }) {
 		});
 		setData(newData);
 
+		// 정렬 시 기존 선택 해제
 		setSelectedRows([]);
 		setSelectedCols([]);
 	};
@@ -309,12 +325,15 @@ function Table({ data: propData }) {
 		return null;
 	}
 
-	/** 행/열 삭제 */
+	/* ---------------------------------------------
+	 * 6) 행/열 삭제, 리셋
+	 * -------------------------------------------- */
 	const handleDeleteRow = (rowIndex, e) => {
 		e.stopPropagation();
 		const newData = [...data];
 		newData.splice(rowIndex, 1);
 		setData(newData);
+
 		const upd = selectedRows
 			.filter((x) => x !== rowIndex)
 			.map((x) => (x > rowIndex ? x - 1 : x));
@@ -329,6 +348,7 @@ function Table({ data: propData }) {
 			return newRow;
 		});
 		setData(newData);
+
 		const upd = selectedCols
 			.filter((x) => x !== colIndex)
 			.map((x) => (x > colIndex ? x - 1 : x));
@@ -343,7 +363,6 @@ function Table({ data: propData }) {
 		setColumns(newCols);
 	};
 
-	/** 원래 데이터로 복원 */
 	const handleReset = () => {
 		const copy = JSON.parse(JSON.stringify(originalData));
 		setData(copy);
@@ -353,11 +372,15 @@ function Table({ data: propData }) {
 		setEditingCell({ row: null, col: null });
 	};
 
-	/** 두 열 연산: Sum, Diff, Avg  */
+	/* ---------------------------------------------
+	 * 7) 열 연산 (Sum, Diff, Avg)
+	 * -------------------------------------------- */
 	function canUseOperation() {
+		// 행/열 동시선택인 경우 불가
 		if (selectedRows.length > 0 && selectedCols.length > 0) {
 			return false;
 		}
+		// 2개 열만 선택해야 가능
 		if (selectedCols.length !== 2) return false;
 		if (rowCount === 0) return false;
 
@@ -389,23 +412,21 @@ function Table({ data: propData }) {
 		setSortStates((prev) => [...prev, null]);
 		setColumns((prev) => [...prev, newHeader]);
 
-		console.log(`[${type}] 열연산 -> 새 열 추가`);
 		setSelectedRows([]);
 		setSelectedCols([]);
 	}
 
+	/* ---------------------------------------------
+	 * 8) 시각화 관련
+	 * -------------------------------------------- */
+	const [visInfo, setVisInfo] = useState([]);
 
-	const [visInfo, setVisInfo] = useState([])
-
-	/** 새 아이콘 버튼 핸들러 */
 	const handleHistogram = (colIndex, e) => {
 		e.stopPropagation();
 		console.log(`Histogram clicked for column ${colIndex}`);
-	
 
 		const currVisInfo = JSON.parse(JSON.stringify(visInfo));
 		currVisInfo.push({ type: 'histogram', index: colIndex });
-		console.log(currVisInfo);
 		setVisInfo(currVisInfo);
 	};
 
@@ -414,64 +435,54 @@ function Table({ data: propData }) {
 		console.log(`Scatterplot X clicked for column ${colIndex}`);
 
 		const currVisInfo = JSON.parse(JSON.stringify(visInfo));
-		const checkIfScatterExists = currVisInfo.filter((x) => {
-			return x.type === 'scatter'
-		});
-		const checkIfScatterFull = currVisInfo.filter((x) => {
-			return x.type === 'scatter' && x.x !== null && x.y !== null
-		});
+		const checkIfScatterExists = currVisInfo.filter((x) => x.type === 'scatter');
+		const checkIfScatterFull = currVisInfo.filter(
+			(x) => x.type === 'scatter' && x.x !== null && x.y !== null
+		);
 		if (checkIfScatterExists.length === checkIfScatterFull.length) {
 			currVisInfo.push({ type: 'scatter', x: colIndex, y: null });
-			console.log(currVisInfo)
 			setVisInfo(currVisInfo);
-		}
-		else {
-			const scatterIndex = currVisInfo.findIndex((x) => {
-				return x.type === 'scatter' && (x.x === null || x.y === null)
-			});
+		} else {
+			const scatterIndex = currVisInfo.findIndex(
+				(x) => x.type === 'scatter' && (x.x === null || x.y === null)
+			);
 			if (currVisInfo[scatterIndex].y !== colIndex) {
 				currVisInfo[scatterIndex].x = colIndex;
-				console.log(currVisInfo)
 				setVisInfo(currVisInfo);
-			}
-			else {
-				alert("Please select a different column for X-axis");
+			} else {
+				alert('Please select a different column for X-axis');
 			}
 		}
-	}
+	};
 
 	const handleScatterY = (colIndex, e) => {
 		e.stopPropagation();
 		console.log(`Scatterplot Y clicked for column ${colIndex}`);
 
 		const currVisInfo = JSON.parse(JSON.stringify(visInfo));
-		const checkIfScatterExists = currVisInfo.filter((x) => {
-			return x.type === 'scatter'
-		});
-		const checkIfScatterFull = currVisInfo.filter((x) => {
-			return x.type === 'scatter' && x.x !== null && x.y !== null
-		});
+		const checkIfScatterExists = currVisInfo.filter((x) => x.type === 'scatter');
+		const checkIfScatterFull = currVisInfo.filter(
+			(x) => x.type === 'scatter' && x.x !== null && x.y !== null
+		);
 		if (checkIfScatterExists.length === checkIfScatterFull.length) {
 			currVisInfo.push({ type: 'scatter', x: null, y: colIndex });
-			console.log(currVisInfo)
 			setVisInfo(currVisInfo);
-		}
-		else {
-			const scatterIndex = currVisInfo.findIndex((x) => {
-				return x.type === 'scatter' && (x.x === null || x.y === null)
-		});
+		} else {
+			const scatterIndex = currVisInfo.findIndex(
+				(x) => x.type === 'scatter' && (x.x === null || x.y === null)
+			);
 			if (currVisInfo[scatterIndex].x !== colIndex) {
 				currVisInfo[scatterIndex].y = colIndex;
-				console.log(currVisInfo)
 				setVisInfo(currVisInfo);
-			}
-			else {
-				alert("Please select a different column for Y-axis");
+			} else {
+				alert('Please select a different column for Y-axis');
 			}
 		}
 	};
 
-	/** 하이라이트 클래스 */
+	/* ---------------------------------------------
+	 * 9) CSS 클래스 (하이라이팅 등)
+	 * -------------------------------------------- */
 	function getRowHeaderClass(r) {
 		return selectedRows.includes(r) ? styles.selectedHeader : '';
 	}
@@ -503,184 +514,191 @@ function Table({ data: propData }) {
 	return (
 		<div className={styles.finalWrapper}>
 			<div>
-			<div>
-				<div className={styles.topBarContainer}>
-					<h3>Data Table</h3>
-					<button type="button" onClick={handleReset} className={styles.topButton}>
-						Reset
-					</button>
-					{canUseOperation() && (
-						<>
-							<button
-								type="button"
-								onClick={() => handleOperation('sum')}
-								className={styles.topButton}
-							>
-								Sum
-							</button>
-							<button
-								type="button"
-								onClick={() => handleOperation('diff')}
-								className={styles.topButton}
-							>
-								Diff
-							</button>
-							<button
-								type="button"
-								onClick={() => handleOperation('avg')}
-								className={styles.topButton}
-							>
-								Avg
-							</button>
-						</>
-					)}
+				<div>
+					<div className={styles.topBarContainer}>
+						<h3>Data Table</h3>
+						<button type="button" onClick={handleReset} className={styles.topButton}>
+							Reset
+						</button>
+						{canUseOperation() && (
+							<>
+								<button
+									type="button"
+									onClick={() => handleOperation('sum')}
+									className={styles.topButton}
+								>
+									Sum
+								</button>
+								<button
+									type="button"
+									onClick={() => handleOperation('diff')}
+									className={styles.topButton}
+								>
+									Diff
+								</button>
+								<button
+									type="button"
+									onClick={() => handleOperation('avg')}
+									className={styles.topButton}
+								>
+									Avg
+								</button>
+							</>
+						)}
+					</div>
+				</div>
+
+				<div className={styles.tableContainer}>
+					<table className={styles.table}>
+						<thead>
+							<tr>
+								{/* 왼쪽 상단 코너 */}
+								<th className={`${styles.header} ${getCornerClass()}`} />
+								{columns.map((col, colIndex) => (
+									<th
+										key={`col-header-${colIndex}`}
+										className={`${styles.header} ${getColHeaderClass(colIndex)}`}
+										// 여기 onMouseDown으로 "열 선택 드래그" 시작
+										onMouseDown={(e) => handleColMouseDown(colIndex, e)}
+										onMouseEnter={() => handleColMouseEnter(colIndex)}
+									>
+										<div className={styles.headerContent}>
+											<span>{col}</span>
+											{/* 정렬 버튼 */}
+											<div className={styles.iconContainer}>
+												<button
+													type="button"
+													onMouseDown={(e) => e.stopPropagation()}
+													onClick={(e) => handleSortClick(colIndex, e)}
+													style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
+												>
+													{sortIndicator(colIndex)}
+												</button>
+												<button
+													type="button"
+													onMouseDown={(e) => e.stopPropagation()}
+													onClick={(e) => handleHistogram(colIndex, e)}
+													style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
+												>
+													<img
+														src="/imgs/histogram.png"
+														alt="histogram"
+														style={{ width: '16px', height: '16px' }}
+													/>
+												</button>
+												<button
+													type="button"
+													onMouseDown={(e) => e.stopPropagation()}
+													onClick={(e) => handleScatterX(colIndex, e)}
+													style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
+												>
+													<img
+														src="/imgs/scatterX.png"
+														alt="scatterX"
+														style={{ width: '16px', height: '16px' }}
+													/>
+												</button>
+												<button
+													type="button"
+													onMouseDown={(e) => e.stopPropagation()}
+													onClick={(e) => handleScatterY(colIndex, e)}
+													style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
+												>
+													<img
+														src="/imgs/scatterY.png"
+														alt="scatterY"
+														style={{ width: '16px', height: '16px' }}
+													/>
+												</button>
+												{/* 열 삭제 버튼 */}
+												<button
+													type="button"
+													onMouseDown={(e) => e.stopPropagation()}
+													onClick={(e) => handleDeleteCol(colIndex, e)}
+													style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
+												>
+													<img
+														src="/imgs/trash.png"
+														alt="trash"
+														style={{ width: '16px', height: '16px' }}
+													/>
+												</button>
+											</div>
+										</div>
+									</th>
+								))}
+							</tr>
+						</thead>
+						<tbody>
+							{data.map((row, rowIndex) => (
+								<tr key={`row-${rowIndex}`}>
+									{/* 행 헤더 (왼쪽) */}
+									<th
+										className={`${styles.header} ${getRowHeaderClass(rowIndex)}`}
+										// onMouseDown으로 "행 선택 드래그" 시작
+										onMouseDown={(e) => handleRowMouseDown(rowIndex, e)}
+										onMouseEnter={() => handleRowMouseEnter(rowIndex)}
+									>
+										<div className={styles.rowHeaderContent}>
+											<span>{rowIndex + 1}</span>
+											<div className={styles.iconContainer}>
+												{/* 행 삭제 버튼 */}
+												<button
+													type="button"
+													onMouseDown={(e) => e.stopPropagation()}
+													onClick={(e) => handleDeleteRow(rowIndex, e)}
+													style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
+												>
+													<img
+														src="/imgs/trash.png"
+														alt="trash"
+														style={{ width: '16px', height: '16px' }}
+													/>
+												</button>
+											</div>
+										</div>
+									</th>
+
+									{/* 셀들 */}
+									{row.map((cell, colIndex) => {
+										const isEditing =
+											editingCell.row === rowIndex && editingCell.col === colIndex;
+										const cellClass = getCellClass(rowIndex, colIndex);
+
+										return (
+											<td
+												key={`cell-${rowIndex}-${colIndex}`}
+												className={`${styles.cell} ${cellClass}`}
+												// onMouseDown으로 "셀 범위 드래그" 시작
+												onMouseDown={(e) => handleCellMouseDown(rowIndex, colIndex, e)}
+												onMouseEnter={() => handleCellMouseEnter(rowIndex, colIndex)}
+												onClick={handleCellClick}
+												onDoubleClick={() => handleCellDoubleClick(rowIndex, colIndex)}
+											>
+												{isEditing ? (
+													<input
+														type="text"
+														className={styles.editCell}
+														defaultValue={cell}
+														autoFocus
+														onBlur={(e) => handleBlur(e, rowIndex, colIndex)}
+														onKeyDown={handleKeyDown}
+													/>
+												) : (
+													cell
+												)}
+											</td>
+										);
+									})}
+								</tr>
+							))}
+						</tbody>
+					</table>
 				</div>
 			</div>
-			<div className={styles.tableContainer}>
-				<table className={styles.table}>
-					<thead>
-						<tr>
-							{/* 왼쪽 상단 코너 */}
-							<th className={`${styles.header} ${getCornerClass()}`} />
-							{columns.map((col, colIndex) => (
-								<th
-									key={`col-header-${colIndex}`}
-									className={`${styles.header} ${getColHeaderClass(colIndex)}`}
-									onMouseDown={(e) => handleColMouseDown(colIndex, e)}
-									onMouseEnter={() => handleColMouseEnter(colIndex)}
-								>
-									<div className={styles.headerContent}>
-										<span style={{ cursor: 'default' }}>{col}</span>
-										<button
-											type="button"
-											onMouseDown={(e) => e.stopPropagation()}
-											onClick={(e) => handleSortClick(colIndex, e)}
-											style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
-										>
-											{sortIndicator(colIndex)}
-										</button>
-										<div className={styles.iconContainer}>
-											<button
-												type="button"
-												onMouseDown={(e) => e.stopPropagation()}
-												onClick={(e) => handleHistogram(colIndex, e)}
-												style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
-											>
-												<img
-													src="/imgs/histogram.png"
-													alt="histogram"
-													style={{ width: '16px', height: '16px' }}
-												/>
-											</button>
-											<button
-												type="button"
-												onMouseDown={(e) => e.stopPropagation()}
-												onClick={(e) => handleScatterX(colIndex, e)}
-												style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
-											>
-												<img
-													src="/imgs/scatterX.png"
-													alt="scatterX"
-													style={{ width: '16px', height: '16px' }}
-												/>
-											</button>
-											<button
-												type="button"
-												onMouseDown={(e) => e.stopPropagation()}
-												onClick={(e) => handleScatterY(colIndex, e)}
-												style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
-											>
-												<img
-													src="/imgs/scatterY.png"
-													alt="scatterY"
-													style={{ width: '16px', height: '16px' }}
-												/>
-											</button>
-											<button
-												type="button"
-												onMouseDown={(e) => e.stopPropagation()}
-												onClick={(e) => handleDeleteCol(colIndex, e)}
-												style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
-											>
-												<img
-													src="/imgs/trash.png"
-													alt="trash"
-													style={{ width: '16px', height: '16px' }}
-												/>
-											</button>
-										</div>
-									</div>
-								</th>
-							))}
-						</tr>
-					</thead>
-					<tbody>
-						{data.map((row, rowIndex) => (
-							<tr key={`row-${rowIndex}`}>
-								<th
-									className={`${styles.header} ${getRowHeaderClass(rowIndex)}`}
-									onMouseDown={(e) => handleRowMouseDown(rowIndex, e)}
-									onMouseEnter={() => handleRowMouseEnter(rowIndex)}
-								>
-									<div className={styles.rowHeaderContent}>
-										<span>{rowIndex + 1}</span>
-										<div className={styles.iconContainer}>
-											<button
-												type="button"
-												onMouseDown={(e) => e.stopPropagation()}
-												onClick={(e) => handleDeleteRow(rowIndex, e)}
-												style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
-											>
-												<img
-													src="/imgs/trash.png"
-													alt="trash"
-													style={{ width: '16px', height: '16px' }}
-												/>
-											</button>
-										</div>
-									</div>
-								</th>
-								{row.map((cell, colIndex) => {
-									const isEditing =
-										editingCell.row === rowIndex && editingCell.col === colIndex;
-									const cellClass = getCellClass(rowIndex, colIndex);
-									return (
-										<td
-											key={`cell-${rowIndex}-${colIndex}`}
-											className={`${styles.cell} ${cellClass}`}
-											// 셀에서 마우스 다운/엔터 이벤트를 추가하여 사각형 드래그 선택 구현
-											onMouseDown={(e) => handleCellMouseDown(rowIndex, colIndex, e)}
-											onMouseEnter={(e) => handleCellMouseEnter(rowIndex, colIndex, e)}
-											onClick={handleCellClick}
-											onDoubleClick={() => handleCellDoubleClick(rowIndex, colIndex)}
-										>
-											{isEditing ? (
-												<input
-													type="text"
-													className={styles.editCell}
-													defaultValue={cell}
-													autoFocus
-													onBlur={(e) => handleBlur(e, rowIndex, colIndex)}
-													onKeyDown={handleKeyDown}
-												/>
-											) : (
-												cell
-											)}
-										</td>
-									);
-								})}
-							</tr>
-						))}
-					</tbody>
-				</table>
-			</div>
-			</div>
-			<Visualization 
-				data={data} 
-				visInfo={visInfo} 
-				columns={columns} 
-				setVisInfo={setVisInfo}
-			/>
+
+			{/* 시각화 컴포넌트 */}
+			<Visualization data={data} visInfo={visInfo} columns={columns} setVisInfo={setVisInfo} />
 		</div>
 	);
 }
