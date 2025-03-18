@@ -1,17 +1,17 @@
 import OpenAI from "openai";
 
 
-import predefined_T3 from "./predefined.json" ;
+import { predefined_T3 } from "./predefined";
 import apiKey from "./api.json";
 
 import * as prompts from "./prompts";
-import { measureImportanceT1 } from "./_prioritizeQuestions";
+import { measureImportanceT1, measureImportanceT2, measureVectorEmbedding, measureVectorEmbeddingStr } from "./_prioritizeQuestions";
 import { returnTopRankedQuestions } from "./_extractQuestions";
 
 export const questions = {
 	"T1": [],
 	"T2": [],
-	"T3": predefined_T3,
+	"T3": [],
 }
 
 export let annotatedData = null; // 계속 global variable로 쓰임
@@ -43,9 +43,26 @@ export async function initiateQuestions(data) {
 	columns = Object.keys(data[0]);
 	const dataset_T1 = await getT1Questions(dataStr);
 	const dataset_T1_importance = await measureImportanceT1(dataset_T1);
-	questions["T1"] = dataset_T1_importance;
+	const dataset_T1_importanceEmbedding = await measureVectorEmbedding(dataset_T1_importance);
+	await initiateT3Embeddings(predefined_T3);
+	questions["T1"] = dataset_T1_importanceEmbedding;
+	console.log(questions);
+	console.log(questions["T3"]);
 }
 
+async function initiateT3Embeddings(predefined_t3) {
+	// console.log(questions["T3"][0]);
+	// console.log(questions["T3"][0]["list"]);
+	questions["T3"] = questions["T3"].concat(JSON.parse(JSON.stringify(predefined_t3)));
+	questions["T3"][0]["list"] = await measureVectorEmbedding(questions["T3"][0]["list"]);
+	questions["T3"][1]["list"] = await measureVectorEmbedding(questions["T3"][1]["list"]);
+	questions["T3"][2]["list"] = await measureVectorEmbedding(questions["T3"][2]["list"]);
+	questions["T3"][3]["list"] = await measureVectorEmbedding(questions["T3"][3]["list"]);
+	questions["T3"][4]["list"] = await measureVectorEmbedding(questions["T3"][4]["list"]);
+	questions["T3"][5]["list"] = await measureVectorEmbedding(questions["T3"][5]["list"]);
+	questions["T3"][6]["list"] = await measureVectorEmbedding(questions["T3"][6]["list"]);
+
+}
 
 export async function addAnnotation(newAnnotation, newAnnotatedData) {
 	let annoatedDataTransformed;
@@ -56,40 +73,62 @@ export async function addAnnotation(newAnnotation, newAnnotatedData) {
 	}
 	const currAnnotation = { 
 		"annotation": newAnnotation,
-		"annotatedData": annoatedDataTransformed
+		"annotatedData": annoatedDataTransformed,
+		"recency": 6
 	};
+	currAnnotation["embedding"] = await measureVectorEmbeddingStr(newAnnotation);
 	annotations.push(currAnnotation);
 	const t2NewQuestions = await generateQuestionsT2Annotations(currAnnotation);
+	const t2NewQuestionsImportance = await measureImportanceT2(t2NewQuestions);
+	const t2NewQuestionsImportanceEmbedding = await measureVectorEmbedding(t2NewQuestionsImportance);
 
-	questions["T2"] = questions["T2"].concat(t2NewQuestions);
+	updateRecencyOfAnnotations();
 
+	questions["T2"] = questions["T2"].concat(t2NewQuestionsImportanceEmbedding);
+	console.log(annotations, questionAnswers);
 }
 
 export async function addQuestionAnswer(newQuestion, newAnswer) {
 	questionAnswers.push({
 		"question": newQuestion,
-		"answer": newAnswer
+		"answer": newAnswer,
+		"answer_embedding": await measureVectorEmbeddingStr(newAnswer),
+		"recency": 6
 	});
-
 	const t2NewQuestions = await generateQuestionsT2QuestionAnswer(newQuestion, newAnswer);
+	const t2NewQuestionsImportance = await measureImportanceT2(t2NewQuestions);
+	const t2NewQuestionsImportanceEmbedding = await measureVectorEmbedding(t2NewQuestionsImportance);
 
-	questions["T2"] = questions["T2"].concat(t2NewQuestions);
-	console.log(questions["T2"]);
+	updateRecencyOfQuestionAnswers();
+
+	questions["T2"] = questions["T2"].concat(t2NewQuestionsImportanceEmbedding);
+	console.log(annotations, questionAnswers);
+}
+
+function updateRecencyOfAnnotations() {
+	annotations.forEach((annotation) => {
+		annotation["recency"] -= 1;
+	});
+}
+
+function updateRecencyOfQuestionAnswers() {
+	questionAnswers.forEach((questionAnswer) => {
+		questionAnswer["recency"] -= 1;
+	});
 }
 
 function annotatedDatafromTableAnnotation(annotatedData) {
 	const cols = annotatedData["cols"];
-	console.log(columns);
 	const colNames = cols.map(col => columns[col]);
 	const rows = annotatedData["rows"];
 
 	const annotatedDataArr = [];
 	for (const rownum in rows) {
-		const row = rows[rownum];
+		const row = dataObj[rownum];
 		const annotatedRow = {};
-		for (const colName in colNames) {
+		colNames.forEach((colName) => {
 			annotatedRow[colName] = row[colName];
-		}
+		});
 		annotatedRow["row number"] = rownum;
 		annotatedDataArr.push(annotatedRow);
 	}

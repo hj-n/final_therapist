@@ -144,7 +144,7 @@ const Questions = () => {
 								/>
 							</div>
 							<div className={styles.questionText}>
-								<p>{q}</p>
+								<p>{q.Question}</p>
 								<textarea
 									className={styles.answerInput}
 									value={answer[i] || ""}

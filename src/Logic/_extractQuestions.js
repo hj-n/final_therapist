@@ -26,7 +26,7 @@ export function returnTopRankedQuestions(qNum) {
 			const lists =  [t1Questions.slice(0, t1qnum), t2Questions.slice(0, t2qnum), t3Questions.slice(0, t3qnum)];
 			const finalList = lists.flat();
 			finalList.forEach((question, index) => { removeQuestionByStr(question.Question); });
-			return finalList.map((question) => question.Question);
+			return finalList;
 		}
 		if (t1Questions.length < t1qnum) {
 			const diff = t1qnum - t1Questions.length;
@@ -107,7 +107,7 @@ function rankT3Questions(k = 10) {
 			: themeInfo.list.length / themeInfo.Number;
 
 		// 질문 텍스트만 추출해 별도로 보관
-		const questionsArray = themeInfo.list.map(item => item.Question);
+		const questionsArray = themeInfo.list.map(item => item);
 
 		return {
 			theme: themeInfo.Theme,
@@ -158,9 +158,7 @@ function rankT3Questions(k = 10) {
 		chosenTheme.questions.splice(randomIndex, 1);
 
 		// 결과에 저장
-		sampled.push({
-			Question: selectedQuestion
-		});
+		sampled.push(selectedQuestion);
 	}
 
 	return sampled;
@@ -194,7 +192,7 @@ function removeQuestionByStr(questionStr) {
 
 	questionsT1.forEach((question) => {
 		if (question["Question"] === questionStr) {
-			questionsT3.splice(questionsT3.indexOf(question),
+			questionsT1.splice(questionsT1.indexOf(question),
 				1);
 		}	
 	})

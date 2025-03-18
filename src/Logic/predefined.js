@@ -1,4 +1,4 @@
-[
+export const predefined_T3 = [
 	{
 		"Theme": "Motivation",
 		"Number": 3,
