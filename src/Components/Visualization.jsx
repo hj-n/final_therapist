@@ -87,10 +87,10 @@ const Visualization = (props) => {
 					});
 
 				if (visType === "histogram") {
-					drawHistogram(data, visInfoItem.index, currSvg);
+					drawHistogram(data, visInfoItem.index, currSvg, itr);
 				}
 				if (visType === "scatter") {
-					drawScatterplot(data, visInfoItem.x, visInfoItem.y, currSvg);
+					drawScatterplot(data, visInfoItem.x, visInfoItem.y, currSvg, itr);
 				}
 			});
 		};
@@ -154,7 +154,7 @@ const Visualization = (props) => {
 			})
 		}
 
-		const drawHistogram = (data, index, currSvg) => {
+		const drawHistogram = (data, index, currSvg, itr) => {
 			const dataArr = data.map(d => parseFloat(d[index]));
 
 			const x = d3.scaleLinear()
@@ -225,7 +225,7 @@ const Visualization = (props) => {
 						return (dx >= x0 && dx <= x1);
 					});
 					isBrushed.forEach((d, idx) => {
-						brushingInfo[index][idx] = d;
+						brushingInfo[itr][idx] = d;
 					});
 
 					brushLinkVisualizations(brushingInfo);
@@ -238,7 +238,7 @@ const Visualization = (props) => {
 			}
 		};
 
-		const drawScatterplot = (data, xIndex, yIndex, currSvg) => {
+		const drawScatterplot = (data, xIndex, yIndex, currSvg, itr) => {
 			let x = null;
 			let y = null;
 			if (xIndex !== null) {
@@ -301,7 +301,7 @@ const Visualization = (props) => {
 							return (dx >= x0 && dx <= x1 && dy >= y0 && dy <= y1);
 						});
 						isBrushed.forEach((d, idx) => {
-							brushingInfo[0][idx] = d;
+							brushingInfo[itr][idx] = d;
 						});
 						brushLinkVisualizations(brushingInfo);
 					} else {
