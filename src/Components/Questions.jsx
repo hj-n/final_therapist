@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import styles from "./Questions.module.scss";
 
-import { provideNewQuestions } from "../Logic/provideNewQuestions";
+// import { provideNewQuestions } from "../Logic/provideNewQuestions";
+
+import { returnTopRankedQuestions } from "../Logic/_extractQuestions";
 
 const Questions = () => {
 
@@ -13,8 +15,10 @@ const Questions = () => {
 
 	const [fadingIndices, setFadingIndices] = useState([]);
 
+	const [loading, setLoading] = useState(false);
+
 	useEffect(() => {
-		setQuestions(provideNewQuestions(10));
+		setQuestions(returnTopRankedQuestions(10));
 	}, []);
 
 
@@ -81,7 +85,7 @@ const Questions = () => {
 		const currentNumQuestions = questions.length;
 
 		// add new questions
-		const newQuestions = provideNewQuestions(10 - currentNumQuestions);
+		const newQuestions = returnTopRankedQuestions(10 - currentNumQuestions);
 
 		// add new questions to the list
 		setQuestions([...questions, ...newQuestions]);
@@ -101,6 +105,7 @@ const Questions = () => {
 				<h3>{"Ask Data Therapist"}</h3>
 				<button
 					onClick={(e) => {addNewQuestions(e)}}
+					disabled={questions.length >= 5}
 				>{"Request New Questions"}</button>
 			</div>
 

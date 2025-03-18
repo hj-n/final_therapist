@@ -74,4 +74,11 @@
 		margin-left: 14px;
 		font-size: 0.9rem;
 	}
+
+	button:disabled {
+		cursor: not-allowed;
+		background-color: #f0f0f0;
+		color: #aaaaaa;
+		border: 1px solid #aaaaaa;
+	}
 }

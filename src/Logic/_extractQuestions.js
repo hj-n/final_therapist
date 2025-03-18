@@ -24,7 +24,9 @@ export function returnTopRankedQuestions(qNum) {
 	while (true) {
 		if (t1Questions.length >= t1qnum && t2Questions.length >= t2qnum && t3Questions.length >= t3qnum) {
 			const lists =  [t1Questions.slice(0, t1qnum), t2Questions.slice(0, t2qnum), t3Questions.slice(0, t3qnum)];
-			return lists.flat();
+			const finalList = lists.flat();
+			finalList.forEach((question, index) => { removeQuestionByStr(question.Question); });
+			return finalList.map((question) => question.Question);
 		}
 		if (t1Questions.length < t1qnum) {
 			const diff = t1qnum - t1Questions.length;
@@ -170,9 +172,32 @@ function rankT2Questions() {
 
 function removeQuestionByStr(questionStr) {
 	const questionsT1 = questions["T1"];
+	const questionsT2 = questions["T2"];
+	const questionsT3 = questions["T3"];
+	// remov
 
 	// TODO
-	// questionsT1.forEach((dictionary, index) => {
-	// 	const questionList = 
-	// }))
+	questionsT3.forEach((dictionary, index) => {
+		const questionList = dictionary["list"];
+		questionList.forEach((question, index) => {
+			if (question["Question"] === questionStr) {
+				questionList.splice(index, 1);
+			}
+		});
+	});
+
+	questionsT2.forEach(question => {
+		if (question["Question"] === questionStr) {
+			questionsT2.splice(questionsT2.indexOf(question), 1);
+		}
+	});
+
+	questionsT1.forEach((question) => {
+		if (question["Question"] === questionStr) {
+			questionsT3.splice(questionsT3.indexOf(question),
+				1);
+		}	
+	})
+
+
 }

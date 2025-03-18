@@ -27,8 +27,6 @@ export async function initiateQuestions(data) {
 	const dataset_T1_importance = await measureImportanceT1(dataset_T1);
 	questions["T1"] = dataset_T1_importance;
 
-	const topRankedQuestions = returnTopRankedQuestions(10);
-	console.log(topRankedQuestions);
 
 }
 
