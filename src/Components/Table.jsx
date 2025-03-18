@@ -43,7 +43,6 @@ function Table({ data: propData }) {
 
 	// 아주 아주 중요한 코드 250317
 	const clearSelections = () => {
-		console.log("testtest")
 		setSelectedRowIds([]);
 		setSelectedCols([]);
 		setDragState({

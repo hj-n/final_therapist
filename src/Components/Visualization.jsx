@@ -4,7 +4,6 @@ import * as d3 from "d3";
 
 const Visualization = (props) => {
 
-	console.log('Rendering Visualization');
 	const data = props.data;
 	const visInfo = props.visInfo;
 	const setVisInfo = props.setVisInfo;
@@ -106,13 +105,6 @@ const Visualization = (props) => {
 				}
 			});
 
-			// [0, 1, 2, 3].forEach((iidx) => {
-			// 	brushingInfo[iidx].forEach((d, idx) => {
-			// 		if (d) {
-			// 			isBrushed[idx] = true;
-			// 		}
-			// 	});
-			// });
 			const brushedSvg = [svg11, svg12, svg21, svg22];
 			brushedSvg.forEach((currSvg, itr) => {
 				if (visInfo.length <= itr) {
