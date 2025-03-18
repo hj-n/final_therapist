@@ -14,18 +14,133 @@ export const questions = {
 	"T3": predefined_T3,
 }
 
+export let annotatedData = null; // 계속 global variable로 쓰임
+
+export function setAnnotatedData (data)  {
+	annotatedData = data;
+}
+
+export const annotations = [];
+export const questionAnswers = [];
+
+
 export const openai = new OpenAI({
 	apiKey: apiKey[0],
 	dangerouslyAllowBrowser: true
 })
 
+
+// data variables
+let dataStr = "";
+let data = null;
+let columns = null;
+
 export const model = "gpt-4o-mini-2024-07-18";
 
 export async function initiateQuestions(data) {
-	const dataStr = dataToStr(data);
+	dataStr = dataToStr(data);
+	data = data;
+	columns = Object.keys(data[0]);
 	const dataset_T1 = await getT1Questions(dataStr);
 	const dataset_T1_importance = await measureImportanceT1(dataset_T1);
 	questions["T1"] = dataset_T1_importance;
+}
+
+
+export async function addAnnotation(newAnnotation, newAnnotatedData) {
+	console.log(newAnnotatedData);
+	let annoatedDataTransformed;
+	if ("cols" in newAnnotatedData) {
+		annoatedDataTransformed = annotatedDatafromTableAnnotation(newAnnotatedData);
+	} else {
+		annoatedDataTransformed = annotatedDatafromVisualAnnotation(newAnnotatedData);
+	}
+	const currAnnotation = { 
+		"annotation": newAnnotation,
+		"annotatedData": annoatedDataTransformed
+	};
+	console.log(currAnnotation);
+	annotations.push(currAnnotation);
+	const t2NewQuestions = await generateQuestionsT2(currAnnotation);
+
+	questions["T2"] = questions["T2"].concat(t2NewQuestions);
+
+	console.log(questions);
+}
+
+function annotatedDatafromTableAnnotation(annotatedData) {
+	const cols = annotatedData["cols"];
+	const colNames = cols.map(col => columns[col]);
+	const rows = annotatedData["rows"];
+
+	const annotatedDataArr = [];
+	for (const rownum in rows) {
+		const row = rows[rownum];
+		const annotatedRow = {};
+		for (const colName in colNames) {
+			annotatedRow[colName] = row[colName];
+		}
+		annotatedDataArr.push(annotatedRow);
+	}
+	return annotatedDataArr;
+}
+
+function annotatedDatafromVisualAnnotation(annotatedData) {
+	const filteredBrushedPoints = annotatedData.filter(data => data["attribute"] !== null);
+	// TODO
+	// const annotatedD
+}
+
+async function generateQuestionsT2(currAnnotation) {
+	// T2: derived from the annotations
+	const input = [
+		{ "role": "user", "content": prompts.IntroDataTherapist + `
+			Here is the dataset: 	` + dataStr + `
+			And here is the annotations and questions made by annotators: 
+		` + JSON.stringify(annotations.map(annot => annot.annotation)) + JSON.stringify(questions["T2"]) + `
+			Here is the most rrecently referenced data instance and annotation:
+		` + JSON.stringify(currAnnotation) + `
+			Here is the task:
+			` + prompts.TaskQT2 + `
+			Create the output in the following manner:
+			` + prompts.OutputFormatQT2
+	}];
+
+	const text = {
+		format: {
+			type: "json_schema",
+			name: "t1questions",
+			schema: {
+				type: "object",
+				properties: {
+					questions: {
+						type: "array",
+						items: {
+							type: "object",
+							properties: {
+								Question: { type: "string" },
+								createdBy: { type: "string" }
+							},
+							// Make sure to include this line:
+							additionalProperties: false,
+							required: ["Question", "createdBy"]
+						}
+					}
+				},
+				required: ["questions"],
+				additionalProperties: false
+			}
+		}
+	};
+
+	const response = await openai.responses.create({
+		model: model,
+		input: input,
+		text: text
+	});
+
+	const t2NewQuestions = JSON.parse(response.output_text)["questions"];
+	return t2NewQuestions;
 
 
 }

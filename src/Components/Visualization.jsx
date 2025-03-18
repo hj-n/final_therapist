@@ -1,6 +1,8 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, use } from "react";
 import styles from "./Visualization.module.scss";
 import * as d3 from "d3";
+
+import { annotatedData, setAnnotatedData } from "../Logic/_createQuestions";
 
 const Visualization = (props) => {
 	const data = props.data;
@@ -46,6 +48,13 @@ const Visualization = (props) => {
 		2: { brushedPoints: [], attribute: null, range: null, domain: null },
 		3: { brushedPoints: [], attribute: null, range: null, domain: null },
 	});
+
+	console.log("RENDERING")
+	useEffect(() => {
+		console.log("TESTtesT")
+		setAnnotatedData(JSON.parse(JSON.stringify(brushState)));
+		console.log(annotatedData);
+	}, [brushState]);
 
 	const svgRef = useRef();
 
@@ -216,7 +225,7 @@ const Visualization = (props) => {
 				.join("rect")
 				.attr("x", (d) => x(d.x0))
 				.attr("y", (d) => y(d.length))
-				.attr("width", (d) => x(d.x1) - x(d.x0) - 1)
+				.attr("width", (d) => x(d.x1) - x(d.x0))
 				.attr("height", (d) => innerHeight - y(d.length))
 				.attr("fill", "steelblue");
 

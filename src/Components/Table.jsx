@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import styles from './Table.module.scss';
 import Visualization from './Visualization';
 
+import { annotatedData, setAnnotatedData } from '../Logic/_createQuestions';
+
 function Table({ data: propData }) {
 	// ---------------------------------------------
 	// 0) rowIds, selectedRowIds 추가
@@ -39,6 +41,17 @@ function Table({ data: propData }) {
 		baseSelectedCols: [],
 	});
 	const dragMovedRef = useRef(false);
+
+	useEffect(() => {
+		if (selectedRowIds.length === 0 && selectedCols.length === 0) {
+			return;
+		}
+		setAnnotatedData({
+			"cols": JSON.parse(JSON.stringify(selectedCols)),
+			"rows": JSON.parse(JSON.stringify(selectedRowIds))
+		});
+		console.log("TABLE")
+	}, [selectedCols, selectedRowIds]);
 
 
 	// 아주 아주 중요한 코드 250317
