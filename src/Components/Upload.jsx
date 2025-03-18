@@ -4,10 +4,15 @@ import styles from "./Upload.module.scss";
 
 import Papa from 'papaparse';
 
+import { initiateQuestions } from "../Logic/_createQuestions";
+
+import LoadingOverlay from "../SubComponents/LoadingOverlay";
+
 const Upload = (props) => {
 
 	const [uploadedData, setUploadedData] = useState(null);
 	const [fileName, setFileName] = useState(null);
+	const [loading, setLoading] = useState(false);
 
 	const setDataApp = props.setData;
 	const setFileNameApp = props.setFileName;
@@ -16,8 +21,14 @@ const Upload = (props) => {
 	const fileInputRef = useRef();
 
 	const initializeTherapist = () => {
-		setDataApp(uploadedData);
-		setFileNameApp(fileName);
+		setLoading(true);	
+		initiateQuestions(uploadedData).then(() => {
+			setLoading(false);
+			setDataApp(uploadedData);
+			setFileNameApp(fileName);
+		}).catch((err) => {
+			console.log(err);
+		});
 	}
 
 	const saveCSV = (e) => {
@@ -87,6 +98,7 @@ const Upload = (props) => {
 
 	return (
 		<div className={styles.fileInputWrapper}>
+			{loading && <LoadingOverlay />}
 			<h3>Upload your data:</h3>
 			{uploadedData === null ?
 				<label htmlFor="csv">
