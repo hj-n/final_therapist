@@ -49,11 +49,8 @@ const Visualization = (props) => {
 		3: { brushedPoints: [], attribute: null, range: null, domain: null },
 	});
 
-	console.log("RENDERING")
 	useEffect(() => {
-		console.log("TESTtesT")
 		setAnnotatedData(JSON.parse(JSON.stringify(brushState)));
-		console.log(annotatedData);
 	}, [brushState]);
 
 	const svgRef = useRef();

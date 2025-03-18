@@ -3,7 +3,8 @@ export const IntroDataTherapist = `A data therapist looks at the dataset, and tr
 export const TaskQT1 = `In this task, read the dataset. Also, make sure to read all existing annotations as well as the answered questions. Then, generate 30 questions that incites the user to provide new information about parts of the dataset (not questions that the user can answer from the dataset, but questions that gives new information that the user might know, but that cannot be seen by looking at the dataset), so that those answers can enrich the explanations about the dataset. You can ask questions about the dataset in general, or some specific instances in the dataset that you think are worth mentioning. Focus on the fact that you should generate questions that collect the "metadata", so avoid asking about the specific patterns of the datasets.`
 
 
-export const TaskQT2 = `In this task, first read the dataset. Also, make sure to read all existing annotations as well as the answered questions. Then, generate 5 questions you think is both relevant and important to the most recently referenced data instance and annotation. Note that the questions that is generated should not overlap with existing questions and annotations. Here, importance means providing deeper understanding about the referenced data instance and annotations.`
+export const TaskQT2 = `In this task, first read the dataset. Also, make sure to read all existing annotations as well as the answered questions. Then, generate 5 questions you think is both relevant and important to the most recently referenced data instance and annotation. Note that the questions that is generated should not overlap with existing questions and annotations. Here, importance means providing deeper understanding about the referenced data instance and annotations. Also specify the row and column that the question is related to if such information is available. For row, specify the range of the rows, and for column, specify the name of the columns. If the question is not related to any specific row or column, leave the relatedRow or relatedCol empty. ([]). Note that "row number" in the annoated data is the row number in the dataset, not the name of the attribute.
+`
 
 export const OutputFormatQT1 = `[
     {"Question": "What is the significance of the annotation?", "createdBy": "DT"},\\
@@ -15,11 +16,11 @@ export const OutputFormatQT1 = `[
 
 
 export const OutputFormatQT2 = `[
-    {"Question": "What is the significance of the annotation?", "createdBy": "DT"},\\
-    {"Question": "What is the importance of the annotation?", "createdBy": "DT"},\\
-    {"Question": "What is the relevance of the annotation to the dataset?", "createdBy": "DT"},\\
-    {"Question": "What is the impact of the annotation on the dataset?", "createdBy": "DT"},\\
-    {"Question": "What is the implication of the annotation on the dataset?", "createdBy": "DT"},...]`
+    {"Question": "What is the significance of the annotation?", "createdBy": "DT", "relatedRow"; [4, 10], "relatedCol": ["attr1, "attr2", ..]},\\
+    {"Question": "What is the importance of the annotation?", "createdBy": "DT", "relatedRow"; [5, 11], "relatedCol": ["attr1]},\\
+    {"Question": "What is the relevance of the annotation to the dataset?", "createdBy": "DT", "relatedRow"; [123, 150], "relatedCol": []},\\
+    {"Question": "What is the impact of the annotation on the dataset?", "createdBy": "DT", "relatedRow"; [], "relatedCol": ["attr3"]},\\
+    {"Question": "What is the implication of the annotation on the dataset?", "createdBy": "DT", , "relatedRow"; [], "relatedCol": []},...]`
 
 
 

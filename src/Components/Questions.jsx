@@ -5,6 +5,9 @@ import styles from "./Questions.module.scss";
 // import { provideNewQuestions } from "../Logic/provideNewQuestions";
 
 import { returnTopRankedQuestions } from "../Logic/_extractQuestions";
+import LoadingOverlay from "../SubComponents/LoadingOverlay";
+import { set } from "zod";
+import { addQuestionAnswer } from "../Logic/_createQuestions";
 
 const Questions = () => {
 
@@ -42,6 +45,17 @@ const Questions = () => {
 
 	const submitAnswer = (i) => {
 		// function 1: submit and store the answer, inform the DB
+
+		const  question = questions[i];
+		const ans = answer[i];
+
+		setLoading(true);
+		addQuestionAnswer(question, ans).then(() => {
+			setLoading(false);
+		}).catch((err) => {
+			console.log(err);
+		});
+
 
 		// function 2: remove the question from the list
 		setFadingIndices((prev) => [...prev, i]);
@@ -101,6 +115,7 @@ const Questions = () => {
 
 	return (
 		<div className={styles.questionWrapper}>
+			{loading && <LoadingOverlay />}
 			<div className={styles.titleWrapper}>
 				<h3>{"Ask Data Therapist"}</h3>
 				<button
