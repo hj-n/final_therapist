@@ -24,6 +24,8 @@ function Table({ data: propData }) {
 	const [originalSort, setOriginalSort] = useState([]);
 	const [selectedCols, setSelectedCols] = useState([]);
 
+	const [triggerVis, setTriggerVis] = useState(false);
+
 	// 셀 편집, 드래그 등등
 	const [editingCell, setEditingCell] = useState({ row: null, col: null });
 	const [dragState, setDragState] = useState({
@@ -40,7 +42,27 @@ function Table({ data: propData }) {
 
 
 	// 아주 아주 중요한 코드 250317
-	console.log(originalData, selectedCols, selectedRowIds);
+	const clearSelections = () => {
+		console.log("testtest")
+		setSelectedRowIds([]);
+		setSelectedCols([]);
+		setDragState({
+			mode: null,
+			startIndex: null,
+			startRow: null,
+			startCol: null,
+			isDragging: false,
+			shiftKey: false,
+			baseSelectedRows: [],
+			baseSelectedCols: [],
+		});
+		setEditingCell({ row: null, col: null });
+		// 필요한 경우 visInfo 등도 초기화할 수 있음
+	};
+	// useEffect(() => {
+	// 	const newVisInfo = JSON.parse(JSON.stringify(visInfo));
+	// 	setVisInfo(newVisInfo);
+	// }, [selectedCols, selectedRowIds]);
 
 	// ---------------------------------------------
 	// 1) propData 로부터 초기 세팅
@@ -85,6 +107,7 @@ function Table({ data: propData }) {
 		// 선택 해제
 		setSelectedRowIds([]);
 		setSelectedCols([]);
+		setTriggerVis(!triggerVis);
 	}, [propData]);
 
 	const rowCount = data.length;
@@ -136,6 +159,7 @@ function Table({ data: propData }) {
 
 		setSelectedRowIds(baseSelected);
 		setSelectedCols([]); // 행 선택이므로 열 선택 해제
+		setTriggerVis(!triggerVis);
 
 		setDragState({
 			mode: 'row',
@@ -162,10 +186,12 @@ function Table({ data: propData }) {
 		if (!shiftKey) {
 			// shift가 아니면 단순히 범위만
 			setSelectedRowIds(rangeIds);
+			setTriggerVis(!triggerVis);
 		} else {
 			// shiftKey면 기존과 합집합
 			const setUnion = new Set([...baseSelectedRows, ...rangeIds]);
 			setSelectedRowIds(Array.from(setUnion));
+			setTriggerVis(!triggerVis);
 		}
 	};
 
@@ -183,12 +209,14 @@ function Table({ data: propData }) {
 			baseSelected = [colIndex];
 			setSelectedCols(baseSelected);
 			setSelectedRowIds([]); // 열 선택이므로 행 선택 해제
+			setTriggerVis(!triggerVis);
 		} else {
 			// shift면 합집합
 			if (!baseSelected.includes(colIndex)) {
 				baseSelected.push(colIndex);
 			}
 			setSelectedCols(baseSelected);
+			setTriggerVis(!triggerVis);
 		}
 
 		setDragState({
@@ -213,9 +241,11 @@ function Table({ data: propData }) {
 
 		if (!shiftKey) {
 			setSelectedCols(range);
+			setTriggerVis(!triggerVis);
 		} else {
 			const setUnion = new Set([...baseSelectedCols, ...range]);
 			setSelectedCols(Array.from(setUnion));
+			setTriggerVis(!triggerVis);
 		}
 	};
 
@@ -229,6 +259,7 @@ function Table({ data: propData }) {
 		const rowId = rowIds[rowIndex];
 		setSelectedRowIds([rowId]);
 		setSelectedCols([colIndex]);
+		setTriggerVis(!triggerVis);
 
 		setDragState({
 			mode: 'cell',
@@ -261,6 +292,7 @@ function Table({ data: propData }) {
 		}
 		setSelectedRowIds(rowRangeIds);
 		setSelectedCols(colRange);
+		setTriggerVis(!triggerVis);
 	};
 
 	const handleCellClick = () => {
@@ -268,6 +300,7 @@ function Table({ data: propData }) {
 		if (!dragMovedRef.current) {
 			setSelectedRowIds([]);
 			setSelectedCols([]);
+			setTriggerVis(!triggerVis);
 		}
 	};
 
@@ -354,6 +387,7 @@ function Table({ data: propData }) {
 		// 정렬 시 기존 선택(드래그) 해제할 경우
 		setSelectedRowIds([]);
 		setSelectedCols([]);
+		setTriggerVis(!triggerVis);
 	};
 
 	function sortIndicator(c) {
@@ -390,6 +424,7 @@ function Table({ data: propData }) {
 
 		// 선택 목록에서도 해당 ID 제거
 		setSelectedRowIds((prev) => prev.filter((id) => id !== thisId));
+		setTriggerVis(!triggerVis);
 	};
 
 	const handleDeleteCol = (colIndex, e) => {
@@ -405,6 +440,7 @@ function Table({ data: propData }) {
 			.filter((c) => c !== colIndex)
 			.map((c) => (c > colIndex ? c - 1 : c));
 		setSelectedCols(updCols);
+		setTriggerVis(!triggerVis);
 
 		const newSort = [...sortStates];
 		newSort.splice(colIndex, 1);
@@ -425,6 +461,7 @@ function Table({ data: propData }) {
 		setSelectedRowIds([]);
 		setSelectedCols([]);
 		setEditingCell({ row: null, col: null });
+		setTriggerVis(!triggerVis);
 	};
 
 	// ---------------------------------------------
@@ -469,6 +506,7 @@ function Table({ data: propData }) {
 
 		setSelectedRowIds([]);
 		setSelectedCols([]);
+		setTriggerVis(!triggerVis);
 	}
 
 	// ---------------------------------------------
@@ -739,7 +777,14 @@ function Table({ data: propData }) {
 			</div>
 
 			{/* 시각화 */}
-			<Visualization data={data} visInfo={visInfo} columns={columns} setVisInfo={setVisInfo} />
+			<Visualization 
+				data={data} 
+				visInfo={visInfo} 
+				columns={columns} 
+				setVisInfo={setVisInfo} 
+				clearSelections={clearSelections}
+				triggerVis={triggerVis}
+			/>
 		</div>
 	);
 }

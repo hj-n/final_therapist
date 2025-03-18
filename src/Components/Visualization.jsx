@@ -3,11 +3,14 @@ import styles from "./Visualization.module.scss";
 import * as d3 from "d3";
 
 const Visualization = (props) => {
+
+	console.log('Rendering Visualization');
 	const data = props.data;
 	const visInfo = props.visInfo;
 	const setVisInfo = props.setVisInfo;
 	const columns = props.columns;
-
+	const clearSelections = props.clearSelections;
+	const triggerVis = props.triggerVis;
 	const width = 700;
 	const height = 700;
 	// 전체 svg의 외부 여백은 그대로 사용하고,
@@ -111,8 +114,6 @@ const Visualization = (props) => {
 			// 	});
 			// });
 			const brushedSvg = [svg11, svg12, svg21, svg22];
-			console.log(brushedSvg);
-			console.log(visInfo);
 			brushedSvg.forEach((currSvg, itr) => {
 				if (visInfo.length <= itr) {
 					return;
@@ -222,6 +223,7 @@ const Visualization = (props) => {
 				.call(brushX);
 
 			function brushed(event) {
+				clearSelections();
 				const selection = event.selection;
 				if (selection) {
 					const [x0, x1] = selection.map(x.invert);
@@ -297,6 +299,7 @@ const Visualization = (props) => {
 					.call(brush);
 
 				function brushed(event) {
+					clearSelections();
 					const selection = event.selection;
 					if (selection) {
 						const [[x0, y1], [x1, y0]] = selection.map(d => [x.invert(d[0]), y.invert(d[1])]);
@@ -317,7 +320,8 @@ const Visualization = (props) => {
 		};
 
 		drawVisualization(data, visInfo);
-	}, [visInfo, data, columns]);
+	}, [visInfo, data, columns, triggerVis]);
+	// });
 
 	return (
 		<div className={styles.visualization}>
