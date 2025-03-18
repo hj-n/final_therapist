@@ -24,6 +24,8 @@ const Questions = () => {
 		setQuestions(returnTopRankedQuestions(10));
 	}, []);
 
+	console.log(questions);
+
 
 	const updateAnswer = (e, i ) => {
 		const newAnswer = [...answer];
@@ -144,7 +146,27 @@ const Questions = () => {
 								/>
 							</div>
 							<div className={styles.questionText}>
-								<p>{q.Question}</p>
+								<div className={styles.boldText}>
+								{
+									(q.relatedCol !== undefined && q.relatedCol.length > 0) ?
+									(
+										<p>{"Related columns: "}<b>{q.relatedCol.reduce(
+											(acc, cur) => acc + ", " + cur
+												)}</b></p>
+									) : <></>
+								
+								}
+								{
+									q.relatedRow !== undefined && q.relatedRow.length > 0 ?
+									(
+												<p>{`Ranges from data item`} <b>{`${q.relatedRow[0]} to ${q.relatedRow[1]}`}</b></p>
+									) : <></>
+								}
+								</div>
+								<div className={styles.pText}>
+									<p>{q.Question}</p>
+									{((q.createdBy === "T1") || (q.createdBy === "T2")) && <img src="./imgs/therapist_mark.png"></img>}
+								</div>
 								<textarea
 									className={styles.answerInput}
 									value={answer[i] || ""}

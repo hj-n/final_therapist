@@ -82,3 +82,17 @@
 		border: 1px solid #aaaaaa;
 	}
 }
+
+.pText {
+	display: flex;
+
+	img {
+		margin-left: 10px;
+	}
+}
+
+.boldText {
+	p {
+		font-size: 0.9rem;
+	}
+}

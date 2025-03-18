@@ -1,5 +1,5 @@
 import { min } from "d3";
-import { questions } from "./_createQuestions";
+import { questions, annotations, questionAnswers } from "./_createQuestions";
 
 
 
@@ -92,6 +92,8 @@ function rankT1Questions() {
 		return b.Importance - a.Importance;
 	});
 
+	questionsT1.forEach((question) => {question["createdBy"] = "T1";});
+
 	// return the top 10 questions if > 10 else return all
 	if (questionsT1.length <= 10) return questionsT1;
 	else return questionsT1.slice(0, 10);
@@ -101,6 +103,9 @@ function rankT3Questions(k = 10) {
 	// 1) 원본 수정 방지를 위해 필요한 정보만 복사
 
 	const questionsT3 = questions["T3"];
+
+	questionsT3.forEach(question => { question["createdBy"] = "T3"; });
+
 	const clonedData = questionsT3.map(themeInfo => {
 		const ratio = (themeInfo.Number === 0)
 			? 0
@@ -165,7 +170,113 @@ function rankT3Questions(k = 10) {
 }
 
 function rankT2Questions() {
-	return [];
+
+	const questionsT2 = questions["T2"];
+
+	questionsT2.forEach(question => { question["createdBy"] = "T2"; });
+
+	// criteria 1: Importance
+	const importanceScores = questionsT2.map(question => question.Importance);
+
+	// criteria 2: Recency
+	const recencyScores = questionsT2.map(question => question.Recency);
+
+	// criteria 3: Originality
+
+	const previousAnnotationEmbeddings = annotations.map(annotation => annotation.embedding);
+	const previousAnswerEmbeddings = questionAnswers.map(qa => qa.answer_embedding);
+	const previousQuestionEmbeddings = questionAnswers.map(qa => qa.question.embedding);
+
+	const prevEmbeddings = previousAnnotationEmbeddings.concat(previousAnswerEmbeddings).concat(previousQuestionEmbeddings);
+
+	function cosineSimilarity(a, b) {
+		const dotProduct = a.reduce((acc, val, i) => acc + val * b[i], 0);
+		const normA = Math.sqrt(a.reduce((acc, val) => acc + val * val, 0));
+		const normB = Math.sqrt(b.reduce((acc, val) => acc + val * val, 0));
+		return dotProduct / (normA * normB);
+	}
+
+	const originalityScores = questionsT2.map(question => {
+		const currentQuestionEmbedding = question.embedding;
+		const similarities = prevEmbeddings.map(prevEmbedding => {
+			return cosineSimilarity(currentQuestionEmbedding, prevEmbedding);
+		});
+		const avgSimilarity = similarities.reduce((a, b) => a + b, 0) / similarities.length;
+		return 1 - avgSimilarity;
+	})
+
+	// criteria 4: Locality
+
+	const previousAnnotationCols = annotations.map(annotation => {
+		if (Array.isArray(annotation.annotatedData)) {
+			return Object.keys(annotation.annotatedData[0]);
+		} else {
+			return Object.keys(annotation.annotatedData["data points"][0]);
+		}
+	});
+	const previousAnnotationRows = annotations.map(annotation => {
+		if (Array.isArray(annotation.annotatedData)) {
+			return annotation.annotatedData.map(datum => datum["row number"])
+		} else {
+			return annotation.annotatedData["data points"].map(datum => datum["row number"]);
+		}
+	});
+	const previousQACols = questionAnswers.map(qa => {
+		return qa.question.relatedCol;
+	});
+
+	const previousQARows = questionAnswers.map(qa => {
+		return qa.question.relatedRow;
+	});
+
+	const previousCols = previousAnnotationCols.concat(previousQACols);
+	const previousRows = previousAnnotationRows.concat(previousQARows);
+
+	const localityScores = questionsT2.map(question => {
+		const currentCols = question.relatedCol;
+		const currentRows = question.relatedRow;
+
+		const colSimilarities = previousCols.map(prevCol => {
+			const intersection = currentCols.filter(col => prevCol.includes(col));
+			return intersection.length / (currentCols.length + prevCol.length - intersection.length);
+		});
+
+		const rowSimilarities = previousRows.map(prevRow => {
+			const intersection = currentRows.filter(row => prevRow.includes(row));
+			return intersection.length / (currentRows.length + prevRow.length - intersection.length);
+		});
+
+		const avgColSimilarity = 1 - colSimilarities.reduce((a, b) => a + b, 0) / colSimilarities.length;
+		const avgRowSimilarity = 1 - rowSimilarities.reduce((a, b) => a + b, 0) / rowSimilarities.length;
+
+		return (avgColSimilarity + avgRowSimilarity) / 2;
+	});
+
+	// normalize scores
+	const normalizedImportance = normalize(importanceScores);
+	const normalizedRecency = normalize(recencyScores);
+	const normalizedOriginality = normalize(originalityScores);
+	const normalizedLocality = normalize(localityScores);
+
+	// combine scores
+	const combinedScores = normalizedImportance.map((val, index) => {
+		return val + normalizedRecency[index] + normalizedOriginality[index] + normalizedLocality[index];
+	});
+
+	// sort questionsT2 by combinedScores (descending). High score first.
+	questionsT2.sort((a, b) => {
+		return combinedScores[questionsT2.indexOf(b)] - combinedScores[questionsT2.indexOf(a)];
+	});
+
+	// return the top 10 questions if > 10 else return all
+	if (questionsT2.length <= 10) return questionsT2;
+	else return questionsT2.slice(0, 10);
+}
+
+function normalize(arr) {
+	const minVal = Math.min(...arr);
+	const maxVal = Math.max(...arr);
+	return arr.map(val => (val - minVal) / (maxVal - minVal));
 }
 
 function removeQuestionByStr(questionStr) {
