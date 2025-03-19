@@ -28,3 +28,26 @@ export const EvaluateImportance = `
 Please judge the importance of the question in Likert scale of 1 (strongly disagree) to 5 (strongly agree). Judge in the two following factors: (1) how does the question clarify the dataset, and (2) how does the question help explain new insights about the dataset.
 
 `
+
+export const GenerateMetadata = `
+Please organize the all the annotatedItems into a "metadata". The metadata should include the following topics: 
+ - Motivation
+ - Composition
+ - Collection process
+ - Preprocessing
+ - Uses
+ - Distribution
+ - Maintenance
+Be sure to include all the contexts of annotations and questions that you have generated in the metadata.
+`
+
+export const GenerateMetadataOutputFormat = `[
+ { "title": "Motivation", "content": "The motivation of the dataset is to predict the price of the house based on the features of the house...."},\\
+{ "title": "Composition", "content": "The dataset is composed of 1000 rows and 10 columns..."},\\
+{ "title": "Collection process", "content": "The data was collected by scraping the data
+from the website..."},\\
+{ "title": "Preprocessing", "content": "The data was preprocessed by removing the missing values..."},\\
+{ "title": "Uses", "content": "The dataset was used to predict the price of the house..."},\\
+{ "title": "Distribution", "content": "The dataset is distributed in the Kaggle..."},\\
+{ "title": "Maintenance", "content": "The dataset is maintained by the Kaggle..."}]
+]`

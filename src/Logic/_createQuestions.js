@@ -17,6 +17,7 @@ export const questions = {
 export let annotatedData = null; // 계속 global variable로 쓰임
 
 export function setAnnotatedData (data)  {
+	console.log(data);
 	annotatedData = data;
 }
 
@@ -135,8 +136,16 @@ function updateRecencyOfQuestionAnswers() {
 
 function annotatedDatafromTableAnnotation(annotatedData) {
 	const cols = annotatedData["cols"];
-	const colNames = cols.map(col => columns[col]);
-	const rows = annotatedData["rows"];
+	let colNames = cols.map(col => columns[col]);
+	let rows = annotatedData["rows"];
+
+	if (rows.length === 0) {
+		rows = dataObj.map((_, i) => i);
+	}
+
+	if (cols.length === 0) {
+		colNames = JSON.parse(JSON.stringify(columns));
+	}
 
 	const annotatedDataArr = [];
 
@@ -210,7 +219,7 @@ async function generateQuestionsT2QuestionAnswer(newQuestion, newAnswer) {
 			"role": "user", "content": prompts.IntroDataTherapist + `
 			Here is the dataset: 	` + dataStr + `
 			And here is the annotations and questions made by annotators:
-		` + JSON.stringify(annotations.map(annot => annot.annotation)) + JSON.stringify(questions["T2"]) + `
+		` + JSON.stringify(annotations.map(annot => annot.annotation)) + JSON.stringify(questions["T2"].map(q => q.Question)) + `
 			Here is the most recently answered question and answer:
 		` + JSON.stringify({ "question": newQuestion.Question, "answer": newAnswer }) + `
 			Here is the task:
@@ -277,7 +286,9 @@ async function generateQuestionsT2Annotations(currAnnotation) {
 		{ "role": "user", "content": prompts.IntroDataTherapist + `
 			Here is the dataset: 	` + dataStr + `
 			And here is the annotations and questions made by annotators: 
-		` + JSON.stringify(annotations.map(annot => annot.annotation)) + JSON.stringify(questions["T2"]) + `
+		` + JSON.stringify(annotations.map(annot => annot.annotation)) + 
+		JSON.stringify(questions["T2"].map(q => q.Question)) +
+		`
 			Here is the most recently referenced data instance and annotation:
 		` + JSON.stringify(annotInput) + `
 			Here is the task:
@@ -404,3 +415,74 @@ async function getT1Questions(dataStr) {
 	const t1Questions = JSON.parse(response.output_text);
 	return t1Questions;
 }
+
+let prevAnnotationItems = "";
+
+export async function updateMetadataInner(annotationItems, oldMetadata) {
+
+	const currAnnotationItems = JSON.stringify(annotationItems);
+	if (prevAnnotationItems === currAnnotationItems) {
+		return oldMetadata;
+	}
+	if (annotationItems.length === 0) {
+		throw new Error("Annotation items should not be empty");
+	}
+	prevAnnotationItems = JSON.stringify(annotationItems);
+
+	const input = [
+		{ "role": "user", "content": prompts.IntroDataTherapist + `
+			Here is the dataset: 	` + dataStr + `
+			And here is the annotations and questions made by annotators:
+			` + JSON.stringify(annotationItems.map(item => {
+				return {
+					"annotation": item.annotation,
+					"annotatedData": item.annotatedData
+				}
+			})) + `
+			Here is the old metadata. Be sure that you should "update", and not should completely rewrite the metadata:
+			`
+			+ JSON.stringify(oldMetadata) +
+			`
+			Here is the task:
+			` + prompts.GenerateMetadata + `
+			Create the output in the following manner:
+			` + prompts.GenerateMetadataOutputFormat
+		}
+	]
+
+	const text = {
+		format: {
+			type: "json_schema",
+			name: "metadata",
+			schema: {
+				type: "object",
+				properties: {
+					items: {
+						type: "array",
+						items: {
+							type: "object",
+							properties: {
+								title: { type: "string" },
+								content: { type: "string" }
+							},
+							required: ["title", "content"],
+							additionalProperties: false
+						}
+					}
+				},
+				required: ["items"],
+				additionalProperties: false
+			}
+		}
+	};
+
+	const response = await openai.responses.create({
+		model: model,
+		input: input,
+		text: text
+	});
+
+	const metadata = JSON.parse(response.output_text)["items"];
+
+	return metadata;
+} 
