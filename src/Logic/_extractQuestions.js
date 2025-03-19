@@ -229,8 +229,12 @@ function rankT2Questions() {
 		return qa.question.relatedRow;
 	});
 
-	const previousCols = previousAnnotationCols.concat(previousQACols);
-	const previousRows = previousAnnotationRows.concat(previousQARows);
+	let previousCols = previousAnnotationCols.concat(previousQACols);
+	let previousRows = previousAnnotationRows.concat(previousQARows);
+
+	// fiter undefined
+	previousCols = previousCols.filter(col => col !== undefined);
+	previousRows = previousRows.filter(row => row !== undefined);
 
 	const localityScores = questionsT2.map(question => {
 		const currentCols = question.relatedCol;

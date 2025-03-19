@@ -20,8 +20,17 @@ export function setAnnotatedData (data)  {
 	annotatedData = data;
 }
 
+let setAnnotationItems = null;
+
+export function setAnnotationItemsFunc(func) {
+	setAnnotationItems = func;
+}
+
+
 export const annotations = [];
 export const questionAnswers = [];
+
+export let combined = [];
 
 
 export const openai = new OpenAI({
@@ -78,6 +87,7 @@ export async function addAnnotation(newAnnotation, newAnnotatedData) {
 	};
 	currAnnotation["embedding"] = await measureVectorEmbeddingStr(newAnnotation);
 	annotations.push(currAnnotation);
+	combined = [currAnnotation].concat(combined);
 	const t2NewQuestions = await generateQuestionsT2Annotations(currAnnotation);
 	const t2NewQuestionsImportance = await measureImportanceT2(t2NewQuestions);
 	const t2NewQuestionsImportanceEmbedding = await measureVectorEmbedding(t2NewQuestionsImportance);
@@ -85,16 +95,20 @@ export async function addAnnotation(newAnnotation, newAnnotatedData) {
 	updateRecencyOfAnnotations();
 
 	questions["T2"] = questions["T2"].concat(t2NewQuestionsImportanceEmbedding);
-	console.log(annotations, questionAnswers);
+	setAnnotationItems(combined);
 }
 
 export async function addQuestionAnswer(newQuestion, newAnswer) {
-	questionAnswers.push({
+
+	const newQA = {
 		"question": newQuestion,
 		"answer": newAnswer,
 		"answer_embedding": await measureVectorEmbeddingStr(newAnswer),
 		"recency": 6
-	});
+	}
+
+	questionAnswers.push(newQA);
+	combined = [newQA].concat(combined);
 	const t2NewQuestions = await generateQuestionsT2QuestionAnswer(newQuestion, newAnswer);
 	const t2NewQuestionsImportance = await measureImportanceT2(t2NewQuestions);
 	const t2NewQuestionsImportanceEmbedding = await measureVectorEmbedding(t2NewQuestionsImportance);
@@ -103,6 +117,8 @@ export async function addQuestionAnswer(newQuestion, newAnswer) {
 
 	questions["T2"] = questions["T2"].concat(t2NewQuestionsImportanceEmbedding);
 	console.log(annotations, questionAnswers);
+
+	setAnnotationItems(combined);
 }
 
 function updateRecencyOfAnnotations() {
@@ -123,7 +139,8 @@ function annotatedDatafromTableAnnotation(annotatedData) {
 	const rows = annotatedData["rows"];
 
 	const annotatedDataArr = [];
-	for (const rownum in rows) {
+
+	rows.forEach((rownum) => {
 		const row = dataObj[rownum];
 		const annotatedRow = {};
 		colNames.forEach((colName) => {
@@ -131,7 +148,7 @@ function annotatedDatafromTableAnnotation(annotatedData) {
 		});
 		annotatedRow["row number"] = rownum;
 		annotatedDataArr.push(annotatedRow);
-	}
+	});
 	return annotatedDataArr;
 }
 
@@ -170,7 +187,8 @@ function annotatedDatafromVisualAnnotation(annotatedData) {
 	// brushedPointsList 내 List의 교집합
 	const brushedPoints = brushedPointsList.reduce((a, b) => a.filter(c => b.includes(c)));
 	const annoatedDataArr = [];
-	for (const rownum in brushedPoints) {
+
+	brushedPoints.forEach((rownum) => {
 		const row = dataObj[rownum];
 		const annotatedRow = {};
 		attributeList.forEach((colName) => {
@@ -178,7 +196,7 @@ function annotatedDatafromVisualAnnotation(annotatedData) {
 		});
 		annotatedRow["row number"] = rownum;
 		annoatedDataArr.push(annotatedRow);
-	}
+	});
 	return {
 		"data points": annoatedDataArr,
 		"brushing information": attributeInfo
@@ -186,6 +204,7 @@ function annotatedDatafromVisualAnnotation(annotatedData) {
 }
 
 async function generateQuestionsT2QuestionAnswer(newQuestion, newAnswer) {
+	// console.log(newQuestion, newAnswer);
 	const input = [
 		{
 			"role": "user", "content": prompts.IntroDataTherapist + `
@@ -193,7 +212,7 @@ async function generateQuestionsT2QuestionAnswer(newQuestion, newAnswer) {
 			And here is the annotations and questions made by annotators:
 		` + JSON.stringify(annotations.map(annot => annot.annotation)) + JSON.stringify(questions["T2"]) + `
 			Here is the most recently answered question and answer:
-		` + JSON.stringify({ "question": newQuestion, "answer": newAnswer }) + `
+		` + JSON.stringify({ "question": newQuestion.Question, "answer": newAnswer }) + `
 			Here is the task:
 			` + prompts.TaskQT2 + `
 			Create the output in the following manner:
@@ -250,13 +269,17 @@ async function generateQuestionsT2QuestionAnswer(newQuestion, newAnswer) {
 
 async function generateQuestionsT2Annotations(currAnnotation) {
 	// T2: derived from the annotations
+	const annotInput = {
+		"annotation": currAnnotation.annotation,
+		"annotatedData": currAnnotation.annotatedData
+	}
 	const input = [
 		{ "role": "user", "content": prompts.IntroDataTherapist + `
 			Here is the dataset: 	` + dataStr + `
 			And here is the annotations and questions made by annotators: 
 		` + JSON.stringify(annotations.map(annot => annot.annotation)) + JSON.stringify(questions["T2"]) + `
 			Here is the most recently referenced data instance and annotation:
-		` + JSON.stringify(currAnnotation) + `
+		` + JSON.stringify(annotInput) + `
 			Here is the task:
 			` + prompts.TaskQT2 + `
 			Create the output in the following manner:

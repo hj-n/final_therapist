@@ -51,6 +51,7 @@ function Table({ data: propData }) {
 			"rows": JSON.parse(JSON.stringify(selectedRowIds))
 		});
 		console.log("TABLE")
+		console.log(annotatedData);
 	}, [selectedCols, selectedRowIds]);
 
 

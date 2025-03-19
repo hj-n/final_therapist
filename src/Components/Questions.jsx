@@ -24,7 +24,6 @@ const Questions = () => {
 		setQuestions(returnTopRankedQuestions(10));
 	}, []);
 
-	console.log(questions);
 
 
 	const updateAnswer = (e, i ) => {
