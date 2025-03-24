@@ -9,7 +9,7 @@ Moreover, check if the answer from the most recently answered question or the mo
 
 `
 
-export const TaskV1 = `Now, look at the answer and check if the answer  addresses the question. If the answer completely does not answer the question, then  provide feedback to guide users to answer the question. Note that you must provide the feedback only when the answer is **completely incorrect**. `
+export const TaskV1 = `Now, look at the answer and check if the answer makes sense, even to a small degree. If the answer does not make sense at all, then provide feedback to guide users to answer the question. Note that you must provide the feedback only when the answer makes no sense 100%. For example, in the question "What other tasks could the dataset be used for?", the answer "data visualization" should be okay, but "I love you" does not make sense.  `
 
 export const OutputFormatQT1 = `[
     {"Question": "What is the significance of the annotation?", "createdBy": "DT"},\\

@@ -655,7 +655,7 @@ function Table({ data: propData, dataid }) {
 					)}
 				</div>
 
-				<div className={styles.tableContainer}>
+				<div className={dataid === "accounting" ? styles.accountTableContainer :  styles.tableContainer}>
 					<table className={styles.table}>
 						<thead>
 							<tr>
@@ -739,7 +739,7 @@ function Table({ data: propData, dataid }) {
 							{data.map((row, rowIndex) => (
 								<tr key={`row-${rowIndex}`}>
 									<th
-										className={`${styles.header} ${getRowHeaderClass(rowIndex)}`}
+										className={`${dataid === "accounting" ? styles.accountHeader : styles.header} ${getRowHeaderClass(rowIndex)}`}
 										onMouseDown={(e) => handleRowMouseDown(rowIndex, e)}
 										onMouseEnter={() => handleRowMouseEnter(rowIndex)}
 									>
@@ -769,7 +769,7 @@ function Table({ data: propData, dataid }) {
 										return (
 											<td
 												key={`cell-${rowIndex}-${colIndex}`}
-												className={`${styles.cell} ${cellClass}`}
+												className={`${dataid === "accounting" ? styles.accountCell :styles.cell} ${cellClass}`}
 												onMouseDown={(e) => handleCellMouseDown(rowIndex, colIndex, e)}
 												onMouseEnter={() => handleCellMouseEnter(rowIndex, colIndex)}
 												onClick={handleCellClick}

@@ -1,5 +1,8 @@
 import axios from 'axios';
 
+import axiosRetry from 'axios-retry';
+
+axiosRetry(axios, { retries: 3 });
 
 const server_url = "http://gpu3.hcil.snu.ac.kr:5002";
 

@@ -52,6 +52,15 @@
 	// border: 1px solid #ccc;
 }
 
+.accountTableContainer {
+	width: 1600px;
+		height: 700px;
+		// margin: 0 auto;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		overflow: auto;
+}
+
 /* 스크롤 영역 컨테이너 */
 .tableContainer {
 	width: 1000px;
@@ -85,6 +94,39 @@
 	height: 25px;
 	// overflow: hidden;
 	cursor: pointer;
+}
+
+
+.accountHeader {
+	background-color: #f1f1f1;
+		font-weight: bold;
+		/* 헤더는 가운데 정렬 (수평 중앙) */
+		text-align: center;
+		border: 1px solid #888;
+		cursor: default;
+		white-space: nowrap;
+		width: 180px;
+		/* 기본 높이 25px */
+		height: 25px;
+		// overflow: hidden;
+		cursor: pointer;
+}
+
+.accountCell {
+	border: 1px solid #888;
+		/* 본문 셀은 왼쪽 정렬 */
+		text-align: left;
+		/* 가로 폭 고정, 세로는 내용 따라 wrap */
+		width: 180px;
+		height: auto;
+		min-height: 25px;
+		/* 기본 높이 25 */
+		white-space: normal;
+		word-break: break-word;
+		cursor: default;
+		// overflow: hidden;
+	
+		font-family: 'PT Mono', monospace;
 }
 
 /* 실제 데이터 셀 */

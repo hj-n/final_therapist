@@ -32,7 +32,6 @@ export const questions = {
 export let annotatedData = null; // 계속 global variable로 쓰임
 
 export function setAnnotatedData (data)  {
-	console.log(data);
 	annotatedData = data;
 }
 
@@ -211,7 +210,7 @@ function updateRecencyOfQuestionAnswers() {
 	});
 }
 
-function annotatedDatafromTableAnnotation(annotatedData) {
+export function annotatedDatafromTableAnnotation(annotatedData) {
 	const cols = annotatedData["cols"];
 	let colNames = cols.map(col => columns[col]);
 	let rows = annotatedData["rows"];
@@ -238,7 +237,7 @@ function annotatedDatafromTableAnnotation(annotatedData) {
 	return annotatedDataArr;
 }
 
-function annotatedDatafromVisualAnnotation(annotatedData) {
+export function annotatedDatafromVisualAnnotation(annotatedData) {
 	const brushedPointsList = [];
 	const attributeInfo = [];
 	const attributeList = [];

@@ -3,7 +3,6 @@ import styles from "./Visualization.module.scss";
 import * as d3 from "d3";
 
 import { annotatedData, setAnnotatedData } from "../Logic/_createQuestions";
-
 const Visualization = (props) => {
 	const data = props.data;
 	const visInfo = props.visInfo;
