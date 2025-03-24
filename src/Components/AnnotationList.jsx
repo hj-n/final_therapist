@@ -45,7 +45,7 @@ function AnnotationList() {
 				<h3 className={styles.titleAnnotationUnselect} onClick={() => {
 					setStatus("metadata")
 					updateMetadata();
-			}}>Metadata</h3> :
+			}}>Generate Metadata</h3> :
 				<h3 className={styles.titleAnnotation} onClick={() => setStatus("annotation")}>Metadata</h3>
 			}
 		</div>

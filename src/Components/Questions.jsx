@@ -8,6 +8,7 @@ import { returnTopRankedQuestions } from "../Logic/_extractQuestions";
 import LoadingOverlay from "../SubComponents/LoadingOverlay";
 import { set } from "zod";
 import { addQuestionAnswer } from "../Logic/_createQuestions";
+import { postRemovedQuestion } from "../Logic/_toserver";
 
 const Questions = () => {
 
@@ -51,27 +52,35 @@ const Questions = () => {
 		const ans = answer[i];
 
 		setLoading(true);
-		addQuestionAnswer(question, ans).then(() => {
+		addQuestionAnswer(question, ans).then((response) => {
 			setLoading(false);
+
+			console.log(response);
+			if (response !== true) {
+				questions[i].feedback = response;
+				return; 
+			}
+
+			// function 2: remove the question from the list
+			setFadingIndices((prev) => [...prev, i]);
+
+			setTimeout(() => {
+
+				setFadingIndices((prev) => prev.filter((index) => index !== i));
+				const newQuestions = [...questions];
+				newQuestions.splice(i, 1);
+				const newAnswer = [...answer];
+				newAnswer.splice(i, 1);
+
+				setQuestions(newQuestions);
+				setAnswer(newAnswer);
+			}, 500);
+
 		}).catch((err) => {
 			console.log(err);
 		});
 
 
-		// function 2: remove the question from the list
-		setFadingIndices((prev) => [...prev, i]);
-		
-		setTimeout(() => {
-
-			setFadingIndices((prev) => prev.filter((index) => index !== i));
-			const newQuestions = [...questions];
-			newQuestions.splice(i, 1);
-			const newAnswer = [...answer];
-			newAnswer.splice(i, 1);
-
-			setQuestions(newQuestions);
-			setAnswer(newAnswer);
-		}, 500);
 	}
 
 	const removeQuestion = (e, i) => {
@@ -82,6 +91,9 @@ const Questions = () => {
 
 		// function 2: remove the question from the list
 		setFadingIndices((prev) => [...prev, i]);
+
+		const question = questions[i];
+		postRemovedQuestion(question)
 
 		setTimeout(() => {
 			setFadingIndices((prev) => prev.filter((index) => index !== i));
@@ -166,6 +178,7 @@ const Questions = () => {
 									<p>{q.Question}</p>
 									{((q.createdBy === "T1") || (q.createdBy === "T2")) && <img src="./imgs/therapist_mark.png"></img>}
 								</div>
+								{q.feedback && <p className={styles.feedback}>{q.feedback}</p>}
 								<textarea
 									className={styles.answerInput}
 									value={answer[i] || ""}

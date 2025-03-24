@@ -2,11 +2,26 @@ import OpenAI from "openai";
 
 
 import { predefined_T3 } from "./predefined";
-import apiKey from "./api.json";
+// import apiKey from "./api.json";
 
 import * as prompts from "./prompts";
 import { measureImportanceT1, measureImportanceT2, measureVectorEmbedding, measureVectorEmbeddingStr } from "./_prioritizeQuestions";
 import { returnTopRankedQuestions } from "./_extractQuestions";
+
+import { postAnnotation, postInitialQuestions, postQuestionAnswer } from "./_toserver";
+
+
+let apiKey = null;
+
+export let openai = null;
+
+export function setApiKey(newApiKey) {
+		apiKey = newApiKey;
+		openai = new OpenAI({
+		apiKey: apiKey,
+		dangerouslyAllowBrowser: true
+	})	
+}
 
 export const questions = {
 	"T1": [],
@@ -34,10 +49,7 @@ export const questionAnswers = [];
 export let combined = [];
 
 
-export const openai = new OpenAI({
-	apiKey: apiKey[0],
-	dangerouslyAllowBrowser: true
-})
+
 
 
 // data variables
@@ -58,6 +70,8 @@ export async function initiateQuestions(data) {
 	questions["T1"] = dataset_T1_importanceEmbedding;
 	console.log(questions);
 	console.log(questions["T3"]);
+
+	postInitialQuestions(questions);
 }
 
 async function initiateT3Embeddings(predefined_t3) {
@@ -76,10 +90,13 @@ async function initiateT3Embeddings(predefined_t3) {
 
 export async function addAnnotation(newAnnotation, newAnnotatedData) {
 	let annoatedDataTransformed;
+	let annotationType = null;
 	if ("cols" in newAnnotatedData) {
 		annoatedDataTransformed = annotatedDatafromTableAnnotation(newAnnotatedData);
+		annotationType = "table";
 	} else {
 		annoatedDataTransformed = annotatedDatafromVisualAnnotation(newAnnotatedData);
+		annotationType = "visual";
 	}
 	const currAnnotation = { 
 		"annotation": newAnnotation,
@@ -97,9 +114,21 @@ export async function addAnnotation(newAnnotation, newAnnotatedData) {
 
 	questions["T2"] = questions["T2"].concat(t2NewQuestionsImportanceEmbedding);
 	setAnnotationItems(combined);
+
+	postAnnotation(currAnnotation, t2NewQuestionsImportanceEmbedding, annotationType);
+
 }
 
 export async function addQuestionAnswer(newQuestion, newAnswer) {
+
+	// check whether the answer is valid 
+
+	const feedbackInfo = await checkAnswerValidity(newAnswer, newQuestion);
+	console.log(feedbackInfo);
+	if (feedbackInfo["alert"] === 1) {
+		return feedbackInfo["feedback"];
+	}
+
 
 	const newQA = {
 		"question": newQuestion,
@@ -120,6 +149,54 @@ export async function addQuestionAnswer(newQuestion, newAnswer) {
 	console.log(annotations, questionAnswers);
 
 	setAnnotationItems(combined);
+
+	postQuestionAnswer(newQuestion, newAnswer, t2NewQuestionsImportanceEmbedding);
+
+	return true;
+}
+
+async function checkAnswerValidity(answer, question) {
+	console.log(answer, question);
+	const input = [
+		{
+			"role": "user",
+			"content": prompts.IntroDataTherapist + `
+				Here is the answer about the question: ` + answer + `
+				and here is the question:` + question.Question + `
+				Here is the task:
+				` + prompts.TaskV1 + `
+				Output in the following manner:` + 
+			 + prompts.OutputFormatV1 + `
+			 If you find no issue, then answer 0 for "alert", and an empty string for "feedback".
+			 If there exists an issue, then answer 1 for "alert", and provide feedback for "feedback". 
+			 `
+		}
+	]
+
+	const text = {
+		format: {
+			type: "json_schema",
+			name: "t1questions",
+			schema: {
+				type: "object",
+				properties: {
+					alert: { type: "number" },
+					feedback: { type: "string" }
+				},
+				required: ["alert", "feedback"],
+				additionalProperties: false
+			}
+		}
+	}
+
+	const response = await openai.responses.create({
+		model: model,
+		input: input,
+		text: text
+	});
+
+	const feedbackInfo = JSON.parse(response.output_text);
+	return feedbackInfo;
 }
 
 function updateRecencyOfAnnotations() {

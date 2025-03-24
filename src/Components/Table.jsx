@@ -4,7 +4,7 @@ import Visualization from './Visualization';
 
 import { annotatedData, setAnnotatedData } from '../Logic/_createQuestions';
 
-function Table({ data: propData }) {
+function Table({ data: propData, dataid }) {
 	// ---------------------------------------------
 	// 0) rowIds, selectedRowIds 추가
 	// ---------------------------------------------
@@ -528,6 +528,10 @@ function Table({ data: propData }) {
 	const handleHistogram = (colIndex, e) => {
 		e.stopPropagation();
 		const curr = [...visInfo];
+		if (curr.length === 4) {
+			alert('You can only select up to 4 visualization');
+			return;
+		}
 		curr.push({ type: 'histogram', index: colIndex });
 		setVisInfo(curr);
 	};
@@ -535,6 +539,10 @@ function Table({ data: propData }) {
 	const handleScatterX = (colIndex, e) => {
 		e.stopPropagation();
 		const curr = [...visInfo];
+		if (curr.length === 4) {
+			alert('You can only select up to 4 visualization');
+			return;
+		}
 		const existing = curr.filter((x) => x.type === 'scatter');
 		const filled = existing.filter((x) => x.x !== null && x.y !== null);
 		if (existing.length === filled.length) {
@@ -663,6 +671,7 @@ function Table({ data: propData }) {
 										<div className={styles.headerContent}>
 											<span>{col}</span>
 											<div className={styles.iconContainer}>
+												{dataid !== "accounting" && 
 												<button
 													type="button"
 													onMouseDown={(e) => e.stopPropagation()}
@@ -671,6 +680,7 @@ function Table({ data: propData }) {
 												>
 													{sortIndicator(colIndex)}
 												</button>
+												}
 												<button
 													type="button"
 													onMouseDown={(e) => e.stopPropagation()}
@@ -788,14 +798,16 @@ function Table({ data: propData }) {
 			</div>
 
 			{/* 시각화 */}
-			<Visualization 
-				data={data} 
-				visInfo={visInfo} 
-				columns={columns} 
-				setVisInfo={setVisInfo} 
-				clearSelections={clearSelections}
-				triggerVis={triggerVis}
-			/>
+			{dataid !== "accounting" &&
+				<Visualization 
+					data={data} 
+					visInfo={visInfo} 
+					columns={columns} 
+					setVisInfo={setVisInfo} 
+					clearSelections={clearSelections}
+					triggerVis={triggerVis}
+				/>
+			}	
 		</div>
 	);
 }
