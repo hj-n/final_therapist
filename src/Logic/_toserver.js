@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const server_url = "http://127.0.0.1:5001";
+const server_url = "http://gpu3.hcil.snu.ac.kr:5002";
 
 let pid = null;
 

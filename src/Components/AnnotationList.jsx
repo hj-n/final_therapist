@@ -12,6 +12,8 @@ function AnnotationList() {
 	const [annotationItems, setAnnotationItems] = useState([]);
 	const [loading, setLoading] = useState(false);	
 
+	console.log(annotationItems);
+
 	useEffect(() => {
 		setAnnotationItemsFunc(setAnnotationItems);
 	}, []);
@@ -124,9 +126,23 @@ function AnnotationList() {
 												<p className={styles.explanation}>{`Ranges from data item`} <b>{`${item.question.relatedRow[0]} to ${item.question.relatedRow[1]}`}</b></p>
 											) : <></>
 									}
-									<p className={styles.questionContent}>{"Question: "}<b>{item.question.Question}</b></p>
-									<p className={styles.content}>{"Your answer: "}<b>{item.answer}</b></p>
-									
+									<div className={styles.questionContentWrapper}>
+										<div>
+											<p className={styles.questionContent}>{"Question: "}<b>{item.question.Question}</b></p>
+											<p className={styles.content}>{"Your answer: "}<b>{item.answer}</b></p>
+										</div>
+										{(() => {
+											if (item.question.theme !== undefined) {
+												return (
+													<div>
+														<img src={`./icons/${item.question.theme}.png`} />
+														<p className={styles.smallText}>{item.question.theme}</p>
+													</div>
+													
+												)
+											}
+										})()}
+									</div>
 								</div>
 							)
 						}

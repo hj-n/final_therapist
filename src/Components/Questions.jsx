@@ -21,6 +21,8 @@ const Questions = () => {
 
 	const [loading, setLoading] = useState(false);
 
+	console.log(questions);
+
 	useEffect(() => {
 		setQuestions(returnTopRankedQuestions(10));
 	}, []);

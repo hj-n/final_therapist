@@ -162,6 +162,8 @@ function rankT3Questions(k = 10) {
 		const selectedQuestion = chosenTheme.questions[randomIndex];
 		chosenTheme.questions.splice(randomIndex, 1);
 
+		selectedQuestion["theme"] = chosenTheme.theme;
+		console.log(selectedQuestion);
 		// 결과에 저장
 		sampled.push(selectedQuestion);
 	}

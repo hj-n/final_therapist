@@ -60,7 +60,7 @@ export const predefined_T3 = [
 		]
 	},
     {
-		"Theme": "Collection process",
+		"Theme": "Collection_process",
 		"Number": 11,
 		"list": [
 			{
@@ -99,7 +99,7 @@ export const predefined_T3 = [
 		]
 	},
     {
-		"Theme": "Preprocessing/cleaning/labeling",
+		"Theme": "Preprocessing",
 		"Number": 3,
 		"list": [
 			{
