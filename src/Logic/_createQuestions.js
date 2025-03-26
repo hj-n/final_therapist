@@ -97,15 +97,45 @@ export async function addAnnotation(newAnnotation, newAnnotatedData) {
 		annoatedDataTransformed = annotatedDatafromVisualAnnotation(newAnnotatedData);
 		annotationType = "visual";
 	}
-	const currAnnotation = { 
-		"annotation": newAnnotation,
-		"annotatedData": annoatedDataTransformed,
-		"recency": 6
-	};
+
+	let currAnnotation;
+	let currAnnotationforServer;
+	
+	if (annotationType === "table") {
+		// random sampling 
+		const annotatedDataTransformedCopy = JSON.parse(JSON.stringify(annoatedDataTransformed));
+		const sampledData = [];
+		for (let i = 0; i < 300; i++) {
+			const randomIndex = Math.floor(Math.random() * annoatedDataTransformed.length);
+			sampledData.push(annoatedDataTransformed[randomIndex]);
+		}
+		currAnnotation = {
+			"annotation": newAnnotation,
+			"annotatedData": annoatedDataTransformed,
+			"recency": 6
+		}
+		currAnnotationforServer = {
+			"annotation": newAnnotation,
+			"annotatedData": sampledData,
+			"recency": 6
+		}
+	}
+	else {
+		currAnnotation = { 
+			"annotation": newAnnotation,
+			"annotatedData": annoatedDataTransformed,
+			"recency": 6
+		};
+		currAnnotationforServer = {
+			"annotation": newAnnotation,
+			"annotatedData": annoatedDataTransformed,
+			"recency": 6
+		};
+	}
 	currAnnotation["embedding"] = await measureVectorEmbeddingStr(newAnnotation);
 	annotations.push(currAnnotation);
 	combined = [currAnnotation].concat(combined);
-	const t2NewQuestions = await generateQuestionsT2Annotations(currAnnotation);
+	const t2NewQuestions = await generateQuestionsT2Annotations(currAnnotationforServer);
 	const t2NewQuestionsImportance = await measureImportanceT2(t2NewQuestions);
 	const t2NewQuestionsImportanceEmbedding = await measureVectorEmbedding(t2NewQuestionsImportance);
 
@@ -114,7 +144,7 @@ export async function addAnnotation(newAnnotation, newAnnotatedData) {
 	questions["T2"] = questions["T2"].concat(t2NewQuestionsImportanceEmbedding);
 	setAnnotationItems(combined);
 
-	postAnnotation(currAnnotation, t2NewQuestionsImportanceEmbedding, annotationType);
+	postAnnotation(currAnnotationforServer, t2NewQuestionsImportanceEmbedding, annotationType);
 
 }
 
@@ -234,6 +264,7 @@ export function annotatedDatafromTableAnnotation(annotatedData) {
 		annotatedRow["row number"] = rownum;
 		annotatedDataArr.push(annotatedRow);
 	});
+
 	return annotatedDataArr;
 }
 
@@ -247,21 +278,21 @@ export function annotatedDatafromVisualAnnotation(annotatedData) {
 			if (typeof annotatedData[i]["attribute"] === "string") {
 				attributeInfo.push({
 					"attribute": annotatedData[i]["attribute"],
-					"brushed range": annotatedData[i]["domain"],
-					"range of the entire dataset": annotatedData[i]["range"]
+					"brushed range": annotatedData[i]["range"],
+					"range of the entire dataset": annotatedData[i]["domian"]
 				});
 				attributeList.push(annotatedData[i]["attribute"]);
 			}
 			else {
 				attributeInfo.push({
 					"attribute": annotatedData[i]["attribute"][0],
-					"brushed range": annotatedData[i]["domain"][0],
-					"range of the entire dataset": annotatedData[i]["range"][0]
+					"brushed range": annotatedData[i]["range"][0],
+					"range of the entire dataset": annotatedData[i]["domain"][0]
 				});
 				attributeInfo.push({
 					"attribute": annotatedData[i]["attribute"][1],
-					"brushed range": annotatedData[i]["domain"][1],
-					"range of the entire dataset": annotatedData[i]["range"][1]
+					"brushed range": annotatedData[i]["range"][1],
+					"range of the entire dataset": annotatedData[i]["domain"][1]
 				});
 				attributeList.push(annotatedData[i]["attribute"][0]);
 				attributeList.push(annotatedData[i]["attribute"][1]);
@@ -422,6 +453,17 @@ async function generateQuestionsT2Annotations(currAnnotation) {
 function dataToStr(data) {
   //현재 형태: [{"att1": "val1", "att2": "val2"}, {"att1": "val3", "att2": "val4"}, ...]
 	// table 형태로 변경
+
+	if (data.length > 3000) {
+		// random sampling
+		const sampledData = [];
+
+		for (let i = 0; i < 1000; i++) {
+			const randomIndex = Math.floor(Math.random() * data.length);
+			sampledData.push(data[randomIndex]);
+		}
+		data = sampledData;
+	}
 
 	let dataStr = ""
 	for (let i = 0; i < data.length; i++) {

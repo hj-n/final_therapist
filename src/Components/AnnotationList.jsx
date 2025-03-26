@@ -5,7 +5,7 @@ import { setAnnotationItemsFunc, updateMetadata, updateMetadataInner } from '../
 
 import LoadingOverlay from '../SubComponents/LoadingOverlay';
 
-function AnnotationList() {
+function AnnotationList(props) {
 
 	const [status, setStatus] = useState("annotation");
 
@@ -64,10 +64,80 @@ function AnnotationList() {
 					{annotationItems.map((item, index) => {
 						if ("annotation" in item) {
 							return (
-								<div className={styles.card} key={index}>
+								<div className={styles.card} key={index}
+									onMouseEnter={() => {
+										if (Array.isArray(item.annotatedData)) {
+											let keyList = Object.keys(item.annotatedData[0]);
+											keyList = keyList.filter(key => key !== "row number");
+											const rowNumbers = []
+											for (let datum of item.annotatedData) {
+												rowNumbers.push(datum["row number"]);
+											}
+											const colNumbers = []
+											for (let keykey of keyList) {
+												colNumbers.push(props.columns.indexOf(keykey));
+											}
+
+											console.log(rowNumbers);
+											console.log(colNumbers);
+
+											for (let rownumber of rowNumbers) {
+												for (let colnumber of colNumbers) {
+													document.getElementById(`cell-${colnumber + 1}-${rownumber + 1}`).style.border = "2px solid red";
+												}
+											}
+										}
+										else {
+											console.log(item.annotatedData["brushing information"]);
+											let keylist = item.annotatedData["brushing information"].map(brushingInfo => brushingInfo.attribute);
+											let rangelist = item.annotatedData["brushing information"].map(brushingInfo => brushingInfo["brushed range"]);
+											const colNumbers = []
+											let rowNumbers = props.data.map((datum, idx) => idx);
+											let rowFilter = props.data.map((datum, idx) => true);
+											for (let keykey of keylist) {
+												colNumbers.push(props.columns.indexOf(keykey));
+												const currRange = rangelist[keylist.indexOf(keykey)];
+												const currNowNumbers = props.data.map((datum, idx) => {
+													const bigValue = currRange[1] > currRange[0] ? currRange[1] : currRange[0];
+													const smallValue = currRange[1] > currRange[0] ? currRange[0] : currRange[1];
+													console.log(bigValue, smallValue);
+													if (datum[keykey] >= smallValue && datum[keykey] <= bigValue) {
+														return true;
+													}
+													else {
+														return false;
+													}
+												});
+												rowFilter = rowFilter.map((datum, idx) => datum && currNowNumbers[idx]);
+											}
+											console.log(rowFilter)
+											rowNumbers = rowNumbers.filter((datum, idx) => rowFilter[idx]);
+											console.log(rowNumbers);
+											console.log(colNumbers);
+
+											for (let rownumber of rowNumbers) {
+												for (let colnumber of colNumbers) {
+													document.getElementById(`cell-${colnumber + 1}-${rownumber + 1}`).style.border = "2px solid red";
+												}
+											}
+										}
+
+									}}
+									onMouseLeave={() => {
+										const colLength = props.columns.length;
+										const rowLength = props.dataLength;
+
+										for (let i = 0; i < colLength; i++) {
+											for (let j = 0; j < rowLength; j++) {
+												
+												document.getElementById(`cell-${i + 1}-${j + 1}`).style.border = "1px solid black";
+											}
+										}
+									}}
+								>
 									{
 										(() => {
-											console.log(item);
+											console.log(item.annotatedData);
 											if (Array.isArray(item.annotatedData)) {
 												let keyList = Object.keys(item.annotatedData[0]);
 												keyList = keyList.filter(key => key !== "row number");

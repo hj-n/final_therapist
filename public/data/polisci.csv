@@ -1,0 +1,2344 @@
+Country,Country_OLD,Year,COW_Code_A,COW_Code_N,WordBank_Code_A,UN_Code_N,Region,PTS_A,PTS_H,PTS_S,NA_Status_A,NA_Status_H,NA_Status_S
+Afghanistan,Afghanistan,2013,AFG,700,AFG,4,sa,NA,5,5,88,0,0
+Afghanistan,Afghanistan,2014,AFG,700,AFG,4,sa,4,5,5,0,0,0
+Afghanistan,Afghanistan,2015,AFG,700,AFG,4,sa,5,5,4,0,0,0
+Afghanistan,Afghanistan,2016,AFG,700,AFG,4,sa,5,4,5,0,0,0
+Afghanistan,Afghanistan,2017,AFG,700,AFG,4,sa,5,5,5,0,0,0
+Afghanistan,Afghanistan,2018,AFG,700,AFG,4,sa,NA,5,5,88,0,0
+Afghanistan,Afghanistan,2019,AFG,700,AFG,4,sa,5,NA,5,0,88,0
+Afghanistan,Afghanistan,2020,AFG,700,AFG,4,sa,5,5,5,0,0,0
+Afghanistan,Afghanistan,2021,AFG,700,AFG,4,sa,5,5,5,0,0,0
+Afghanistan,Afghanistan,2022,AFG,700,AFG,4,sa,5,5,5,0,0,0
+Afghanistan,Afghanistan,2023,AFG,700,AFG,4,sa,5,5,5,0,0,0
+Albania,Albania,2013,ALB,339,ALB,8,eca,NA,NA,2,88,88,0
+Albania,Albania,2014,ALB,339,ALB,8,eca,2,NA,2,0,88,0
+Albania,Albania,2015,ALB,339,ALB,8,eca,3,NA,2,0,88,0
+Albania,Albania,2016,ALB,339,ALB,8,eca,2,NA,2,0,88,0
+Albania,Albania,2017,ALB,339,ALB,8,eca,2,NA,2,0,88,0
+Albania,Albania,2018,ALB,339,ALB,8,eca,NA,NA,2,88,88,0
+Albania,Albania,2019,ALB,339,ALB,8,eca,2,NA,2,0,88,0
+Albania,Albania,2020,ALB,339,ALB,8,eca,2,NA,2,0,88,0
+Albania,Albania,2021,ALB,339,ALB,8,eca,1,NA,2,0,88,0
+Albania,Albania,2022,ALB,339,ALB,8,eca,1,NA,2,0,88,0
+Albania,Albania,2023,ALB,339,ALB,8,eca,1,NA,2,0,88,0
+Algeria,Algeria,2013,ALG,615,DZA,12,mena,NA,3,2,88,0,0
+Algeria,Algeria,2014,ALG,615,DZA,12,mena,3,2,3,0,0,0
+Algeria,Algeria,2015,ALG,615,DZA,12,mena,3,3,2,0,0,0
+Algeria,Algeria,2016,ALG,615,DZA,12,mena,3,3,2,0,0,0
+Algeria,Algeria,2017,ALG,615,DZA,12,mena,3,2,2,0,0,0
+Algeria,Algeria,2018,ALG,615,DZA,12,mena,4,2,2,0,0,0
+Algeria,Algeria,2019,ALG,615,DZA,12,mena,4,3,2,0,0,0
+Algeria,Algeria,2020,ALG,615,DZA,12,mena,3,4,2,0,0,0
+Algeria,Algeria,2021,ALG,615,DZA,12,mena,4,4,3,0,0,0
+Algeria,Algeria,2022,ALG,615,DZA,12,mena,3,3,3,0,0,0
+Algeria,Algeria,2023,ALG,615,DZA,12,mena,3,3,3,0,0,0
+Andorra,Andorra,2013,AND,232,ADO,20,eca,NA,NA,1,88,88,0
+Andorra,Andorra,2014,AND,232,ADO,20,eca,NA,NA,1,88,88,0
+Andorra,Andorra,2015,AND,232,ADO,20,eca,NA,NA,1,88,88,0
+Andorra,Andorra,2016,AND,232,ADO,20,eca,NA,NA,1,88,88,0
+Andorra,Andorra,2017,AND,232,ADO,20,eca,NA,NA,1,88,88,0
+Andorra,Andorra,2018,AND,232,ADO,20,eca,NA,NA,1,88,88,0
+Andorra,Andorra,2019,AND,232,ADO,20,eca,NA,NA,1,88,88,0
+Andorra,Andorra,2020,AND,232,ADO,20,eca,NA,NA,1,88,88,0
+Andorra,Andorra,2021,AND,232,ADO,20,eca,1,NA,1,88,88,0
+Andorra,Andorra,2022,AND,232,ADO,20,eca,1,NA,1,88,88,0
+Andorra,Andorra,2023,AND,232,ADO,20,eca,1,NA,1,88,88,0
+Angola,Angola,2013,ANG,540,AGO,24,ssa,NA,4,3,88,0,0
+Angola,Angola,2014,ANG,540,AGO,24,ssa,4,4,3,0,0,0
+Angola,Angola,2015,ANG,540,AGO,24,ssa,3,3,3,0,0,0
+Angola,Angola,2016,ANG,540,AGO,24,ssa,2,3,3,0,0,0
+Angola,Angola,2017,ANG,540,AGO,24,ssa,3,3,3,0,0,0
+Angola,Angola,2018,ANG,540,AGO,24,ssa,NA,3,3,88,0,0
+Angola,Angola,2019,ANG,540,AGO,24,ssa,3,3,3,0,0,0
+Angola,Angola,2020,ANG,540,AGO,24,ssa,3,3,3,0,0,0
+Angola,Angola,2021,ANG,540,AGO,24,ssa,3,3,3,0,0,0
+Angola,Angola,2022,ANG,540,AGO,24,ssa,3,3,3,0,0,0
+Angola,Angola,2023,ANG,540,AGO,24,ssa,3,3,3,0,0,0
+Antigua and Barbuda,Antigua and Barbuda,2013,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2014,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2015,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2016,AAB,58,ATG,28,lac,NA,NA,2,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2017,AAB,58,ATG,28,lac,NA,NA,2,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2018,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2019,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2020,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2021,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2022,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Antigua and Barbuda,Antigua and Barbuda,2023,AAB,58,ATG,28,lac,NA,NA,1,88,88,0
+Argentina,Argentina,2013,ARG,160,ARG,32,lac,NA,2,2,88,0,0
+Argentina,Argentina,2014,ARG,160,ARG,32,lac,3,2,3,0,0,0
+Argentina,Argentina,2015,ARG,160,ARG,32,lac,2,2,2,0,0,0
+Argentina,Argentina,2016,ARG,160,ARG,32,lac,2,2,2,0,0,0
+Argentina,Argentina,2017,ARG,160,ARG,32,lac,2,2,2,0,0,0
+Argentina,Argentina,2018,ARG,160,ARG,32,lac,NA,2,2,88,0,0
+Argentina,Argentina,2019,ARG,160,ARG,32,lac,1,2,2,0,0,0
+Argentina,Argentina,2020,ARG,160,ARG,32,lac,3,3,2,0,0,0
+Argentina,Argentina,2021,ARG,160,ARG,32,lac,1,2,3,0,0,0
+Argentina,Argentina,2022,ARG,160,ARG,32,lac,2,3,3,0,0,0
+Argentina,Argentina,2023,ARG,160,ARG,32,lac,2,2,3,0,0,0
+Armenia,Armenia,2013,ARM,371,ARM,51,eca,NA,2,3,88,0,0
+Armenia,Armenia,2014,ARM,371,ARM,51,eca,3,3,3,0,0,0
+Armenia,Armenia,2015,ARM,371,ARM,51,eca,3,3,2,0,0,0
+Armenia,Armenia,2016,ARM,371,ARM,51,eca,3,3,3,0,0,0
+Armenia,Armenia,2017,ARM,371,ARM,51,eca,2,2,3,0,0,0
+Armenia,Armenia,2018,ARM,371,ARM,51,eca,NA,2,3,88,0,0
+Armenia,Armenia,2019,ARM,371,ARM,51,eca,1,1,3,0,0,0
+Armenia,Armenia,2020,ARM,371,ARM,51,eca,3,4,3,0,0,0
+Armenia,Armenia,2021,ARM,371,ARM,51,eca,3,3,3,0,0,0
+Armenia,Armenia,2022,ARM,371,ARM,51,eca,3,3,2,0,0,0
+Armenia,Armenia,2023,ARM,371,ARM,51,eca,3,2,3,0,0,0
+Australia,Australia,2013,AUL,900,AUS,36,eap,NA,1,1,88,0,0
+Australia,Australia,2014,AUL,900,AUS,36,eap,2,1,1,0,0,0
+Australia,Australia,2015,AUL,900,AUS,36,eap,2,2,1,0,0,0
+Australia,Australia,2016,AUL,900,AUS,36,eap,2,1,1,0,0,0
+Australia,Australia,2017,AUL,900,AUS,36,eap,2,1,1,0,0,0
+Australia,Australia,2018,AUL,900,AUS,36,eap,NA,1,1,88,0,0
+Australia,Australia,2019,AUL,900,AUS,36,eap,2,2,1,0,0,0
+Australia,Australia,2020,AUL,900,AUS,36,eap,2,1,2,0,0,0
+Australia,Australia,2021,AUL,900,AUS,36,eap,2,1,1,0,0,0
+Australia,Australia,2022,AUL,900,AUS,36,eap,1,1,1,0,0,0
+Australia,Australia,2023,AUL,900,AUS,36,eap,1,1,1,0,0,0
+Austria,Austria,2013,AUS,305,AUT,40,eca,NA,NA,1,88,88,0
+Austria,Austria,2014,AUS,305,AUT,40,eca,1,NA,1,0,88,0
+Austria,Austria,2015,AUS,305,AUT,40,eca,2,NA,1,0,88,0
+Austria,Austria,2016,AUS,305,AUT,40,eca,1,NA,1,0,88,0
+Austria,Austria,2017,AUS,305,AUT,40,eca,1,NA,1,0,88,0
+Austria,Austria,2018,AUS,305,AUT,40,eca,NA,NA,1,88,88,0
+Austria,Austria,2019,AUS,305,AUT,40,eca,2,NA,1,0,88,0
+Austria,Austria,2020,AUS,305,AUT,40,eca,1,NA,1,0,88,0
+Austria,Austria,2021,AUS,305,AUT,40,eca,1,NA,1,0,88,0
+Austria,Austria,2022,AUS,305,AUT,40,eca,1,NA,1,0,88,0
+Austria,Austria,2023,AUS,305,AUT,40,eca,1,NA,1,0,88,0
+Azerbaijan,Azerbaijan,2013,AZE,373,AZE,31,eca,NA,3,3,88,0,0
+Azerbaijan,Azerbaijan,2014,AZE,373,AZE,31,eca,3,3,3,0,0,0
+Azerbaijan,Azerbaijan,2015,AZE,373,AZE,31,eca,3,3,3,0,0,0
+Azerbaijan,Azerbaijan,2016,AZE,373,AZE,31,eca,3,3,3,0,0,0
+Azerbaijan,Azerbaijan,2017,AZE,373,AZE,31,eca,3,3,3,0,0,0
+Azerbaijan,Azerbaijan,2018,AZE,373,AZE,31,eca,NA,3,3,88,0,0
+Azerbaijan,Azerbaijan,2019,AZE,373,AZE,31,eca,3,3,3,0,0,0
+Azerbaijan,Azerbaijan,2020,AZE,373,AZE,31,eca,4,4,4,0,0,0
+Azerbaijan,Azerbaijan,2021,AZE,373,AZE,31,eca,4,4,3,0,0,0
+Azerbaijan,Azerbaijan,2022,AZE,373,AZE,31,eca,4,4,3,0,0,0
+Azerbaijan,Azerbaijan,2023,AZE,373,AZE,31,eca,4,4,3,0,0,0
+Bahamas,Bahamas,2013,BHM,31,BHS,44,lac,NA,NA,2,88,88,0
+Bahamas,Bahamas,2014,BHM,31,BHS,44,lac,2,NA,2,0,88,0
+Bahamas,Bahamas,2015,BHM,31,BHS,44,lac,3,NA,2,0,88,0
+Bahamas,Bahamas,2016,BHM,31,BHS,44,lac,2,NA,2,0,88,0
+Bahamas,Bahamas,2017,BHM,31,BHS,44,lac,NA,NA,2,0,88,0
+Bahamas,Bahamas,2018,BHM,31,BHS,44,lac,NA,NA,2,88,88,0
+Bahamas,Bahamas,2019,BHM,31,BHS,44,lac,NA,NA,2,88,88,0
+Bahamas,Bahamas,2020,BHM,31,BHS,44,lac,NA,NA,2,88,88,0
+Bahamas,Bahamas,2021,BHM,31,BHS,44,lac,NA,NA,2,88,88,0
+Bahamas,Bahamas,2022,BHM,31,BHS,44,lac,NA,NA,2,88,88,0
+Bahamas,Bahamas,2023,BHM,31,BHS,44,lac,NA,NA,2,88,88,0
+Bahrain,Bahrain,2013,BAH,692,BHR,48,mena,NA,3,3,88,0,0
+Bahrain,Bahrain,2014,BAH,692,BHR,48,mena,3,3,3,0,0,0
+Bahrain,Bahrain,2015,BAH,692,BHR,48,mena,4,3,2,0,0,0
+Bahrain,Bahrain,2016,BAH,692,BHR,48,mena,3,3,3,0,0,0
+Bahrain,Bahrain,2017,BAH,692,BHR,48,mena,3,3,3,0,0,0
+Bahrain,Bahrain,2018,BAH,692,BHR,48,mena,3,3,3,0,0,0
+Bahrain,Bahrain,2019,BAH,692,BHR,48,mena,2,3,3,0,0,0
+Bahrain,Bahrain,2020,BAH,692,BHR,48,mena,3,3,3,0,0,0
+Bahrain,Bahrain,2021,BAH,692,BHR,48,mena,3,3,3,0,0,0
+Bahrain,Bahrain,2022,BAH,692,BHR,48,mena,3,3,2,0,0,0
+Bahrain,Bahrain,2023,BAH,692,BHR,48,mena,3,3,3,0,0,0
+Bangladesh,Bangladesh,2013,BNG,771,BGD,50,sa,NA,4,4,88,0,0
+Bangladesh,Bangladesh,2014,BNG,771,BGD,50,sa,4,4,4,0,0,0
+Bangladesh,Bangladesh,2015,BNG,771,BGD,50,sa,4,4,4,0,0,0
+Bangladesh,Bangladesh,2016,BNG,771,BGD,50,sa,4,4,4,0,0,0
+Bangladesh,Bangladesh,2017,BNG,771,BGD,50,sa,4,4,4,0,0,0
+Bangladesh,Bangladesh,2018,BNG,771,BGD,50,sa,NA,4,4,88,0,0
+Bangladesh,Bangladesh,2019,BNG,771,BGD,50,sa,4,4,4,0,0,0
+Bangladesh,Bangladesh,2020,BNG,771,BGD,50,sa,4,4,4,0,0,0
+Bangladesh,Bangladesh,2021,BNG,771,BGD,50,sa,4,4,4,0,0,0
+Bangladesh,Bangladesh,2022,BNG,771,BGD,50,sa,4,4,3,0,0,0
+Bangladesh,Bangladesh,2023,BNG,771,BGD,50,sa,4,4,3,0,0,0
+Barbados,Barbados,2013,BAR,53,BRB,52,lac,NA,NA,1,88,88,0
+Barbados,Barbados,2014,BAR,53,BRB,52,lac,NA,NA,1,88,88,0
+Barbados,Barbados,2015,BAR,53,BRB,52,lac,NA,NA,2,88,88,0
+Barbados,Barbados,2016,BAR,53,BRB,52,lac,NA,NA,2,88,88,0
+Barbados,Barbados,2017,BAR,53,BRB,52,lac,NA,NA,2,88,88,0
+Barbados,Barbados,2018,BAR,53,BRB,52,lac,NA,NA,2,88,88,0
+Barbados,Barbados,2019,BAR,53,BRB,52,lac,NA,NA,1,88,88,0
+Barbados,Barbados,2020,BAR,53,BRB,52,lac,NA,NA,1,88,88,0
+Barbados,Barbados,2021,BAR,53,BRB,52,lac,NA,NA,1,88,88,0
+Barbados,Barbados,2022,BAR,53,BRB,52,lac,NA,NA,1,88,88,0
+Barbados,Barbados,2023,BAR,53,BRB,52,lac,NA,NA,1,88,88,0
+Belarus,Belarus,2013,BLR,370,BLR,112,eca,NA,3,3,88,0,0
+Belarus,Belarus,2014,BLR,370,BLR,112,eca,2,3,3,0,0,0
+Belarus,Belarus,2015,BLR,370,BLR,112,eca,2,3,2,0,0,0
+Belarus,Belarus,2016,BLR,370,BLR,112,eca,2,2,3,0,0,0
+Belarus,Belarus,2017,BLR,370,BLR,112,eca,3,3,3,0,0,0
+Belarus,Belarus,2018,BLR,370,BLR,112,eca,NA,3,3,88,0,0
+Belarus,Belarus,2019,BLR,370,BLR,112,eca,NA,2,3,88,0,0
+Belarus,Belarus,2020,BLR,370,BLR,112,eca,4,4,4,0,0,0
+Belarus,Belarus,2021,BLR,370,BLR,112,eca,4,4,4,0,0,0
+Belarus,Belarus,2022,BLR,370,BLR,112,eca,4,4,4,0,0,0
+Belarus,Belarus,2023,BLR,370,BLR,112,eca,4,4,3,0,0,0
+Belgium,Belgium,2013,BEL,211,BEL,56,eca,NA,NA,1,88,88,0
+Belgium,Belgium,2014,BEL,211,BEL,56,eca,1,NA,1,0,88,0
+Belgium,Belgium,2015,BEL,211,BEL,56,eca,1,NA,1,0,88,0
+Belgium,Belgium,2016,BEL,211,BEL,56,eca,1,NA,1,0,88,0
+Belgium,Belgium,2017,BEL,211,BEL,56,eca,1,NA,1,0,88,0
+Belgium,Belgium,2018,BEL,211,BEL,56,eca,NA,NA,1,88,88,0
+Belgium,Belgium,2019,BEL,211,BEL,56,eca,1,NA,1,0,88,0
+Belgium,Belgium,2020,BEL,211,BEL,56,eca,1,NA,2,0,88,0
+Belgium,Belgium,2021,BEL,211,BEL,56,eca,1,NA,1,0,88,0
+Belgium,Belgium,2022,BEL,211,BEL,56,eca,1,NA,1,0,88,0
+Belgium,Belgium,2023,BEL,211,BEL,56,eca,1,NA,1,0,88,0
+Belize,Belize,2013,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2014,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2015,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2016,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2017,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2018,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2019,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2020,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2021,BLZ,80,BLZ,84,lac,NA,NA,3,88,88,0
+Belize,Belize,2022,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Belize,Belize,2023,BLZ,80,BLZ,84,lac,NA,NA,2,88,88,0
+Benin,Benin,2013,BEN,434,BEN,204,ssa,NA,NA,2,88,88,0
+Benin,Benin,2014,BEN,434,BEN,204,ssa,1,NA,3,0,88,0
+Benin,Benin,2015,BEN,434,BEN,204,ssa,2,NA,2,0,88,0
+Benin,Benin,2016,BEN,434,BEN,204,ssa,2,NA,2,0,88,0
+Benin,Benin,2017,BEN,434,BEN,204,ssa,2,NA,2,0,88,0
+Benin,Benin,2018,BEN,434,BEN,204,ssa,NA,NA,2,88,88,0
+Benin,Benin,2019,BEN,434,BEN,204,ssa,3,NA,2,0,88,0
+Benin,Benin,2020,BEN,434,BEN,204,ssa,3,NA,2,0,88,0
+Benin,Benin,2021,BEN,434,BEN,204,ssa,3,NA,3,0,88,0
+Benin,Benin,2022,BEN,434,BEN,204,ssa,3,NA,3,0,88,0
+Benin,Benin,2023,BEN,434,BEN,204,ssa,3,NA,2,0,88,0
+Bhutan,Bhutan,2013,BHU,760,BTN,64,sa,NA,NA,2,88,88,0
+Bhutan,Bhutan,2014,BHU,760,BTN,64,sa,NA,NA,1,88,88,0
+Bhutan,Bhutan,2015,BHU,760,BTN,64,sa,NA,NA,2,88,88,0
+Bhutan,Bhutan,2016,BHU,760,BTN,64,sa,NA,NA,1,88,88,0
+Bhutan,Bhutan,2017,BHU,760,BTN,64,sa,NA,NA,1,88,88,0
+Bhutan,Bhutan,2018,BHU,760,BTN,64,sa,NA,NA,1,88,88,0
+Bhutan,Bhutan,2019,BHU,760,BTN,64,sa,NA,NA,1,88,88,0
+Bhutan,Bhutan,2020,BHU,760,BTN,64,sa,NA,NA,1,88,88,0
+Bhutan,Bhutan,2021,BHU,760,BTN,64,sa,NA,NA,2,88,88,0
+Bhutan,Bhutan,2022,BHU,760,BTN,64,sa,NA,NA,1,88,88,0
+Bhutan,Bhutan,2023,BHU,760,BTN,64,sa,1,NA,1,0,88,0
+"Bolivia, Plurinational State of",Bolivia,2013,BOL,145,BOL,68,lac,NA,2,2,88,0,0
+"Bolivia, Plurinational State of",Bolivia,2014,BOL,145,BOL,68,lac,1,2,3,0,0,0
+"Bolivia, Plurinational State of",Bolivia,2015,BOL,145,BOL,68,lac,1,2,2,0,0,0
+"Bolivia, Plurinational State of",Bolivia,2016,BOL,145,BOL,68,lac,1,2,3,0,0,0
+"Bolivia, Plurinational State of",Bolivia,2017,BOL,145,BOL,68,lac,1,2,2,0,0,0
+"Bolivia, Plurinational State of",Bolivia,2018,BOL,145,BOL,68,lac,NA,2,2,88,0,0
+"Bolivia, Plurinational State of",Bolivia,2019,BOL,145,BOL,68,lac,3,3,3,0,0,0
+"Bolivia, Plurinational State of",Bolivia,2020,BOL,145,BOL,68,lac,3,3,3,0,0,0
+"Bolivia, Plurinational State of",Bolivia,2021,BOL,145,BOL,68,lac,3,2,3,0,0,0
+"Bolivia, Plurinational State of",Bolivia,2022,BOL,145,BOL,68,lac,2,2,2,0,0,0
+"Bolivia, Plurinational State of",Bolivia,2023,BOL,145,BOL,68,lac,2,2,2,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2013,BOS,346,BIH,70,eca,NA,2,2,88,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2014,BOS,346,BIH,70,eca,2,2,2,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2015,BOS,346,BIH,70,eca,2,1,1,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2016,BOS,346,BIH,70,eca,2,2,2,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2017,BOS,346,BIH,70,eca,1,2,2,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2018,BOS,346,BIH,70,eca,NA,1,2,88,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2019,BOS,346,BIH,70,eca,2,1,2,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2020,BOS,346,BIH,70,eca,2,1,1,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2021,BOS,346,BIH,70,eca,2,1,2,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2022,BOS,346,BIH,70,eca,2,2,2,0,0,0
+Bosnia and Herzegovina,Bosnia and Herzegovina,2023,BOS,346,BIH,70,eca,2,2,2,0,0,0
+Botswana,Botswana,2013,BOT,571,BWA,72,ssa,NA,NA,1,88,88,0
+Botswana,Botswana,2014,BOT,571,BWA,72,ssa,NA,NA,1,88,88,0
+Botswana,Botswana,2015,BOT,571,BWA,72,ssa,NA,NA,1,88,88,0
+Botswana,Botswana,2016,BOT,571,BWA,72,ssa,2,NA,2,0,88,0
+Botswana,Botswana,2017,BOT,571,BWA,72,ssa,2,NA,2,0,88,0
+Botswana,Botswana,2018,BOT,571,BWA,72,ssa,NA,NA,2,88,88,0
+Botswana,Botswana,2019,BOT,571,BWA,72,ssa,1,NA,1,0,88,0
+Botswana,Botswana,2020,BOT,571,BWA,72,ssa,2,NA,1,0,88,0
+Botswana,Botswana,2021,BOT,571,BWA,72,ssa,1,NA,1,0,88,0
+Botswana,Botswana,2022,BOT,571,BWA,72,ssa,1,NA,1,0,88,0
+Botswana,Botswana,2023,BOT,571,BWA,72,ssa,2,NA,1,0,88,0
+Brazil,Brazil,2013,BRA,140,BRA,76,lac,NA,4,4,88,0,0
+Brazil,Brazil,2014,BRA,140,BRA,76,lac,4,4,4,0,0,0
+Brazil,Brazil,2015,BRA,140,BRA,76,lac,4,4,4,0,0,0
+Brazil,Brazil,2016,BRA,140,BRA,76,lac,4,4,3,0,0,0
+Brazil,Brazil,2017,BRA,140,BRA,76,lac,4,4,3,0,0,0
+Brazil,Brazil,2018,BRA,140,BRA,76,lac,NA,4,4,88,0,0
+Brazil,Brazil,2019,BRA,140,BRA,76,lac,5,4,4,0,0,0
+Brazil,Brazil,2020,BRA,140,BRA,76,lac,5,4,4,0,0,0
+Brazil,Brazil,2021,BRA,140,BRA,76,lac,4,4,4,0,0,0
+Brazil,Brazil,2022,BRA,140,BRA,76,lac,4,4,4,0,0,0
+Brazil,Brazil,2023,BRA,140,BRA,76,lac,4,4,4,0,0,0
+Brunei Darussalam,Brunei,2013,BRU,835,BRN,96,eap,NA,NA,1,88,88,0
+Brunei Darussalam,Brunei,2014,BRU,835,BRN,96,eap,1,NA,1,0,88,0
+Brunei Darussalam,Brunei,2015,BRU,835,BRN,96,eap,NA,NA,1,88,88,0
+Brunei Darussalam,Brunei,2016,BRU,835,BRN,96,eap,2,NA,1,0,88,0
+Brunei Darussalam,Brunei,2017,BRU,835,BRN,96,eap,2,NA,1,0,88,0
+Brunei Darussalam,Brunei,2018,BRU,835,BRN,96,eap,NA,NA,1,88,88,0
+Brunei Darussalam,Brunei,2019,BRU,835,BRN,96,eap,1,NA,2,0,88,0
+Brunei Darussalam,Brunei,2020,BRU,835,BRN,96,eap,NA,NA,1,88,88,0
+Brunei Darussalam,Brunei,2021,BRU,835,BRN,96,eap,NA,NA,1,88,88,0
+Brunei Darussalam,Brunei,2022,BRU,835,BRN,96,eap,NA,NA,1,88,88,0
+Brunei Darussalam,Brunei,2023,BRU,835,BRN,96,eap,NA,NA,1,88,88,0
+Bulgaria,Bulgaria,2013,BUL,355,BGR,100,eca,NA,NA,2,88,88,0
+Bulgaria,Bulgaria,2014,BUL,355,BGR,100,eca,2,NA,2,0,88,0
+Bulgaria,Bulgaria,2015,BUL,355,BGR,100,eca,2,NA,2,0,88,0
+Bulgaria,Bulgaria,2016,BUL,355,BGR,100,eca,2,NA,2,0,88,0
+Bulgaria,Bulgaria,2017,BUL,355,BGR,100,eca,2,NA,3,0,88,0
+Bulgaria,Bulgaria,2018,BUL,355,BGR,100,eca,NA,NA,2,88,88,0
+Bulgaria,Bulgaria,2019,BUL,355,BGR,100,eca,1,NA,2,0,88,0
+Bulgaria,Bulgaria,2020,BUL,355,BGR,100,eca,2,NA,2,0,88,0
+Bulgaria,Bulgaria,2021,BUL,355,BGR,100,eca,2,NA,3,0,88,0
+Bulgaria,Bulgaria,2022,BUL,355,BGR,100,eca,2,NA,2,0,88,0
+Bulgaria,Bulgaria,2023,BUL,355,BGR,100,eca,2,NA,2,0,88,0
+Burkina Faso,Burkina Faso,2013,BFO,439,BFA,854,ssa,NA,NA,3,88,88,0
+Burkina Faso,Burkina Faso,2014,BFO,439,BFA,854,ssa,3,NA,3,0,88,0
+Burkina Faso,Burkina Faso,2015,BFO,439,BFA,854,ssa,3,NA,3,0,88,0
+Burkina Faso,Burkina Faso,2016,BFO,439,BFA,854,ssa,2,NA,3,0,88,0
+Burkina Faso,Burkina Faso,2017,BFO,439,BFA,854,ssa,2,NA,3,0,88,0
+Burkina Faso,Burkina Faso,2018,BFO,439,BFA,854,ssa,NA,NA,3,88,88,0
+Burkina Faso,Burkina Faso,2019,BFO,439,BFA,854,ssa,4,NA,4,0,88,0
+Burkina Faso,Burkina Faso,2020,BFO,439,BFA,854,ssa,4,4,4,0,0,0
+Burkina Faso,Burkina Faso,2021,BFO,439,BFA,854,ssa,4,4,4,0,0,0
+Burkina Faso,Burkina Faso,2022,BFO,439,BFA,854,ssa,4,5,4,0,0,0
+Burkina Faso,Burkina Faso,2023,BFO,439,BFA,854,ssa,5,5,4,0,0,0
+Burundi,Burundi,2013,BUI,516,BDI,108,ssa,NA,4,4,88,0,0
+Burundi,Burundi,2014,BUI,516,BDI,108,ssa,3,3,3,0,0,0
+Burundi,Burundi,2015,BUI,516,BDI,108,ssa,4,4,4,0,0,0
+Burundi,Burundi,2016,BUI,516,BDI,108,ssa,4,4,4,0,0,0
+Burundi,Burundi,2017,BUI,516,BDI,108,ssa,5,4,4,0,0,0
+Burundi,Burundi,2018,BUI,516,BDI,108,ssa,NA,4,4,88,0,0
+Burundi,Burundi,2019,BUI,516,BDI,108,ssa,3,4,4,0,0,0
+Burundi,Burundi,2020,BUI,516,BDI,108,ssa,4,5,5,0,0,0
+Burundi,Burundi,2021,BUI,516,BDI,108,ssa,4,4,4,0,0,0
+Burundi,Burundi,2022,BUI,516,BDI,108,ssa,4,4,4,0,0,0
+Burundi,Burundi,2023,BUI,516,BDI,108,ssa,4,4,4,0,0,0
+Cabo Verde,Cape Verde,2013,CAP,402,CPV,132,ssa,NA,NA,2,88,88,0
+Cabo Verde,Cape Verde,2014,CAP,402,CPV,132,ssa,NA,NA,2,88,88,0
+Cabo Verde,Cape Verde,2015,CAP,402,CPV,132,ssa,NA,NA,1,88,88,0
+Cabo Verde,Cape Verde,2016,CAP,402,CPV,132,ssa,NA,NA,1,88,88,0
+Cabo Verde,Cape Verde,2017,CAP,402,CPV,132,ssa,NA,NA,2,88,88,0
+Cabo Verde,Cape Verde,2018,CAP,402,CPV,132,ssa,NA,NA,1,88,88,0
+Cabo Verde,Cape Verde,2019,CAP,402,CPV,132,ssa,NA,NA,1,88,88,0
+Cabo Verde,Cape Verde,2020,CAP,402,CPV,132,ssa,NA,NA,1,88,88,0
+Cabo Verde,Cape Verde,2021,CAP,402,CPV,132,ssa,NA,NA,1,88,88,0
+Cabo Verde,Cape Verde,2022,CAP,402,CPV,132,ssa,NA,NA,1,88,88,0
+Cabo Verde,Cape Verde,2023,CAP,402,CPV,132,ssa,NA,NA,1,88,88,0
+Cambodia,Cambodia,2013,CAM,811,KHM,116,eap,NA,4,3,88,0,0
+Cambodia,Cambodia,2014,CAM,811,KHM,116,eap,3,3,3,0,0,0
+Cambodia,Cambodia,2015,CAM,811,KHM,116,eap,2,3,2,0,0,0
+Cambodia,Cambodia,2016,CAM,811,KHM,116,eap,3,3,2,0,0,0
+Cambodia,Cambodia,2017,CAM,811,KHM,116,eap,4,3,2,0,0,0
+Cambodia,Cambodia,2018,CAM,811,KHM,116,eap,NA,3,3,88,0,0
+Cambodia,Cambodia,2019,CAM,811,KHM,116,eap,3,3,3,0,0,0
+Cambodia,Cambodia,2020,CAM,811,KHM,116,eap,3,3,3,0,0,0
+Cambodia,Cambodia,2021,CAM,811,KHM,116,eap,3,3,3,0,0,0
+Cambodia,Cambodia,2022,CAM,811,KHM,116,eap,3,4,3,0,0,0
+Cambodia,Cambodia,2023,CAM,811,KHM,116,eap,3,4,3,0,0,0
+Cameroon,Cameroon,2013,CAO,471,CMR,120,ssa,NA,NA,3,88,88,0
+Cameroon,Cameroon,2014,CAO,471,CMR,120,ssa,4,NA,3,0,88,0
+Cameroon,Cameroon,2015,CAO,471,CMR,120,ssa,3,NA,3,0,88,0
+Cameroon,Cameroon,2016,CAO,471,CMR,120,ssa,4,NA,3,0,88,0
+Cameroon,Cameroon,2017,CAO,471,CMR,120,ssa,4,NA,3,0,88,0
+Cameroon,Cameroon,2018,CAO,471,CMR,120,ssa,NA,4,4,88,0,0
+Cameroon,Cameroon,2019,CAO,471,CMR,120,ssa,4,4,4,0,0,0
+Cameroon,Cameroon,2020,CAO,471,CMR,120,ssa,4,4,4,0,0,0
+Cameroon,Cameroon,2021,CAO,471,CMR,120,ssa,3,4,4,0,0,0
+Cameroon,Cameroon,2022,CAO,471,CMR,120,ssa,4,4,4,0,0,0
+Cameroon,Cameroon,2023,CAO,471,CMR,120,ssa,4,4,3,0,0,0
+Canada,Canada,2013,CAN,20,CAN,124,na,NA,1,1,88,0,0
+Canada,Canada,2014,CAN,20,CAN,124,na,1,1,1,0,0,0
+Canada,Canada,2015,CAN,20,CAN,124,na,1,1,1,0,0,0
+Canada,Canada,2016,CAN,20,CAN,124,na,1,1,1,0,0,0
+Canada,Canada,2017,CAN,20,CAN,124,na,1,1,1,0,0,0
+Canada,Canada,2018,CAN,20,CAN,124,na,NA,1,1,88,0,0
+Canada,Canada,2019,CAN,20,CAN,124,na,1,1,1,0,0,0
+Canada,Canada,2020,CAN,20,CAN,124,na,2,1,2,0,0,0
+Canada,Canada,2021,CAN,20,CAN,124,na,1,1,2,0,0,0
+Canada,Canada,2022,CAN,20,CAN,124,na,1,1,2,0,0,0
+Canada,Canada,2023,CAN,20,CAN,124,na,1,1,2,0,0,0
+Central African Republic,Central African Republic,2013,CEN,482,CAF,140,ssa,NA,5,5,88,0,0
+Central African Republic,Central African Republic,2014,CEN,482,CAF,140,ssa,5,5,5,0,0,0
+Central African Republic,Central African Republic,2015,CEN,482,CAF,140,ssa,4,NA,4,0,88,0
+Central African Republic,Central African Republic,2016,CEN,482,CAF,140,ssa,4,3,4,0,0,0
+Central African Republic,Central African Republic,2017,CEN,482,CAF,140,ssa,4,4,4,0,0,0
+Central African Republic,Central African Republic,2018,CEN,482,CAF,140,ssa,NA,3,3,88,0,0
+Central African Republic,Central African Republic,2019,CEN,482,CAF,140,ssa,2,3,3,0,0,0
+Central African Republic,Central African Republic,2020,CEN,482,CAF,140,ssa,4,3,3,0,0,0
+Central African Republic,Central African Republic,2021,CEN,482,CAF,140,ssa,4,4,3,0,0,0
+Central African Republic,Central African Republic,2022,CEN,482,CAF,140,ssa,4,4,4,0,0,0
+Central African Republic,Central African Republic,2023,CEN,482,CAF,140,ssa,4,4,3,0,0,0
+Chad,Chad,2013,CHA,483,TCD,148,ssa,NA,NA,3,88,88,0
+Chad,Chad,2014,CHA,483,TCD,148,ssa,3,NA,3,0,88,0
+Chad,Chad,2015,CHA,483,TCD,148,ssa,3,NA,3,0,88,0
+Chad,Chad,2016,CHA,483,TCD,148,ssa,4,NA,3,0,88,0
+Chad,Chad,2017,CHA,483,TCD,148,ssa,3,NA,3,0,88,0
+Chad,Chad,2018,CHA,483,TCD,148,ssa,NA,NA,3,88,88,0
+Chad,Chad,2019,CHA,483,TCD,148,ssa,3,NA,3,0,88,0
+Chad,Chad,2020,CHA,483,TCD,148,ssa,3,NA,3,0,88,0
+Chad,Chad,2021,CHA,483,TCD,148,ssa,3,3,4,0,0,0
+Chad,Chad,2022,CHA,483,TCD,148,ssa,3,3,4,0,0,0
+Chad,Chad,2023,CHA,483,TCD,148,ssa,3,3,4,0,0,0
+Chile,Chile,2013,CHL,155,CHL,152,lac,NA,2,2,88,0,0
+Chile,Chile,2014,CHL,155,CHL,152,lac,2,2,2,0,0,0
+Chile,Chile,2015,CHL,155,CHL,152,lac,2,2,1,0,0,0
+Chile,Chile,2016,CHL,155,CHL,152,lac,2,2,2,0,0,0
+Chile,Chile,2017,CHL,155,CHL,152,lac,2,1,2,0,0,0
+Chile,Chile,2018,CHL,155,CHL,152,lac,NA,1,2,88,0,0
+Chile,Chile,2019,CHL,155,CHL,152,lac,4,4,2,0,0,0
+Chile,Chile,2020,CHL,155,CHL,152,lac,3,4,3,0,0,0
+Chile,Chile,2021,CHL,155,CHL,152,lac,3,2,2,0,0,0
+Chile,Chile,2022,CHL,155,CHL,152,lac,3,2,2,0,0,0
+Chile,Chile,2023,CHL,155,CHL,152,lac,2,1,2,0,0,0
+China,China,2013,CHN,710,CHN,156,eap,NA,4,4,88,0,0
+China,China,2014,CHN,710,CHN,156,eap,4,4,4,0,0,0
+China,China,2015,CHN,710,CHN,156,eap,4,4,4,0,0,0
+China,China,2016,CHN,710,CHN,156,eap,4,4,4,0,0,0
+China,China,2017,CHN,710,CHN,156,eap,4,3,4,0,0,0
+China,China,2018,CHN,710,CHN,156,eap,NA,4,4,88,0,0
+China,China,2019,CHN,710,CHN,156,eap,4,4,4,0,0,0
+China,China,2020,CHN,710,CHN,156,eap,4,4,5,0,0,0
+China,China,2021,CHN,710,CHN,156,eap,4,4,5,0,0,0
+China,China,2022,CHN,710,CHN,156,eap,4,4,5,0,0,0
+China,China,2023,CHN,710,CHN,156,eap,4,4,5,0,0,0
+Colombia,Colombia,2013,COL,100,COL,170,lac,NA,4,4,88,0,0
+Colombia,Colombia,2014,COL,100,COL,170,lac,4,4,3,0,0,0
+Colombia,Colombia,2015,COL,100,COL,170,lac,4,4,3,0,0,0
+Colombia,Colombia,2016,COL,100,COL,170,lac,3,4,3,0,0,0
+Colombia,Colombia,2017,COL,100,COL,170,lac,4,3,3,0,0,0
+Colombia,Colombia,2018,COL,100,COL,170,lac,NA,3,3,88,0,0
+Colombia,Colombia,2019,COL,100,COL,170,lac,4,3,3,0,0,0
+Colombia,Colombia,2020,COL,100,COL,170,lac,4,3,3,0,0,0
+Colombia,Colombia,2021,COL,100,COL,170,lac,4,3,3,0,0,0
+Colombia,Colombia,2022,COL,100,COL,170,lac,4,3,3,0,0,0
+Colombia,Colombia,2023,COL,100,COL,170,lac,3,3,3,0,0,0
+Comoros,Comoros,2013,COM,581,COM,174,ssa,NA,NA,1,88,88,0
+Comoros,Comoros,2014,COM,581,COM,174,ssa,NA,NA,1,88,88,0
+Comoros,Comoros,2015,COM,581,COM,174,ssa,NA,NA,1,88,88,0
+Comoros,Comoros,2016,COM,581,COM,174,ssa,NA,NA,1,88,88,0
+Comoros,Comoros,2017,COM,581,COM,174,ssa,NA,NA,1,88,88,0
+Comoros,Comoros,2018,COM,581,COM,174,ssa,NA,NA,2,88,88,0
+Comoros,Comoros,2019,COM,581,COM,174,ssa,NA,NA,2,88,88,0
+Comoros,Comoros,2020,COM,581,COM,174,ssa,NA,NA,2,88,88,0
+Comoros,Comoros,2021,COM,581,COM,174,ssa,NA,NA,2,88,88,0
+Comoros,Comoros,2022,COM,581,COM,174,ssa,NA,NA,2,88,88,0
+Comoros,Comoros,2023,COM,581,COM,174,ssa,NA,NA,2,88,88,0
+Congo,Congo,2013,CON,484,COG,178,ssa,NA,NA,3,88,88,0
+Congo,Congo,2014,CON,484,COG,178,ssa,4,NA,3,0,88,0
+Congo,Congo,2015,CON,484,COG,178,ssa,4,NA,4,0,88,0
+Congo,Congo,2016,CON,484,COG,178,ssa,4,NA,4,0,88,0
+Congo,Congo,2017,CON,484,COG,178,ssa,4,NA,4,0,88,0
+Congo,Congo,2018,CON,484,COG,178,ssa,NA,NA,3,88,88,0
+Congo,Congo,2019,CON,484,COG,178,ssa,3,NA,3,0,88,0
+Congo,Congo,2020,CON,484,COG,178,ssa,2,NA,3,0,88,0
+Congo,Congo,2021,CON,484,COG,178,ssa,2,NA,3,0,88,0
+Congo,Congo,2022,CON,484,COG,178,ssa,2,NA,2,0,88,0
+Congo,Congo,2023,CON,484,COG,178,ssa,2,NA,3,0,88,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2013,DRC,490,ZAR,180,ssa,NA,5,5,88,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2014,DRC,490,ZAR,180,ssa,5,3,5,0,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2015,DRC,490,ZAR,180,ssa,4,4,5,0,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2016,DRC,490,ZAR,180,ssa,5,4,5,0,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2017,DRC,490,ZAR,180,ssa,5,5,5,0,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2018,DRC,490,ZAR,180,ssa,NA,5,5,88,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2019,DRC,490,ZAR,180,ssa,5,4,5,0,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2020,DRC,490,ZAR,180,ssa,5,5,5,0,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2021,DRC,490,ZAR,180,ssa,5,5,5,0,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2022,DRC,490,ZAR,180,ssa,5,5,5,0,0,0
+"Congo, the Democratic Republic of the",Democratic Republic of the Congo,2023,DRC,490,ZAR,180,ssa,5,5,5,0,0,0
+Costa Rica,Costa Rica,2013,COS,94,CRI,188,lac,NA,NA,2,88,88,0
+Costa Rica,Costa Rica,2014,COS,94,CRI,188,lac,NA,NA,2,88,88,0
+Costa Rica,Costa Rica,2015,COS,94,CRI,188,lac,NA,NA,1,88,88,0
+Costa Rica,Costa Rica,2016,COS,94,CRI,188,lac,NA,NA,2,88,88,0
+Costa Rica,Costa Rica,2017,COS,94,CRI,188,lac,NA,NA,1,88,88,0
+Costa Rica,Costa Rica,2018,COS,94,CRI,188,lac,NA,NA,1,88,88,0
+Costa Rica,Costa Rica,2019,COS,94,CRI,188,lac,NA,NA,1,88,88,0
+Costa Rica,Costa Rica,2020,COS,94,CRI,188,lac,NA,NA,1,88,88,0
+Costa Rica,Costa Rica,2021,COS,94,CRI,188,lac,NA,NA,1,88,88,0
+Costa Rica,Costa Rica,2022,COS,94,CRI,188,lac,NA,NA,1,88,88,0
+Costa Rica,Costa Rica,2023,COS,94,CRI,188,lac,NA,NA,1,88,88,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2013,CDI,437,CIV,384,ssa,NA,3,3,88,0,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2014,CDI,437,CIV,384,ssa,3,3,3,0,0,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2015,CDI,437,CIV,384,ssa,3,3,3,0,0,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2016,CDI,437,CIV,384,ssa,3,3,3,0,0,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2017,CDI,437,CIV,384,ssa,3,3,3,0,0,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2018,CDI,437,CIV,384,ssa,NA,2,3,88,0,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2019,CDI,437,CIV,384,ssa,3,3,3,0,0,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2020,CDI,437,CIV,384,ssa,4,NA,3,0,88,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2021,CDI,437,CIV,384,ssa,2,NA,2,0,88,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2022,CDI,437,CIV,384,ssa,2,NA,3,0,88,0
+Cote d'Ivoire,Ivory Coast (Cote d'Ivoire),2023,CDI,437,CIV,384,ssa,2,NA,3,0,88,0
+Crimea,Crimea,2013,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Crimea,Crimea,2014,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Crimea,Crimea,2015,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Crimea,Crimea,2016,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Crimea,Crimea,2017,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Crimea,Crimea,2018,NA,NA,NA,NA,eca,NA,NA,4,66,66,0
+Crimea,Crimea,2019,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Crimea,Crimea,2020,NA,NA,NA,NA,eca,NA,NA,4,66,66,0
+Crimea,Crimea,2021,NA,NA,NA,NA,eca,NA,NA,3,66,66,0
+Crimea,Crimea,2022,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Crimea,Crimea,2023,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Croatia,Croatia,2013,CRO,344,HRV,191,eca,NA,1,1,88,0,0
+Croatia,Croatia,2014,CRO,344,HRV,191,eca,1,NA,1,0,88,0
+Croatia,Croatia,2015,CRO,344,HRV,191,eca,1,NA,1,0,88,0
+Croatia,Croatia,2016,CRO,344,HRV,191,eca,1,NA,1,0,88,0
+Croatia,Croatia,2017,CRO,344,HRV,191,eca,2,NA,1,0,88,0
+Croatia,Croatia,2018,CRO,344,HRV,191,eca,NA,NA,1,88,88,0
+Croatia,Croatia,2019,CRO,344,HRV,191,eca,2,NA,1,0,88,0
+Croatia,Croatia,2020,CRO,344,HRV,191,eca,2,NA,1,0,88,0
+Croatia,Croatia,2021,CRO,344,HRV,191,eca,2,NA,2,0,88,0
+Croatia,Croatia,2022,CRO,344,HRV,191,eca,2,NA,1,0,88,0
+Croatia,Croatia,2023,CRO,344,HRV,191,eca,2,NA,1,0,88,0
+Cuba,Cuba,2013,CUB,40,CUB,192,lac,NA,3,3,88,0,0
+Cuba,Cuba,2014,CUB,40,CUB,192,lac,3,3,3,0,0,0
+Cuba,Cuba,2015,CUB,40,CUB,192,lac,3,3,3,0,0,0
+Cuba,Cuba,2016,CUB,40,CUB,192,lac,3,3,2,0,0,0
+Cuba,Cuba,2017,CUB,40,CUB,192,lac,3,3,3,0,0,0
+Cuba,Cuba,2018,CUB,40,CUB,192,lac,NA,3,3,88,0,0
+Cuba,Cuba,2019,CUB,40,CUB,192,lac,3,3,3,0,0,0
+Cuba,Cuba,2020,CUB,40,CUB,192,lac,3,NA,3,0,88,0
+Cuba,Cuba,2021,CUB,40,CUB,192,lac,3,3,3,0,0,0
+Cuba,Cuba,2022,CUB,40,CUB,192,lac,3,3,3,0,0,0
+Cuba,Cuba,2023,CUB,40,CUB,192,lac,3,3,3,0,0,0
+Cyprus,Cyprus,2013,CYP,352,CYP,196,eca,NA,NA,1,88,88,0
+Cyprus,Cyprus,2014,CYP,352,CYP,196,eca,2,NA,2,0,88,0
+Cyprus,Cyprus,2015,CYP,352,CYP,196,eca,2,NA,2,0,88,0
+Cyprus,Cyprus,2016,CYP,352,CYP,196,eca,1,NA,1,0,88,0
+Cyprus,Cyprus,2017,CYP,352,CYP,196,eca,1,NA,2,0,88,0
+Cyprus,Cyprus,2018,CYP,352,CYP,196,eca,NA,NA,2,88,88,0
+Cyprus,Cyprus,2019,CYP,352,CYP,196,eca,1,NA,2,0,88,0
+Cyprus,Cyprus,2020,CYP,352,CYP,196,eca,1,NA,2,0,88,0
+Cyprus,Cyprus,2021,CYP,352,CYP,196,eca,1,NA,2,0,88,0
+Cyprus,Cyprus,2022,CYP,352,CYP,196,eca,1,NA,2,0,88,0
+Cyprus,Cyprus,2023,CYP,352,CYP,196,eca,1,NA,2,0,88,0
+Czechia,Czech Republic,2013,CZR,316,CZE,203,eca,NA,NA,1,88,88,0
+Czechia,Czech Republic,2014,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechia,Czech Republic,2015,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechia,Czech Republic,2016,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechia,Czech Republic,2017,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechia,Czech Republic,2018,CZR,316,CZE,203,eca,NA,NA,1,88,88,0
+Czechia,Czech Republic,2019,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechia,Czech Republic,2020,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechia,Czech Republic,2021,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechia,Czech Republic,2022,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechia,Czech Republic,2023,CZR,316,CZE,203,eca,1,NA,1,0,88,0
+Czechoslovakia,Czechoslovakia,2013,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2014,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2015,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2016,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2017,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2018,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2019,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2020,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2021,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2022,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Czechoslovakia,Czechoslovakia,2023,CZE,315,NA,NA,eca,NA,NA,NA,77,77,77
+Denmark,Denmark,2013,DEN,390,DNK,208,eca,NA,NA,1,88,88,0
+Denmark,Denmark,2014,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Denmark,Denmark,2015,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Denmark,Denmark,2016,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Denmark,Denmark,2017,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Denmark,Denmark,2018,DEN,390,DNK,208,eca,NA,NA,1,88,88,0
+Denmark,Denmark,2019,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Denmark,Denmark,2020,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Denmark,Denmark,2021,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Denmark,Denmark,2022,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Denmark,Denmark,2023,DEN,390,DNK,208,eca,1,NA,1,0,88,0
+Djibouti,Djibouti,2013,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2014,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2015,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2016,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2017,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2018,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2019,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2020,DJI,522,DJI,262,mena,NA,NA,4,88,88,0
+Djibouti,Djibouti,2021,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2022,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Djibouti,Djibouti,2023,DJI,522,DJI,262,mena,NA,NA,3,88,88,0
+Dominica,Dominica,2013,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2014,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2015,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2016,DMA,54,DMA,212,lac,NA,NA,2,88,88,0
+Dominica,Dominica,2017,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2018,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2019,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2020,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2021,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2022,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominica,Dominica,2023,DMA,54,DMA,212,lac,NA,NA,1,88,88,0
+Dominican Republic,Dominican Republic,2013,DOM,42,DOM,214,lac,NA,NA,3,88,88,0
+Dominican Republic,Dominican Republic,2014,DOM,42,DOM,214,lac,3,NA,3,0,88,0
+Dominican Republic,Dominican Republic,2015,DOM,42,DOM,214,lac,3,2,3,0,0,0
+Dominican Republic,Dominican Republic,2016,DOM,42,DOM,214,lac,3,NA,3,0,88,0
+Dominican Republic,Dominican Republic,2017,DOM,42,DOM,214,lac,3,NA,3,0,88,0
+Dominican Republic,Dominican Republic,2018,DOM,42,DOM,214,lac,NA,NA,3,88,88,0
+Dominican Republic,Dominican Republic,2019,DOM,42,DOM,214,lac,2,NA,4,0,88,0
+Dominican Republic,Dominican Republic,2020,DOM,42,DOM,214,lac,3,NA,3,0,88,0
+Dominican Republic,Dominican Republic,2021,DOM,42,DOM,214,lac,1,NA,3,0,88,0
+Dominican Republic,Dominican Republic,2022,DOM,42,DOM,214,lac,2,NA,3,0,88,0
+Dominican Republic,Dominican Republic,2023,DOM,42,DOM,214,lac,2,NA,3,0,88,0
+Ecuador,Ecuador,2013,ECU,130,ECU,218,lac,NA,2,2,88,0,0
+Ecuador,Ecuador,2014,ECU,130,ECU,218,lac,2,2,2,0,0,0
+Ecuador,Ecuador,2015,ECU,130,ECU,218,lac,2,2,3,0,0,0
+Ecuador,Ecuador,2016,ECU,130,ECU,218,lac,2,2,3,0,0,0
+Ecuador,Ecuador,2017,ECU,130,ECU,218,lac,2,2,2,0,0,0
+Ecuador,Ecuador,2018,ECU,130,ECU,218,lac,NA,2,2,88,0,0
+Ecuador,Ecuador,2019,ECU,130,ECU,218,lac,3,2,2,0,0,0
+Ecuador,Ecuador,2020,ECU,130,ECU,218,lac,1,2,2,0,0,0
+Ecuador,Ecuador,2021,ECU,130,ECU,218,lac,1,2,2,0,0,0
+Ecuador,Ecuador,2022,ECU,130,ECU,218,lac,3,3,2,0,0,0
+Ecuador,Ecuador,2023,ECU,130,ECU,218,lac,3,2,2,0,0,0
+Egypt,Egypt,2013,EGY,651,EGY,818,mena,NA,4,4,88,0,0
+Egypt,Egypt,2014,EGY,651,EGY,818,mena,4,4,4,0,0,0
+Egypt,Egypt,2015,EGY,651,EGY,818,mena,4,4,4,0,0,0
+Egypt,Egypt,2016,EGY,651,EGY,818,mena,4,4,4,0,0,0
+Egypt,Egypt,2017,EGY,651,EGY,818,mena,5,4,4,0,0,0
+Egypt,Egypt,2018,EGY,651,EGY,818,mena,4,4,4,0,0,0
+Egypt,Egypt,2019,EGY,651,EGY,818,mena,5,4,4,0,0,0
+Egypt,Egypt,2020,EGY,651,EGY,818,mena,4,4,4,0,0,0
+Egypt,Egypt,2021,EGY,651,EGY,818,mena,4,4,4,0,0,0
+Egypt,Egypt,2022,EGY,651,EGY,818,mena,4,3,4,0,0,0
+Egypt,Egypt,2023,EGY,651,EGY,818,mena,4,4,4,0,0,0
+El Salvador,El Salvador,2013,SAL,92,SLV,222,lac,NA,NA,3,88,88,0
+El Salvador,El Salvador,2014,SAL,92,SLV,222,lac,1,NA,3,0,88,0
+El Salvador,El Salvador,2015,SAL,92,SLV,222,lac,1,NA,3,0,88,0
+El Salvador,El Salvador,2016,SAL,92,SLV,222,lac,2,NA,3,0,88,0
+El Salvador,El Salvador,2017,SAL,92,SLV,222,lac,2,NA,3,0,88,0
+El Salvador,El Salvador,2018,SAL,92,SLV,222,lac,NA,3,3,88,0,0
+El Salvador,El Salvador,2019,SAL,92,SLV,222,lac,2,3,3,0,0,0
+El Salvador,El Salvador,2020,SAL,92,SLV,222,lac,3,4,3,0,0,0
+El Salvador,El Salvador,2021,SAL,92,SLV,222,lac,2,3,3,0,0,0
+El Salvador,El Salvador,2022,SAL,92,SLV,222,lac,4,4,4,0,0,0
+El Salvador,El Salvador,2023,SAL,92,SLV,222,lac,3,4,4,0,0,0
+Equatorial Guinea,Equatorial Guinea,2013,EQG,411,GNQ,226,ssa,NA,3,3,88,0,0
+Equatorial Guinea,Equatorial Guinea,2014,EQG,411,GNQ,226,ssa,3,2,3,0,0,0
+Equatorial Guinea,Equatorial Guinea,2015,EQG,411,GNQ,226,ssa,3,NA,3,0,88,0
+Equatorial Guinea,Equatorial Guinea,2016,EQG,411,GNQ,226,ssa,3,2,3,0,0,0
+Equatorial Guinea,Equatorial Guinea,2017,EQG,411,GNQ,226,ssa,3,2,3,0,0,0
+Equatorial Guinea,Equatorial Guinea,2018,EQG,411,GNQ,226,ssa,NA,3,3,88,0,0
+Equatorial Guinea,Equatorial Guinea,2019,EQG,411,GNQ,226,ssa,3,2,3,0,0,0
+Equatorial Guinea,Equatorial Guinea,2020,EQG,411,GNQ,226,ssa,3,NA,3,0,88,0
+Equatorial Guinea,Equatorial Guinea,2021,EQG,411,GNQ,226,ssa,2,NA,3,0,88,0
+Equatorial Guinea,Equatorial Guinea,2022,EQG,411,GNQ,226,ssa,4,NA,3,0,88,0
+Equatorial Guinea,Equatorial Guinea,2023,EQG,411,GNQ,226,ssa,3,NA,3,0,88,0
+Eritrea,Eritrea,2013,ERI,531,ERI,232,ssa,NA,5,4,88,0,0
+Eritrea,Eritrea,2014,ERI,531,ERI,232,ssa,5,4,4,0,0,0
+Eritrea,Eritrea,2015,ERI,531,ERI,232,ssa,5,4,5,0,0,0
+Eritrea,Eritrea,2016,ERI,531,ERI,232,ssa,4,4,5,0,0,0
+Eritrea,Eritrea,2017,ERI,531,ERI,232,ssa,5,5,5,0,0,0
+Eritrea,Eritrea,2018,ERI,531,ERI,232,ssa,NA,5,5,88,0,0
+Eritrea,Eritrea,2019,ERI,531,ERI,232,ssa,4,5,5,0,0,0
+Eritrea,Eritrea,2020,ERI,531,ERI,232,ssa,4,5,5,0,0,0
+Eritrea,Eritrea,2021,ERI,531,ERI,232,ssa,4,5,5,0,0,0
+Eritrea,Eritrea,2022,ERI,531,ERI,232,ssa,5,5,4,0,0,0
+Eritrea,Eritrea,2023,ERI,531,ERI,232,ssa,5,5,3,0,0,0
+Estonia,Estonia,2013,EST,366,EST,233,eca,NA,NA,1,88,88,0
+Estonia,Estonia,2014,EST,366,EST,233,eca,1,NA,1,0,88,0
+Estonia,Estonia,2015,EST,366,EST,233,eca,1,NA,1,0,88,0
+Estonia,Estonia,2016,EST,366,EST,233,eca,1,NA,1,0,88,0
+Estonia,Estonia,2017,EST,366,EST,233,eca,1,NA,1,0,88,0
+Estonia,Estonia,2018,EST,366,EST,233,eca,NA,NA,1,88,88,0
+Estonia,Estonia,2019,EST,366,EST,233,eca,1,NA,1,0,88,0
+Estonia,Estonia,2020,EST,366,EST,233,eca,1,NA,1,0,88,0
+Estonia,Estonia,2021,EST,366,EST,233,eca,1,NA,1,0,88,0
+Estonia,Estonia,2022,EST,366,EST,233,eca,1,NA,1,0,88,0
+Estonia,Estonia,2023,EST,366,EST,233,eca,NA,NA,1,88,88,0
+Eswatini,Swaziland,2013,SWA,572,SWZ,748,ssa,NA,NA,3,88,88,0
+Eswatini,Swaziland,2014,SWA,572,SWZ,748,ssa,2,NA,3,0,88,0
+Eswatini,Swaziland,2015,SWA,572,SWZ,748,ssa,2,2,3,0,0,0
+Eswatini,Swaziland,2016,SWA,572,SWZ,748,ssa,2,2,3,0,0,0
+Eswatini,Swaziland,2017,SWA,572,SWZ,748,ssa,2,2,2,0,0,0
+Eswatini,Swaziland,2018,SWA,572,SWZ,748,ssa,NA,3,2,88,0,0
+Eswatini,Swaziland,2019,SWA,572,SWZ,748,ssa,1,2,2,0,0,0
+Eswatini,Swaziland,2020,SWA,572,SWZ,748,ssa,1,1,2,0,0,0
+Eswatini,Swaziland,2021,SWA,572,SWZ,748,ssa,4,3,3,0,0,0
+Eswatini,Swaziland,2022,SWA,572,SWZ,748,ssa,3,3,3,0,0,0
+Eswatini,Swaziland,2023,SWA,572,SWZ,748,ssa,3,3,3,0,0,0
+Ethiopia,Ethiopia,2013,ETH,530,ETH,231,ssa,NA,3,3,88,0,0
+Ethiopia,Ethiopia,2014,ETH,530,ETH,231,ssa,4,4,3,0,0,0
+Ethiopia,Ethiopia,2015,ETH,530,ETH,231,ssa,4,3,3,0,0,0
+Ethiopia,Ethiopia,2016,ETH,530,ETH,231,ssa,4,4,5,0,0,0
+Ethiopia,Ethiopia,2017,ETH,530,ETH,231,ssa,4,5,4,0,0,0
+Ethiopia,Ethiopia,2018,ETH,530,ETH,231,ssa,NA,3,4,88,0,0
+Ethiopia,Ethiopia,2019,ETH,530,ETH,231,ssa,4,3,4,0,0,0
+Ethiopia,Ethiopia,2020,ETH,530,ETH,231,ssa,4,4,4,0,0,0
+Ethiopia,Ethiopia,2021,ETH,530,ETH,231,ssa,5,5,4,0,0,0
+Ethiopia,Ethiopia,2022,ETH,530,ETH,231,ssa,5,5,5,0,0,0
+Ethiopia,Ethiopia,2023,ETH,530,ETH,231,ssa,5,5,5,0,0,0
+European Union,European Union,2013,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+European Union,European Union,2014,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+European Union,European Union,2015,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+European Union,European Union,2016,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+European Union,European Union,2017,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+European Union,European Union,2018,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+European Union,European Union,2019,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+European Union,European Union,2020,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+European Union,European Union,2021,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+European Union,European Union,2022,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+European Union,European Union,2023,NA,NA,NA,NA,eca,NA,2,NA,66,0,66
+Fiji,Fiji,2013,FIJ,950,FJI,242,eap,NA,NA,2,88,88,0
+Fiji,Fiji,2014,FIJ,950,FJI,242,eap,2,NA,1,0,88,0
+Fiji,Fiji,2015,FIJ,950,FJI,242,eap,2,NA,1,0,88,0
+Fiji,Fiji,2016,FIJ,950,FJI,242,eap,1,NA,1,0,88,0
+Fiji,Fiji,2017,FIJ,950,FJI,242,eap,2,NA,2,0,88,0
+Fiji,Fiji,2018,FIJ,950,FJI,242,eap,NA,NA,1,88,88,0
+Fiji,Fiji,2019,FIJ,950,FJI,242,eap,2,NA,1,0,88,0
+Fiji,Fiji,2020,FIJ,950,FJI,242,eap,2,NA,2,0,88,0
+Fiji,Fiji,2021,FIJ,950,FJI,242,eap,1,NA,2,0,88,0
+Fiji,Fiji,2022,FIJ,950,FJI,242,eap,1,NA,2,0,88,0
+Fiji,Fiji,2023,FIJ,950,FJI,242,eap,1,NA,2,0,88,0
+Finland,Finland ,2013,FIN,375,FIN,246,eca,NA,NA,1,88,88,0
+Finland,Finland ,2014,FIN,375,FIN,246,eca,1,NA,1,0,88,0
+Finland,Finland ,2015,FIN,375,FIN,246,eca,1,NA,1,0,88,0
+Finland,Finland ,2016,FIN,375,FIN,246,eca,1,NA,1,0,88,0
+Finland,Finland ,2017,FIN,375,FIN,246,eca,1,NA,1,0,88,0
+Finland,Finland ,2018,FIN,375,FIN,246,eca,NA,NA,1,88,88,0
+Finland,Finland ,2019,FIN,375,FIN,246,eca,2,NA,1,0,88,0
+Finland,Finland ,2020,FIN,375,FIN,246,eca,1,NA,1,0,88,0
+Finland,Finland ,2021,FIN,375,FIN,246,eca,1,NA,1,0,88,0
+Finland,Finland ,2022,FIN,375,FIN,246,eca,1,NA,1,0,88,0
+Finland,Finland ,2023,FIN,375,FIN,246,eca,1,NA,1,0,88,0
+France,France,2013,FRN,220,FRA,250,eca,NA,1,1,88,0,0
+France,France,2014,FRN,220,FRA,250,eca,2,NA,1,0,88,0
+France,France,2015,FRN,220,FRA,250,eca,2,NA,1,0,88,0
+France,France,2016,FRN,220,FRA,250,eca,1,NA,2,0,88,0
+France,France,2017,FRN,220,FRA,250,eca,1,NA,1,0,88,0
+France,France,2018,FRN,220,FRA,250,eca,NA,NA,2,88,88,0
+France,France,2019,FRN,220,FRA,250,eca,3,NA,1,0,88,0
+France,France,2020,FRN,220,FRA,250,eca,2,2,2,0,0,0
+France,France,2021,FRN,220,FRA,250,eca,2,2,2,0,0,0
+France,France,2022,FRN,220,FRA,250,eca,2,1,2,0,0,0
+France,France,2023,FRN,220,FRA,250,eca,2,2,2,0,0,0
+Gabon,Gabon,2013,GAB,481,GAB,266,ssa,NA,NA,2,88,88,0
+Gabon,Gabon,2014,GAB,481,GAB,266,ssa,NA,NA,2,88,88,0
+Gabon,Gabon,2015,GAB,481,GAB,266,ssa,NA,NA,2,88,88,0
+Gabon,Gabon,2016,GAB,481,GAB,266,ssa,NA,NA,3,88,88,0
+Gabon,Gabon,2017,GAB,481,GAB,266,ssa,3,NA,3,0,88,0
+Gabon,Gabon,2018,GAB,481,GAB,266,ssa,NA,NA,3,88,88,0
+Gabon,Gabon,2019,GAB,481,GAB,266,ssa,2,NA,2,0,88,0
+Gabon,Gabon,2020,GAB,481,GAB,266,ssa,NA,NA,2,88,88,0
+Gabon,Gabon,2021,GAB,481,GAB,266,ssa,NA,NA,2,88,88,0
+Gabon,Gabon,2022,GAB,481,GAB,266,ssa,NA,NA,2,88,88,0
+Gabon,Gabon,2023,GAB,481,GAB,266,ssa,NA,NA,2,88,88,0
+Gambia,Gambia,2013,GAM,420,GMB,270,ssa,NA,NA,3,88,88,0
+Gambia,Gambia,2014,GAM,420,GMB,270,ssa,3,NA,3,0,88,0
+Gambia,Gambia,2015,GAM,420,GMB,270,ssa,4,3,3,0,0,0
+Gambia,Gambia,2016,GAM,420,GMB,270,ssa,3,2,3,0,0,0
+Gambia,Gambia,2017,GAM,420,GMB,270,ssa,2,1,2,0,0,0
+Gambia,Gambia,2018,GAM,420,GMB,270,ssa,NA,NA,2,88,88,0
+Gambia,Gambia,2019,GAM,420,GMB,270,ssa,NA,NA,1,88,88,0
+Gambia,Gambia,2020,GAM,420,GMB,270,ssa,NA,NA,1,88,88,0
+Gambia,Gambia,2021,GAM,420,GMB,270,ssa,2,NA,2,0,88,0
+Gambia,Gambia,2022,GAM,420,GMB,270,ssa,2,NA,2,0,88,0
+Gambia,Gambia,2023,GAM,420,GMB,270,ssa,1,NA,1,0,88,0
+Gaza (Hamas),Hamas/Gaza,2013,NA,NA,NA,NA,mena,NA,NA,4,66,66,0
+Gaza (Hamas),Hamas/Gaza,2014,NA,NA,NA,NA,mena,NA,NA,4,66,66,0
+Gaza (Hamas),Hamas/Gaza,2015,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Gaza (Hamas),Hamas/Gaza,2016,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Gaza (Hamas),Hamas/Gaza,2017,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Gaza (Hamas),Hamas/Gaza,2018,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Gaza (Hamas),Hamas/Gaza,2019,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Gaza (Hamas),Hamas/Gaza,2020,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Gaza (Hamas),Hamas/Gaza,2021,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Gaza (Hamas),Hamas/Gaza,2022,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Gaza (Hamas),Hamas/Gaza,2023,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Georgia,Georgia,2013,GRG,372,GEO,268,eca,NA,1,2,88,0,0
+Georgia,Georgia,2014,GRG,372,GEO,268,eca,2,2,2,0,0,0
+Georgia,Georgia,2015,GRG,372,GEO,268,eca,2,2,2,0,0,0
+Georgia,Georgia,2016,GRG,372,GEO,268,eca,2,2,2,0,0,0
+Georgia,Georgia,2017,GRG,372,GEO,268,eca,2,2,2,0,0,0
+Georgia,Georgia,2018,GRG,372,GEO,268,eca,NA,2,2,88,0,0
+Georgia,Georgia,2019,GRG,372,GEO,268,eca,2,3,2,0,0,0
+Georgia,Georgia,2020,GRG,372,GEO,268,eca,3,2,2,0,0,0
+Georgia,Georgia,2021,GRG,372,GEO,268,eca,2,3,2,0,0,0
+Georgia,Georgia,2022,GRG,372,GEO,268,eca,3,2,2,0,0,0
+Georgia,Georgia,2023,GRG,372,GEO,268,eca,3,3,3,0,0,0
+German Democratic Republic,"Germany, East",2013,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2014,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2015,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2016,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2017,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2018,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2019,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2020,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2021,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2022,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Democratic Republic,"Germany, East",2023,GDR,265,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2013,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2014,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2015,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2016,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2017,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2018,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2019,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2020,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2021,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2022,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+German Federal Republic,"Germany, West",2023,GFR,260,NA,NA,eca,NA,NA,NA,77,77,77
+Germany,Germany,2013,GMY,255,DEU,276,eca,NA,1,1,88,0,0
+Germany,Germany,2014,GMY,255,DEU,276,eca,1,NA,1,0,88,0
+Germany,Germany,2015,GMY,255,DEU,276,eca,1,NA,1,0,88,0
+Germany,Germany,2016,GMY,255,DEU,276,eca,1,NA,1,0,88,0
+Germany,Germany,2017,GMY,255,DEU,276,eca,1,NA,1,0,88,0
+Germany,Germany,2018,GMY,255,DEU,276,eca,NA,NA,1,88,88,0
+Germany,Germany,2019,GMY,255,DEU,276,eca,1,NA,1,0,88,0
+Germany,Germany,2020,GMY,255,DEU,276,eca,1,1,1,0,0,0
+Germany,Germany,2021,GMY,255,DEU,276,eca,1,1,1,0,0,0
+Germany,Germany,2022,GMY,255,DEU,276,eca,1,1,1,0,0,0
+Germany,Germany,2023,GMY,255,DEU,276,eca,1,1,1,0,0,0
+Ghana,Ghana,2013,GHA,452,GHA,288,ssa,NA,NA,2,88,88,0
+Ghana,Ghana,2014,GHA,452,GHA,288,ssa,1,NA,3,0,88,0
+Ghana,Ghana,2015,GHA,452,GHA,288,ssa,2,NA,3,0,88,0
+Ghana,Ghana,2016,GHA,452,GHA,288,ssa,2,NA,3,0,88,0
+Ghana,Ghana,2017,GHA,452,GHA,288,ssa,2,NA,3,0,88,0
+Ghana,Ghana,2018,GHA,452,GHA,288,ssa,NA,NA,3,88,88,0
+Ghana,Ghana,2019,GHA,452,GHA,288,ssa,2,NA,3,0,88,0
+Ghana,Ghana,2020,GHA,452,GHA,288,ssa,1,NA,3,0,88,0
+Ghana,Ghana,2021,GHA,452,GHA,288,ssa,2,NA,2,0,88,0
+Ghana,Ghana,2022,GHA,452,GHA,288,ssa,3,NA,3,0,88,0
+Ghana,Ghana,2023,GHA,452,GHA,288,ssa,2,NA,3,0,88,0
+Greece,Greece,2013,GRC,350,GRC,300,eca,NA,1,1,88,0,0
+Greece,Greece,2014,GRC,350,GRC,300,eca,3,NA,2,0,88,0
+Greece,Greece,2015,GRC,350,GRC,300,eca,3,NA,2,0,88,0
+Greece,Greece,2016,GRC,350,GRC,300,eca,3,NA,2,0,88,0
+Greece,Greece,2017,GRC,350,GRC,300,eca,2,NA,2,0,88,0
+Greece,Greece,2018,GRC,350,GRC,300,eca,NA,NA,1,88,88,0
+Greece,Greece,2019,GRC,350,GRC,300,eca,2,NA,2,0,88,0
+Greece,Greece,2020,GRC,350,GRC,300,eca,2,2,2,0,0,0
+Greece,Greece,2021,GRC,350,GRC,300,eca,3,2,2,0,0,0
+Greece,Greece,2022,GRC,350,GRC,300,eca,2,2,2,0,0,0
+Greece,Greece,2023,GRC,350,GRC,300,eca,2,2,2,0,0,0
+Grenada,Grenada,2013,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2014,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2015,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2016,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2017,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2018,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2019,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2020,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2021,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2022,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Grenada,Grenada,2023,GRN,55,GRD,308,lac,NA,NA,1,88,88,0
+Guatemala,Guatemala,2013,GUA,90,GTM,320,lac,NA,2,2,88,0,0
+Guatemala,Guatemala,2014,GUA,90,GTM,320,lac,2,2,3,0,0,0
+Guatemala,Guatemala,2015,GUA,90,GTM,320,lac,2,2,3,0,0,0
+Guatemala,Guatemala,2016,GUA,90,GTM,320,lac,2,1,3,0,0,0
+Guatemala,Guatemala,2017,GUA,90,GTM,320,lac,3,2,3,0,0,0
+Guatemala,Guatemala,2018,GUA,90,GTM,320,lac,NA,2,3,88,0,0
+Guatemala,Guatemala,2019,GUA,90,GTM,320,lac,3,2,3,0,0,0
+Guatemala,Guatemala,2020,GUA,90,GTM,320,lac,3,2,3,0,0,0
+Guatemala,Guatemala,2021,GUA,90,GTM,320,lac,3,2,3,0,0,0
+Guatemala,Guatemala,2022,GUA,90,GTM,320,lac,2,2,3,0,0,0
+Guatemala,Guatemala,2023,GUA,90,GTM,320,lac,2,2,2,0,0,0
+Guinea,Guinea,2013,GUI,438,GIN,324,ssa,NA,3,3,88,0,0
+Guinea,Guinea,2014,GUI,438,GIN,324,ssa,3,3,3,0,0,0
+Guinea,Guinea,2015,GUI,438,GIN,324,ssa,3,2,3,0,0,0
+Guinea,Guinea,2016,GUI,438,GIN,324,ssa,3,2,2,0,0,0
+Guinea,Guinea,2017,GUI,438,GIN,324,ssa,3,NA,3,0,88,0
+Guinea,Guinea,2018,GUI,438,GIN,324,ssa,NA,3,3,88,0,0
+Guinea,Guinea,2019,GUI,438,GIN,324,ssa,3,3,3,0,0,0
+Guinea,Guinea,2020,GUI,438,GIN,324,ssa,3,3,4,0,0,0
+Guinea,Guinea,2021,GUI,438,GIN,324,ssa,3,3,4,0,0,0
+Guinea,Guinea,2022,GUI,438,GIN,324,ssa,3,NA,3,0,88,0
+Guinea,Guinea,2023,GUI,438,GIN,324,ssa,3,NA,3,0,88,0
+Guinea-Bissau,Guinea-Bissau,2013,GNB,404,GNB,624,ssa,NA,NA,2,88,88,0
+Guinea-Bissau,Guinea-Bissau,2014,GNB,404,GNB,624,ssa,2,NA,2,0,88,0
+Guinea-Bissau,Guinea-Bissau,2015,GNB,404,GNB,624,ssa,2,NA,3,0,88,0
+Guinea-Bissau,Guinea-Bissau,2016,GNB,404,GNB,624,ssa,2,NA,2,0,88,0
+Guinea-Bissau,Guinea-Bissau,2017,GNB,404,GNB,624,ssa,NA,NA,1,88,88,0
+Guinea-Bissau,Guinea-Bissau,2018,GNB,404,GNB,624,ssa,NA,NA,1,88,88,0
+Guinea-Bissau,Guinea-Bissau,2019,GNB,404,GNB,624,ssa,NA,NA,1,88,88,0
+Guinea-Bissau,Guinea-Bissau,2020,GNB,404,GNB,624,ssa,NA,NA,2,88,88,0
+Guinea-Bissau,Guinea-Bissau,2021,GNB,404,GNB,624,ssa,NA,NA,2,88,88,0
+Guinea-Bissau,Guinea-Bissau,2022,GNB,404,GNB,624,ssa,NA,NA,2,88,88,0
+Guinea-Bissau,Guinea-Bissau,2023,GNB,404,GNB,624,ssa,NA,NA,2,88,88,0
+Guyana,Guyana,2013,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Guyana,Guyana,2014,GUY,110,GUY,328,lac,2,NA,2,0,88,0
+Guyana,Guyana,2015,GUY,110,GUY,328,lac,2,NA,2,0,88,0
+Guyana,Guyana,2016,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Guyana,Guyana,2017,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Guyana,Guyana,2018,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Guyana,Guyana,2019,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Guyana,Guyana,2020,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Guyana,Guyana,2021,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Guyana,Guyana,2022,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Guyana,Guyana,2023,GUY,110,GUY,328,lac,NA,NA,2,88,88,0
+Haiti,Haiti,2013,HAI,41,HTI,332,lac,NA,2,3,88,0,0
+Haiti,Haiti,2014,HAI,41,HTI,332,lac,2,3,3,0,0,0
+Haiti,Haiti,2015,HAI,41,HTI,332,lac,1,2,3,0,0,0
+Haiti,Haiti,2016,HAI,41,HTI,332,lac,2,2,3,0,0,0
+Haiti,Haiti,2017,HAI,41,HTI,332,lac,2,2,2,0,0,0
+Haiti,Haiti,2018,HAI,41,HTI,332,lac,NA,2,2,88,0,0
+Haiti,Haiti,2019,HAI,41,HTI,332,lac,4,2,3,0,0,0
+Haiti,Haiti,2020,HAI,41,HTI,332,lac,NA,3,3,88,0,0
+Haiti,Haiti,2021,HAI,41,HTI,332,lac,4,3,3,0,0,0
+Haiti,Haiti,2022,HAI,41,HTI,332,lac,4,3,3,0,0,0
+Haiti,Haiti,2023,HAI,41,HTI,332,lac,2,3,3,0,0,0
+Honduras,Honduras,2013,HON,91,HND,340,lac,NA,3,3,88,0,0
+Honduras,Honduras,2014,HON,91,HND,340,lac,3,3,3,0,0,0
+Honduras,Honduras,2015,HON,91,HND,340,lac,2,3,3,0,0,0
+Honduras,Honduras,2016,HON,91,HND,340,lac,3,4,3,0,0,0
+Honduras,Honduras,2017,HON,91,HND,340,lac,4,3,3,0,0,0
+Honduras,Honduras,2018,HON,91,HND,340,lac,NA,3,3,88,0,0
+Honduras,Honduras,2019,HON,91,HND,340,lac,4,3,3,0,0,0
+Honduras,Honduras,2020,HON,91,HND,340,lac,2,3,3,0,0,0
+Honduras,Honduras,2021,HON,91,HND,340,lac,3,3,3,0,0,0
+Honduras,Honduras,2022,HON,91,HND,340,lac,3,3,3,0,0,0
+Honduras,Honduras,2023,HON,91,HND,340,lac,3,3,3,0,0,0
+Hungary,Hungary,2013,HUN,310,HUN,348,eca,NA,1,2,88,0,0
+Hungary,Hungary,2014,HUN,310,HUN,348,eca,1,NA,2,0,88,0
+Hungary,Hungary,2015,HUN,310,HUN,348,eca,1,NA,2,0,88,0
+Hungary,Hungary,2016,HUN,310,HUN,348,eca,2,NA,2,0,88,0
+Hungary,Hungary,2017,HUN,310,HUN,348,eca,2,NA,2,0,88,0
+Hungary,Hungary,2018,HUN,310,HUN,348,eca,NA,NA,2,88,88,0
+Hungary,Hungary,2019,HUN,310,HUN,348,eca,1,NA,2,0,88,0
+Hungary,Hungary,2020,HUN,310,HUN,348,eca,1,2,2,0,0,0
+Hungary,Hungary,2021,HUN,310,HUN,348,eca,2,2,2,0,0,0
+Hungary,Hungary,2022,HUN,310,HUN,348,eca,1,2,2,0,0,0
+Hungary,Hungary,2023,HUN,310,HUN,348,eca,2,2,2,0,0,0
+Iceland,Iceland,2013,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2014,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2015,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2016,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2017,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2018,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2019,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2020,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2021,ICE,395,ISL,352,eca,NA,NA,1,88,88,0
+Iceland,Iceland,2022,ICE,395,ISL,352,eca,1,NA,1,0,0,0
+Iceland,Iceland,2023,ICE,395,ISL,352,eca,NA,NA,1,88,0,0
+India,India,2013,IND,750,IND,356,sa,NA,4,4,88,0,0
+India,India,2014,IND,750,IND,356,sa,4,3,4,0,0,0
+India,India,2015,IND,750,IND,356,sa,4,3,4,0,0,0
+India,India,2016,IND,750,IND,356,sa,4,3,4,0,0,0
+India,India,2017,IND,750,IND,356,sa,3,3,4,0,0,0
+India,India,2018,IND,750,IND,356,sa,NA,3,4,88,0,0
+India,India,2019,IND,750,IND,356,sa,4,4,4,0,0,0
+India,India,2020,IND,750,IND,356,sa,3,4,4,0,0,0
+India,India,2021,IND,750,IND,356,sa,4,3,4,0,0,0
+India,India,2022,IND,750,IND,356,sa,4,4,4,0,0,0
+India,India,2023,IND,750,IND,356,sa,4,4,4,0,0,0
+Indonesia,Indonesia,2013,INS,850,IDN,360,eap,NA,3,3,88,0,0
+Indonesia,Indonesia,2014,INS,850,IDN,360,eap,3,3,3,0,0,0
+Indonesia,Indonesia,2015,INS,850,IDN,360,eap,3,2,4,0,0,0
+Indonesia,Indonesia,2016,INS,850,IDN,360,eap,3,3,3,0,0,0
+Indonesia,Indonesia,2017,INS,850,IDN,360,eap,3,3,3,0,0,0
+Indonesia,Indonesia,2018,INS,850,IDN,360,eap,NA,3,3,88,0,0
+Indonesia,Indonesia,2019,INS,850,IDN,360,eap,3,3,3,0,0,0
+Indonesia,Indonesia,2020,INS,850,IDN,360,eap,3,2,3,0,0,0
+Indonesia,Indonesia,2021,INS,850,IDN,360,eap,3,2,3,0,0,0
+Indonesia,Indonesia,2022,INS,850,IDN,360,eap,4,3,4,0,0,0
+Indonesia,Indonesia,2023,INS,850,IDN,360,eap,3,3,3,0,0,0
+"Iran, Islamic Republic of",Iran,2013,IRN,630,IRN,364,mena,NA,3,4,88,0,0
+"Iran, Islamic Republic of",Iran,2014,IRN,630,IRN,364,mena,3,3,4,0,0,0
+"Iran, Islamic Republic of",Iran,2015,IRN,630,IRN,364,mena,3,4,4,0,0,0
+"Iran, Islamic Republic of",Iran,2016,IRN,630,IRN,364,mena,4,4,4,0,0,0
+"Iran, Islamic Republic of",Iran,2017,IRN,630,IRN,364,mena,4,4,4,0,0,0
+"Iran, Islamic Republic of",Iran,2018,IRN,630,IRN,364,mena,5,4,4,0,0,0
+"Iran, Islamic Republic of",Iran,2019,IRN,630,IRN,364,mena,4,4,5,0,0,0
+"Iran, Islamic Republic of",Iran,2020,IRN,630,IRN,364,mena,5,4,5,0,0,0
+"Iran, Islamic Republic of",Iran,2021,IRN,630,IRN,364,mena,4,4,5,0,0,0
+"Iran, Islamic Republic of",Iran,2022,IRN,630,IRN,364,mena,5,4,5,0,0,0
+"Iran, Islamic Republic of",Iran,2023,IRN,630,IRN,364,mena,5,4,4,0,0,0
+Iraq,Iraq,2013,IRQ,645,IRQ,368,mena,NA,5,5,88,0,0
+Iraq,Iraq,2014,IRQ,645,IRQ,368,mena,5,5,5,0,0,0
+Iraq,Iraq,2015,IRQ,645,IRQ,368,mena,5,5,5,0,0,0
+Iraq,Iraq,2016,IRQ,645,IRQ,368,mena,5,5,5,0,0,0
+Iraq,Iraq,2017,IRQ,645,IRQ,368,mena,5,5,4,0,0,0
+Iraq,Iraq,2018,IRQ,645,IRQ,368,mena,5,4,4,0,0,0
+Iraq,Iraq,2019,IRQ,645,IRQ,368,mena,5,4,5,0,0,0
+Iraq,Iraq,2020,IRQ,645,IRQ,368,mena,5,4,4,0,0,0
+Iraq,Iraq,2021,IRQ,645,IRQ,368,mena,5,4,4,0,0,0
+Iraq,Iraq,2022,IRQ,645,IRQ,368,mena,4,3,5,0,0,0
+Iraq,Iraq,2023,IRQ,645,IRQ,368,mena,4,3,4,0,0,0
+Ireland,Ireland,2013,IRE,205,IRL,372,eca,NA,NA,1,88,88,0
+Ireland,Ireland,2014,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Ireland,Ireland,2015,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Ireland,Ireland,2016,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Ireland,Ireland,2017,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Ireland,Ireland,2018,IRE,205,IRL,372,eca,NA,NA,1,88,88,0
+Ireland,Ireland,2019,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Ireland,Ireland,2020,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Ireland,Ireland,2021,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Ireland,Ireland,2022,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Ireland,Ireland,2023,IRE,205,IRL,372,eca,1,NA,1,0,88,0
+Israel,Israel and Occupied Territories,2013,ISR,666,ISR,376,mena,NA,4,4,66,0,0
+Israel,Israel and Occupied Territories,2014,ISR,666,ISR,376,mena,4,4,4,0,0,0
+Israel,Israel and Occupied Territories,2015,ISR,666,ISR,376,mena,4,3,4,0,0,0
+Israel,Israel and Occupied Territories,2016,ISR,666,ISR,376,mena,4,3,3,0,0,0
+Israel,Israel and Occupied Territories,2017,ISR,666,ISR,376,mena,4,4,3,0,0,0
+Israel,Israel and Occupied Territories,2018,ISR,666,ISR,376,mena,4,3,3,0,0,0
+Israel,Israel and Occupied Territories,2019,ISR,666,ISR,376,mena,3,4,3,0,0,0
+Israel,Israel and Occupied Territories,2020,ISR,666,ISR,376,mena,4,4,3,0,0,0
+Israel,Israel and Occupied Territories,2021,ISR,666,ISR,376,mena,4,4,4,0,0,0
+Israel,Israel and Occupied Territories,2022,ISR,666,ISR,376,mena,4,4,3,0,0,0
+Israel,Israel and Occupied Territories,2023,ISR,666,ISR,376,mena,NA,NA,NA,99,99,99
+Israel in Occupied Territories,Israel in Occupied Territories,2013,NA,NA,NA,NA,mena,NA,NA,4,66,66,0
+Israel in Occupied Territories,Israel in Occupied Territories,2014,NA,NA,NA,NA,mena,NA,NA,4,66,66,0
+Israel in Occupied Territories,Israel in Occupied Territories,2015,NA,NA,NA,NA,mena,NA,NA,4,66,66,0
+Israel in Occupied Territories,Israel in Occupied Territories,2016,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in Occupied Territories,Israel in Occupied Territories,2017,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in Occupied Territories,Israel in Occupied Territories,2018,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in Occupied Territories,Israel in Occupied Territories,2019,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in Occupied Territories,Israel in Occupied Territories,2020,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in Occupied Territories,Israel in Occupied Territories,2021,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in Occupied Territories,Israel in Occupied Territories,2022,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in Occupied Territories,Israel in Occupied Territories,2023,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in pre-1967 borders,Israel in pre-1967 borders,2013,NA,NA,NA,NA,mena,NA,NA,2,66,66,0
+Israel in pre-1967 borders,Israel in pre-1967 borders,2014,NA,NA,NA,NA,mena,NA,NA,2,66,66,0
+Israel in pre-1967 borders,Israel in pre-1967 borders,2015,NA,NA,NA,NA,mena,NA,NA,2,66,66,0
+Israel in pre-1967 borders,Israel in pre-1967 borders,2016,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in pre-1967 borders,Israel in pre-1967 borders,2017,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in pre-1967 borders,Israel in pre-1967 borders,2018,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in pre-1967 borders,Israel in pre-1967 borders,2019,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in pre-1967 borders,Israel in pre-1967 borders,2020,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in pre-1967 borders,Israel in pre-1967 borders,2021,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in pre-1967 borders,Israel in pre-1967 borders,2022,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Israel in pre-1967 borders,Israel in pre-1967 borders,2023,NA,NA,NA,NA,mena,NA,NA,NA,66,66,66
+Italy,Italy,2013,ITA,325,ITA,380,eca,NA,2,2,88,0,0
+Italy,Italy,2014,ITA,325,ITA,380,eca,2,NA,2,0,88,0
+Italy,Italy,2015,ITA,325,ITA,380,eca,2,NA,1,0,88,0
+Italy,Italy,2016,ITA,325,ITA,380,eca,2,NA,2,0,88,0
+Italy,Italy,2017,ITA,325,ITA,380,eca,2,NA,1,0,88,0
+Italy,Italy,2018,ITA,325,ITA,380,eca,NA,NA,1,88,88,0
+Italy,Italy,2019,ITA,325,ITA,380,eca,2,NA,1,0,88,0
+Italy,Italy,2020,ITA,325,ITA,380,eca,2,1,2,0,0,0
+Italy,Italy,2021,ITA,325,ITA,380,eca,2,1,2,0,0,0
+Italy,Italy,2022,ITA,325,ITA,380,eca,2,1,1,0,0,0
+Italy,Italy,2023,ITA,325,ITA,380,eca,2,1,1,0,0,0
+Jamaica,Jamaica,2013,JAM,51,JAM,388,lac,NA,NA,3,88,88,0
+Jamaica,Jamaica,2014,JAM,51,JAM,388,lac,3,NA,3,0,88,0
+Jamaica,Jamaica,2015,JAM,51,JAM,388,lac,3,NA,3,0,88,0
+Jamaica,Jamaica,2016,JAM,51,JAM,388,lac,3,NA,3,0,88,0
+Jamaica,Jamaica,2017,JAM,51,JAM,388,lac,3,NA,2,0,88,0
+Jamaica,Jamaica,2018,JAM,51,JAM,388,lac,NA,NA,3,88,88,0
+Jamaica,Jamaica,2019,JAM,51,JAM,388,lac,3,NA,3,0,88,0
+Jamaica,Jamaica,2020,JAM,51,JAM,388,lac,NA,NA,3,88,88,0
+Jamaica,Jamaica,2021,JAM,51,JAM,388,lac,NA,NA,3,88,88,0
+Jamaica,Jamaica,2022,JAM,51,JAM,388,lac,NA,NA,3,88,88,0
+Jamaica,Jamaica,2023,JAM,51,JAM,388,lac,NA,NA,3,88,88,0
+Japan,Japan,2013,JPN,740,JPN,392,eap,NA,NA,1,88,88,0
+Japan,Japan,2014,JPN,740,JPN,392,eap,2,NA,1,0,88,0
+Japan,Japan,2015,JPN,740,JPN,392,eap,1,NA,1,0,88,0
+Japan,Japan,2016,JPN,740,JPN,392,eap,1,1,1,0,0,0
+Japan,Japan,2017,JPN,740,JPN,392,eap,1,1,1,0,0,0
+Japan,Japan,2018,JPN,740,JPN,392,eap,NA,1,1,88,0,0
+Japan,Japan,2019,JPN,740,JPN,392,eap,1,1,1,0,0,0
+Japan,Japan,2020,JPN,740,JPN,392,eap,1,1,1,0,0,0
+Japan,Japan,2021,JPN,740,JPN,392,eap,1,1,1,0,0,0
+Japan,Japan,2022,JPN,740,JPN,392,eap,2,1,1,0,0,0
+Japan,Japan,2023,JPN,740,JPN,392,eap,1,1,1,0,0,0
+Jordan,Jordan,2013,JOR,663,JOR,400,mena,NA,3,3,88,0,0
+Jordan,Jordan,2014,JOR,663,JOR,400,mena,3,2,3,0,0,0
+Jordan,Jordan,2015,JOR,663,JOR,400,mena,3,3,3,0,0,0
+Jordan,Jordan,2016,JOR,663,JOR,400,mena,3,2,3,0,0,0
+Jordan,Jordan,2017,JOR,663,JOR,400,mena,2,2,3,0,0,0
+Jordan,Jordan,2018,JOR,663,JOR,400,mena,3,2,3,0,0,0
+Jordan,Jordan,2019,JOR,663,JOR,400,mena,2,2,3,0,0,0
+Jordan,Jordan,2020,JOR,663,JOR,400,mena,2,2,2,0,0,0
+Jordan,Jordan,2021,JOR,663,JOR,400,mena,3,2,2,0,0,0
+Jordan,Jordan,2022,JOR,663,JOR,400,mena,2,2,3,0,0,0
+Jordan,Jordan,2023,JOR,663,JOR,400,mena,2,2,3,0,0,0
+Kazakhstan,Kazakhstan,2013,KZK,705,KAZ,398,eca,NA,3,3,88,0,0
+Kazakhstan,Kazakhstan,2014,KZK,705,KAZ,398,eca,3,3,3,0,0,0
+Kazakhstan,Kazakhstan,2015,KZK,705,KAZ,398,eca,2,3,3,0,0,0
+Kazakhstan,Kazakhstan,2016,KZK,705,KAZ,398,eca,3,3,3,0,0,0
+Kazakhstan,Kazakhstan,2017,KZK,705,KAZ,398,eca,2,3,3,0,0,0
+Kazakhstan,Kazakhstan,2018,KZK,705,KAZ,398,eca,NA,3,3,88,0,0
+Kazakhstan,Kazakhstan,2019,KZK,705,KAZ,398,eca,3,3,3,0,0,0
+Kazakhstan,Kazakhstan,2020,KZK,705,KAZ,398,eca,3,3,3,0,0,0
+Kazakhstan,Kazakhstan,2021,KZK,705,KAZ,398,eca,3,3,3,0,0,0
+Kazakhstan,Kazakhstan,2022,KZK,705,KAZ,398,eca,4,4,4,0,0,0
+Kazakhstan,Kazakhstan,2023,KZK,705,KAZ,398,eca,3,3,3,0,0,0
+Kenya,Kenya,2013,KEN,501,KEN,404,ssa,NA,3,4,88,0,0
+Kenya,Kenya,2014,KEN,501,KEN,404,ssa,4,3,4,0,0,0
+Kenya,Kenya,2015,KEN,501,KEN,404,ssa,3,3,4,0,0,0
+Kenya,Kenya,2016,KEN,501,KEN,404,ssa,3,3,4,0,0,0
+Kenya,Kenya,2017,KEN,501,KEN,404,ssa,3,4,4,0,0,0
+Kenya,Kenya,2018,KEN,501,KEN,404,ssa,NA,4,4,88,0,0
+Kenya,Kenya,2019,KEN,501,KEN,404,ssa,3,4,4,0,0,0
+Kenya,Kenya,2020,KEN,501,KEN,404,ssa,4,3,4,0,0,0
+Kenya,Kenya,2021,KEN,501,KEN,404,ssa,3,3,4,0,0,0
+Kenya,Kenya,2022,KEN,501,KEN,404,ssa,3,3,4,0,0,0
+Kenya,Kenya,2023,KEN,501,KEN,404,ssa,3,4,4,0,0,0
+Kiribati,Kiribati,2013,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2014,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2015,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2016,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2017,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2018,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2019,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2020,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2021,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2022,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+Kiribati,Kiribati,2023,KIR,946,KIR,296,eap,NA,NA,1,88,88,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2013,PRK,731,PRK,408,eap,NA,5,5,88,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2014,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2015,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2016,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2017,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2018,PRK,731,PRK,408,eap,NA,5,5,88,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2019,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2020,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2021,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2022,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Democratic People's Republic of",North Korea (Democratc People's Republic of Korea),2023,PRK,731,PRK,408,eap,5,5,5,0,0,0
+"Korea, Republic of",South Korea (Republic of Korea),2013,ROK,732,KOR,410,eap,NA,NA,1,88,88,0
+"Korea, Republic of",South Korea (Republic of Korea),2014,ROK,732,KOR,410,eap,2,NA,2,0,88,0
+"Korea, Republic of",South Korea (Republic of Korea),2015,ROK,732,KOR,410,eap,1,NA,2,0,88,0
+"Korea, Republic of",South Korea (Republic of Korea),2016,ROK,732,KOR,410,eap,2,NA,2,0,88,0
+"Korea, Republic of",South Korea (Republic of Korea),2017,ROK,732,KOR,410,eap,2,1,2,0,0,0
+"Korea, Republic of",South Korea (Republic of Korea),2018,ROK,732,KOR,410,eap,NA,1,1,88,0,0
+"Korea, Republic of",South Korea (Republic of Korea),2019,ROK,732,KOR,410,eap,1,1,2,0,0,0
+"Korea, Republic of",South Korea (Republic of Korea),2020,ROK,732,KOR,410,eap,1,1,2,0,0,0
+"Korea, Republic of",South Korea (Republic of Korea),2021,ROK,732,KOR,410,eap,1,1,2,0,0,0
+"Korea, Republic of",South Korea (Republic of Korea),2022,ROK,732,KOR,410,eap,1,1,2,0,0,0
+"Korea, Republic of",South Korea (Republic of Korea),2023,ROK,732,KOR,410,eap,1,1,1,0,0,0
+Kosovo,Kosovo,2013,KOS,347,KSV,NA,eca,NA,2,1,77,0,0
+Kosovo,Kosovo,2014,KOS,347,KSV,NA,eca,NA,2,2,77,0,0
+Kosovo,Kosovo,2015,KOS,347,KSV,NA,eca,NA,1,1,77,0,0
+Kosovo,Kosovo,2016,KOS,347,KSV,NA,eca,NA,1,2,77,0,0
+Kosovo,Kosovo,2017,KOS,347,KSV,NA,eca,NA,1,2,88,0,0
+Kosovo,Kosovo,2018,KOS,347,KSV,NA,eca,NA,2,2,88,0,0
+Kosovo,Kosovo,2019,KOS,347,KSV,NA,eca,NA,1,2,88,0,0
+Kosovo,Kosovo,2020,KOS,347,KSV,NA,eca,1,1,2,0,0,0
+Kosovo,Kosovo,2021,KOS,347,KSV,NA,eca,1,1,2,0,0,0
+Kosovo,Kosovo,2022,KOS,347,KSV,NA,eca,1,1,1,0,0,0
+Kosovo,Kosovo,2023,KOS,347,KSV,NA,eca,1,2,1,0,0,0
+Kuwait,Kuwait,2013,KUW,690,KWT,414,mena,NA,2,2,88,0,0
+Kuwait,Kuwait,2014,KUW,690,KWT,414,mena,2,2,2,0,0,0
+Kuwait,Kuwait,2015,KUW,690,KWT,414,mena,3,2,3,0,0,0
+Kuwait,Kuwait,2016,KUW,690,KWT,414,mena,2,1,3,0,0,0
+Kuwait,Kuwait,2017,KUW,690,KWT,414,mena,2,2,2,0,0,0
+Kuwait,Kuwait,2018,KUW,690,KWT,414,mena,2,2,2,0,0,0
+Kuwait,Kuwait,2019,KUW,690,KWT,414,mena,2,2,2,0,0,0
+Kuwait,Kuwait,2020,KUW,690,KWT,414,mena,2,2,2,0,0,0
+Kuwait,Kuwait,2021,KUW,690,KWT,414,mena,2,2,2,0,0,0
+Kuwait,Kuwait,2022,KUW,690,KWT,414,mena,2,2,2,0,0,0
+Kuwait,Kuwait,2023,KUW,690,KWT,414,mena,2,2,3,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2013,KYR,703,KGZ,417,eca,NA,3,3,88,0,0
+Kyrgyzstan,Kyrgyz Republic,2014,KYR,703,KGZ,417,eca,3,3,3,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2015,KYR,703,KGZ,417,eca,3,3,3,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2016,KYR,703,KGZ,417,eca,3,3,3,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2017,KYR,703,KGZ,417,eca,3,3,3,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2018,KYR,703,KGZ,417,eca,NA,3,3,88,0,0
+Kyrgyzstan,Kyrgyz Republic,2019,KYR,703,KGZ,417,eca,2,3,3,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2020,KYR,703,KGZ,417,eca,3,3,3,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2021,KYR,703,KGZ,417,eca,3,3,3,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2022,KYR,703,KGZ,417,eca,3,3,2,0,0,0
+Kyrgyzstan,Kyrgyz Republic,2023,KYR,703,KGZ,417,eca,3,3,2,0,0,0
+Lao People's Democratic Republic,Laos,2013,LAO,812,LAO,418,eap,NA,NA,2,88,88,0
+Lao People's Democratic Republic,Laos,2014,LAO,812,LAO,418,eap,2,NA,2,0,88,0
+Lao People's Democratic Republic,Laos,2015,LAO,812,LAO,418,eap,2,NA,2,0,88,0
+Lao People's Democratic Republic,Laos,2016,LAO,812,LAO,418,eap,2,NA,2,0,88,0
+Lao People's Democratic Republic,Laos,2017,LAO,812,LAO,418,eap,2,NA,2,0,88,0
+Lao People's Democratic Republic,Laos,2018,LAO,812,LAO,418,eap,NA,NA,2,88,88,0
+Lao People's Democratic Republic,Laos,2019,LAO,812,LAO,418,eap,2,NA,2,0,88,0
+Lao People's Democratic Republic,Laos,2020,LAO,812,LAO,418,eap,NA,NA,2,88,88,0
+Lao People's Democratic Republic,Laos,2021,LAO,812,LAO,418,eap,NA,NA,2,88,88,0
+Lao People's Democratic Republic,Laos,2022,LAO,812,LAO,418,eap,2,NA,2,0,88,0
+Lao People's Democratic Republic,Laos,2023,LAO,812,LAO,418,eap,2,NA,3,0,88,0
+Latvia,Latvia,2013,LAT,367,LVA,428,eca,NA,NA,1,88,88,0
+Latvia,Latvia,2014,LAT,367,LVA,428,eca,2,NA,1,0,88,0
+Latvia,Latvia,2015,LAT,367,LVA,428,eca,1,NA,2,0,88,0
+Latvia,Latvia,2016,LAT,367,LVA,428,eca,1,NA,1,0,88,0
+Latvia,Latvia,2017,LAT,367,LVA,428,eca,1,NA,1,0,88,0
+Latvia,Latvia,2018,LAT,367,LVA,428,eca,NA,NA,1,88,88,0
+Latvia,Latvia,2019,LAT,367,LVA,428,eca,1,NA,1,0,88,0
+Latvia,Latvia,2020,LAT,367,LVA,428,eca,1,NA,1,0,88,0
+Latvia,Latvia,2021,LAT,367,LVA,428,eca,1,NA,1,0,88,0
+Latvia,Latvia,2022,LAT,367,LVA,428,eca,1,NA,1,0,88,0
+Latvia,Latvia,2023,LAT,367,LVA,428,eca,1,NA,1,0,88,0
+Lebanon,Lebanon,2013,LEB,660,LBN,422,mena,NA,3,3,88,0,0
+Lebanon,Lebanon,2014,LEB,660,LBN,422,mena,3,3,3,0,0,0
+Lebanon,Lebanon,2015,LEB,660,LBN,422,mena,2,3,3,0,0,0
+Lebanon,Lebanon,2016,LEB,660,LBN,422,mena,2,3,3,0,0,0
+Lebanon,Lebanon,2017,LEB,660,LBN,422,mena,3,3,3,0,0,0
+Lebanon,Lebanon,2018,LEB,660,LBN,422,mena,2,3,3,0,0,0
+Lebanon,Lebanon,2019,LEB,660,LBN,422,mena,3,3,3,0,0,0
+Lebanon,Lebanon,2020,LEB,660,LBN,422,mena,3,3,3,0,0,0
+Lebanon,Lebanon,2021,LEB,660,LBN,422,mena,3,3,3,0,0,0
+Lebanon,Lebanon,2022,LEB,660,LBN,422,mena,2,3,3,0,0,0
+Lebanon,Lebanon,2023,LEB,660,LBN,422,mena,2,3,3,0,0,0
+Lesotho,Lesotho,2013,LES,570,LSO,426,ssa,NA,NA,2,88,88,0
+Lesotho,Lesotho,2014,LES,570,LSO,426,ssa,NA,NA,2,88,88,0
+Lesotho,Lesotho,2015,LES,570,LSO,426,ssa,3,NA,3,0,88,0
+Lesotho,Lesotho,2016,LES,570,LSO,426,ssa,3,NA,3,0,88,0
+Lesotho,Lesotho,2017,LES,570,LSO,426,ssa,3,NA,2,0,88,0
+Lesotho,Lesotho,2018,LES,570,LSO,426,ssa,NA,NA,2,88,88,0
+Lesotho,Lesotho,2019,LES,570,LSO,426,ssa,2,NA,3,0,88,0
+Lesotho,Lesotho,2020,LES,570,LSO,426,ssa,1,NA,3,0,88,0
+Lesotho,Lesotho,2021,LES,570,LSO,426,ssa,1,NA,3,0,88,0
+Lesotho,Lesotho,2022,LES,570,LSO,426,ssa,3,NA,3,0,88,0
+Lesotho,Lesotho,2023,LES,570,LSO,426,ssa,2,NA,2,0,88,0
+Liberia,Liberia,2013,LBR,450,LBR,430,ssa,NA,2,2,88,0,0
+Liberia,Liberia,2014,LBR,450,LBR,430,ssa,NA,NA,2,88,88,0
+Liberia,Liberia,2015,LBR,450,LBR,430,ssa,NA,NA,3,88,88,0
+Liberia,Liberia,2016,LBR,450,LBR,430,ssa,NA,NA,2,88,88,0
+Liberia,Liberia,2017,LBR,450,LBR,430,ssa,1,NA,2,0,88,0
+Liberia,Liberia,2018,LBR,450,LBR,430,ssa,NA,NA,2,88,88,0
+Liberia,Liberia,2019,LBR,450,LBR,430,ssa,NA,NA,3,88,88,0
+Liberia,Liberia,2020,LBR,450,LBR,430,ssa,NA,NA,3,88,88,0
+Liberia,Liberia,2021,LBR,450,LBR,430,ssa,NA,NA,3,88,88,0
+Liberia,Liberia,2022,LBR,450,LBR,430,ssa,NA,NA,3,88,88,0
+Liberia,Liberia,2023,LBR,450,LBR,430,ssa,NA,NA,3,88,88,0
+Libya,Libya,2013,LIB,620,LBY,434,mena,NA,4,4,88,0,0
+Libya,Libya,2014,LIB,620,LBY,434,mena,5,4,4,0,0,0
+Libya,Libya,2015,LIB,620,LBY,434,mena,5,3,5,0,0,0
+Libya,Libya,2016,LIB,620,LBY,434,mena,5,5,4,0,0,0
+Libya,Libya,2017,LIB,620,LBY,434,mena,5,5,5,0,0,0
+Libya,Libya,2018,LIB,620,LBY,434,mena,5,5,5,0,0,0
+Libya,Libya,2019,LIB,620,LBY,434,mena,5,5,5,0,0,0
+Libya,Libya,2020,LIB,620,LBY,434,mena,5,5,5,0,0,0
+Libya,Libya,2021,LIB,620,LBY,434,mena,5,5,4,0,0,0
+Libya,Libya,2022,LIB,620,LBY,434,mena,4,5,5,0,0,0
+Libya,Libya,2023,LIB,620,LBY,434,mena,5,5,5,0,0,0
+Liechtenstein,Liechtenstein,2013,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2014,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2015,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2016,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2017,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2018,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2019,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2020,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2021,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2022,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Liechtenstein,Liechtenstein,2023,LIE,223,LIE,438,eca,NA,NA,1,88,88,0
+Lithuania,Lithuania,2013,LIT,368,LTU,440,eca,NA,NA,1,88,88,0
+Lithuania,Lithuania,2014,LIT,368,LTU,440,eca,1,NA,2,0,88,0
+Lithuania,Lithuania,2015,LIT,368,LTU,440,eca,1,NA,1,0,88,0
+Lithuania,Lithuania,2016,LIT,368,LTU,440,eca,1,NA,1,0,88,0
+Lithuania,Lithuania,2017,LIT,368,LTU,440,eca,1,NA,1,0,88,0
+Lithuania,Lithuania,2018,LIT,368,LTU,440,eca,NA,NA,1,88,88,0
+Lithuania,Lithuania,2019,LIT,368,LTU,440,eca,2,NA,1,0,88,0
+Lithuania,Lithuania,2020,LIT,368,LTU,440,eca,1,NA,1,0,88,0
+Lithuania,Lithuania,2021,LIT,368,LTU,440,eca,1,NA,1,0,88,0
+Lithuania,Lithuania,2022,LIT,368,LTU,440,eca,1,NA,1,0,88,0
+Lithuania,Lithuania,2023,LIT,368,LTU,440,eca,1,NA,1,0,88,0
+Luxembourg,Luxembourg,2013,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2014,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2015,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2016,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2017,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2018,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2019,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2020,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2021,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2022,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Luxembourg,Luxembourg,2023,LUX,212,LUX,442,eca,NA,NA,1,88,88,0
+Madagascar,Madagascar,2013,MAG,580,MDG,450,ssa,NA,NA,3,88,88,0
+Madagascar,Madagascar,2014,MAG,580,MDG,450,ssa,NA,NA,3,88,88,0
+Madagascar,Madagascar,2015,MAG,580,MDG,450,ssa,4,NA,3,0,88,0
+Madagascar,Madagascar,2016,MAG,580,MDG,450,ssa,3,NA,3,0,88,0
+Madagascar,Madagascar,2017,MAG,580,MDG,450,ssa,2,NA,3,0,88,0
+Madagascar,Madagascar,2018,MAG,580,MDG,450,ssa,NA,NA,3,88,88,0
+Madagascar,Madagascar,2019,MAG,580,MDG,450,ssa,3,NA,4,0,88,0
+Madagascar,Madagascar,2020,MAG,580,MDG,450,ssa,4,NA,4,0,88,0
+Madagascar,Madagascar,2021,MAG,580,MDG,450,ssa,3,NA,4,0,88,0
+Madagascar,Madagascar,2022,MAG,580,MDG,450,ssa,2,NA,4,0,88,0
+Madagascar,Madagascar,2023,MAG,580,MDG,450,ssa,2,NA,4,0,88,0
+Malawi,Malawi,2013,MAW,553,MWI,454,ssa,NA,NA,2,88,88,0
+Malawi,Malawi,2014,MAW,553,MWI,454,ssa,2,NA,3,0,88,0
+Malawi,Malawi,2015,MAW,553,MWI,454,ssa,2,NA,2,0,88,0
+Malawi,Malawi,2016,MAW,553,MWI,454,ssa,2,NA,3,0,88,0
+Malawi,Malawi,2017,MAW,553,MWI,454,ssa,1,NA,3,0,88,0
+Malawi,Malawi,2018,MAW,553,MWI,454,ssa,NA,NA,3,88,88,0
+Malawi,Malawi,2019,MAW,553,MWI,454,ssa,3,NA,3,0,88,0
+Malawi,Malawi,2020,MAW,553,MWI,454,ssa,2,NA,2,0,88,0
+Malawi,Malawi,2021,MAW,553,MWI,454,ssa,1,NA,3,0,88,0
+Malawi,Malawi,2022,MAW,553,MWI,454,ssa,2,NA,2,0,88,0
+Malawi,Malawi,2023,MAW,553,MWI,454,ssa,2,2,2,0,0,0
+Malaysia,Malaysia,2013,MAL,820,MYS,458,eap,NA,3,2,88,0,0
+Malaysia,Malaysia,2014,MAL,820,MYS,458,eap,3,3,3,0,0,0
+Malaysia,Malaysia,2015,MAL,820,MYS,458,eap,3,3,3,0,0,0
+Malaysia,Malaysia,2016,MAL,820,MYS,458,eap,3,2,3,0,0,0
+Malaysia,Malaysia,2017,MAL,820,MYS,458,eap,3,3,3,0,0,0
+Malaysia,Malaysia,2018,MAL,820,MYS,458,eap,NA,3,3,88,0,0
+Malaysia,Malaysia,2019,MAL,820,MYS,458,eap,2,3,3,0,0,0
+Malaysia,Malaysia,2020,MAL,820,MYS,458,eap,2,3,3,0,0,0
+Malaysia,Malaysia,2021,MAL,820,MYS,458,eap,3,3,3,0,0,0
+Malaysia,Malaysia,2022,MAL,820,MYS,458,eap,3,3,2,0,0,0
+Malaysia,Malaysia,2023,MAL,820,MYS,458,eap,3,3,2,0,0,0
+Maldives,Maldives,2013,MAD,781,MDV,462,sa,NA,NA,1,88,88,0
+Maldives,Maldives,2014,MAD,781,MDV,462,sa,2,NA,2,0,88,0
+Maldives,Maldives,2015,MAD,781,MDV,462,sa,3,NA,2,0,88,0
+Maldives,Maldives,2016,MAD,781,MDV,462,sa,3,NA,2,0,88,0
+Maldives,Maldives,2017,MAD,781,MDV,462,sa,3,NA,2,0,88,0
+Maldives,Maldives,2018,MAD,781,MDV,462,sa,NA,3,2,88,0,0
+Maldives,Maldives,2019,MAD,781,MDV,462,sa,2,3,2,0,0,0
+Maldives,Maldives,2020,MAD,781,MDV,462,sa,NA,3,2,88,0,0
+Maldives,Maldives,2021,MAD,781,MDV,462,sa,2,2,2,0,0,0
+Maldives,Maldives,2022,MAD,781,MDV,462,sa,2,2,2,0,0,0
+Maldives,Maldives,2023,MAD,781,MDV,462,sa,2,3,2,0,0,0
+Mali,Mali,2013,MLI,432,MLI,466,ssa,NA,4,4,88,0,0
+Mali,Mali,2014,MLI,432,MLI,466,ssa,3,4,4,0,0,0
+Mali,Mali,2015,MLI,432,MLI,466,ssa,3,4,4,0,0,0
+Mali,Mali,2016,MLI,432,MLI,466,ssa,3,4,4,0,0,0
+Mali,Mali,2017,MLI,432,MLI,466,ssa,4,3,4,0,0,0
+Mali,Mali,2018,MLI,432,MLI,466,ssa,NA,4,4,88,0,0
+Mali,Mali,2019,MLI,432,MLI,466,ssa,3,5,5,0,0,0
+Mali,Mali,2020,MLI,432,MLI,466,ssa,4,5,4,0,0,0
+Mali,Mali,2021,MLI,432,MLI,466,ssa,4,4,5,0,0,0
+Mali,Mali,2022,MLI,432,MLI,466,ssa,5,5,5,0,0,0
+Mali,Mali,2023,MLI,432,MLI,466,ssa,5,5,5,0,0,0
+Malta,Malta,2013,MLT,338,MLT,470,eca,NA,NA,1,88,88,0
+Malta,Malta,2014,MLT,338,MLT,470,eca,1,NA,1,0,88,0
+Malta,Malta,2015,MLT,338,MLT,470,eca,1,NA,1,0,88,0
+Malta,Malta,2016,MLT,338,MLT,470,eca,1,NA,1,0,88,0
+Malta,Malta,2017,MLT,338,MLT,470,eca,1,NA,1,0,88,0
+Malta,Malta,2018,MLT,338,MLT,470,eca,NA,NA,1,88,88,0
+Malta,Malta,2019,MLT,338,MLT,470,eca,2,NA,1,0,88,0
+Malta,Malta,2020,MLT,338,MLT,470,eca,1,NA,1,0,88,0
+Malta,Malta,2021,MLT,338,MLT,470,eca,2,NA,1,0,88,0
+Malta,Malta,2022,MLT,338,MLT,470,eca,2,NA,1,0,88,0
+Malta,Malta,2023,MLT,338,MLT,470,eca,1,NA,1,0,88,0
+Marshall Islands,Marshall Islands,2013,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2014,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2015,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2016,MSI,983,MHL,584,eap,NA,NA,2,88,88,0
+Marshall Islands,Marshall Islands,2017,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2018,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2019,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2020,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2021,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2022,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Marshall Islands,Marshall Islands,2023,MSI,983,MHL,584,eap,NA,NA,1,88,88,0
+Mauritania,Mauritania,2013,MAA,435,MRT,478,ssa,NA,NA,2,88,88,0
+Mauritania,Mauritania,2014,MAA,435,MRT,478,ssa,3,NA,2,0,88,0
+Mauritania,Mauritania,2015,MAA,435,MRT,478,ssa,3,NA,2,0,88,0
+Mauritania,Mauritania,2016,MAA,435,MRT,478,ssa,3,NA,3,0,88,0
+Mauritania,Mauritania,2017,MAA,435,MRT,478,ssa,3,NA,3,0,88,0
+Mauritania,Mauritania,2018,MAA,435,MRT,478,ssa,NA,2,3,88,0,0
+Mauritania,Mauritania,2019,MAA,435,MRT,478,ssa,2,3,3,0,0,0
+Mauritania,Mauritania,2020,MAA,435,MRT,478,ssa,NA,3,2,88,0,0
+Mauritania,Mauritania,2021,MAA,435,MRT,478,ssa,NA,NA,2,88,88,0
+Mauritania,Mauritania,2022,MAA,435,MRT,478,ssa,NA,NA,2,88,88,0
+Mauritania,Mauritania,2023,MAA,435,MRT,478,ssa,3,NA,3,0,88,0
+Mauritius,Mauritius,2013,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2014,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2015,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2016,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2017,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2018,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2019,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2020,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2021,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2022,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mauritius,Mauritius,2023,MAS,590,MUS,480,ssa,NA,NA,2,88,88,0
+Mexico,Mexico,2013,MEX,70,MEX,484,lac,NA,3,4,88,0,0
+Mexico,Mexico,2014,MEX,70,MEX,484,lac,4,4,4,0,0,0
+Mexico,Mexico,2015,MEX,70,MEX,484,lac,5,3,4,0,0,0
+Mexico,Mexico,2016,MEX,70,MEX,484,lac,4,4,4,0,0,0
+Mexico,Mexico,2017,MEX,70,MEX,484,lac,4,4,4,0,0,0
+Mexico,Mexico,2018,MEX,70,MEX,484,lac,NA,4,4,88,0,0
+Mexico,Mexico,2019,MEX,70,MEX,484,lac,4,4,4,0,0,0
+Mexico,Mexico,2020,MEX,70,MEX,484,lac,4,4,4,0,0,0
+Mexico,Mexico,2021,MEX,70,MEX,484,lac,4,4,4,0,0,0
+Mexico,Mexico,2022,MEX,70,MEX,484,lac,4,4,4,0,0,0
+Mexico,Mexico,2023,MEX,70,MEX,484,lac,4,4,4,0,0,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2013,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2014,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2015,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2016,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2017,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2018,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2019,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2020,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2021,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2022,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Micronesia, Federated States of","Micronesia, Federated States of",2023,FSM,987,FSM,583,eap,NA,NA,1,88,88,0
+"Moldova, Republic of",Moldova,2013,MLD,359,MDA,498,eca,NA,NA,2,88,88,0
+"Moldova, Republic of",Moldova,2014,MLD,359,MDA,498,eca,2,NA,3,0,88,0
+"Moldova, Republic of",Moldova,2015,MLD,359,MDA,498,eca,2,NA,2,0,88,0
+"Moldova, Republic of",Moldova,2016,MLD,359,MDA,498,eca,2,NA,2,0,88,0
+"Moldova, Republic of",Moldova,2017,MLD,359,MDA,498,eca,2,NA,3,0,88,0
+"Moldova, Republic of",Moldova,2018,MLD,359,MDA,498,eca,NA,NA,3,88,88,0
+"Moldova, Republic of",Moldova,2019,MLD,359,MDA,498,eca,3,NA,3,0,88,0
+"Moldova, Republic of",Moldova,2020,MLD,359,MDA,498,eca,2,NA,3,0,88,0
+"Moldova, Republic of",Moldova,2021,MLD,359,MDA,498,eca,2,NA,3,0,88,0
+"Moldova, Republic of",Moldova,2022,MLD,359,MDA,498,eca,2,NA,3,0,88,0
+"Moldova, Republic of",Moldova,2023,MLD,359,MDA,498,eca,2,NA,2,0,88,0
+Monaco,Monaco,2013,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2014,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2015,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2016,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2017,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2018,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2019,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2020,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2021,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2022,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Monaco,Monaco,2023,MNC,221,MCO,492,eca,NA,NA,1,88,88,0
+Mongolia,Mongolia,2013,MON,712,MNG,496,eap,NA,NA,2,88,88,0
+Mongolia,Mongolia,2014,MON,712,MNG,496,eap,3,NA,2,0,88,0
+Mongolia,Mongolia,2015,MON,712,MNG,496,eap,3,NA,2,0,88,0
+Mongolia,Mongolia,2016,MON,712,MNG,496,eap,3,NA,2,0,88,0
+Mongolia,Mongolia,2017,MON,712,MNG,496,eap,3,NA,2,0,88,0
+Mongolia,Mongolia,2018,MON,712,MNG,496,eap,NA,NA,2,88,88,0
+Mongolia,Mongolia,2019,MON,712,MNG,496,eap,2,NA,2,0,88,0
+Mongolia,Mongolia,2020,MON,712,MNG,496,eap,3,NA,2,0,88,0
+Mongolia,Mongolia,2021,MON,712,MNG,496,eap,2,NA,2,0,88,0
+Mongolia,Mongolia,2022,MON,712,MNG,496,eap,2,NA,2,0,88,0
+Mongolia,Mongolia,2023,MON,712,MNG,496,eap,2,NA,2,0,88,0
+Montenegro,Montenegro,2013,MNG,341,MNE,499,eca,NA,NA,2,88,88,0
+Montenegro,Montenegro,2014,MNG,341,MNE,499,eca,2,NA,2,0,88,0
+Montenegro,Montenegro,2015,MNG,341,MNE,499,eca,3,NA,1,0,88,0
+Montenegro,Montenegro,2016,MNG,341,MNE,499,eca,1,NA,1,0,88,0
+Montenegro,Montenegro,2017,MNG,341,MNE,499,eca,1,NA,2,0,88,0
+Montenegro,Montenegro,2018,MNG,341,MNE,499,eca,NA,NA,2,88,88,0
+Montenegro,Montenegro,2019,MNG,341,MNE,499,eca,1,NA,2,0,88,0
+Montenegro,Montenegro,2020,MNG,341,MNE,499,eca,2,NA,2,0,88,0
+Montenegro,Montenegro,2021,MNG,341,MNE,499,eca,1,NA,2,0,88,0
+Montenegro,Montenegro,2022,MNG,341,MNE,499,eca,2,NA,2,0,88,0
+Montenegro,Montenegro,2023,MNG,341,MNE,499,eca,1,NA,2,0,88,0
+Morocco,Morocco,2013,MOR,600,MAR,504,mena,NA,2,3,88,0,0
+Morocco,Morocco,2014,MOR,600,MAR,504,mena,3,2,3,0,0,0
+Morocco,Morocco,2015,MOR,600,MAR,504,mena,3,3,2,0,0,0
+Morocco,Morocco,2016,MOR,600,MAR,504,mena,3,3,2,0,0,0
+Morocco,Morocco,2017,MOR,600,MAR,504,mena,3,2,2,0,0,0
+Morocco,Morocco,2018,MOR,600,MAR,504,mena,3,2,2,0,0,0
+Morocco,Morocco,2019,MOR,600,MAR,504,mena,2,2,2,0,0,0
+Morocco,Morocco,2020,MOR,600,MAR,504,mena,2,3,2,0,0,0
+Morocco,Morocco,2021,MOR,600,MAR,504,mena,2,3,2,0,0,0
+Morocco,Morocco,2022,MOR,600,MAR,504,mena,3,3,2,0,0,0
+Morocco,Morocco,2023,MOR,600,MAR,504,mena,3,3,2,0,0,0
+Mozambique,Mozambique,2013,MZM,541,MOZ,508,ssa,NA,NA,3,88,88,0
+Mozambique,Mozambique,2014,MZM,541,MOZ,508,ssa,3,NA,3,0,88,0
+Mozambique,Mozambique,2015,MZM,541,MOZ,508,ssa,2,NA,3,0,88,0
+Mozambique,Mozambique,2016,MZM,541,MOZ,508,ssa,3,3,3,0,0,0
+Mozambique,Mozambique,2017,MZM,541,MOZ,508,ssa,3,2,3,0,0,0
+Mozambique,Mozambique,2018,MZM,541,MOZ,508,ssa,NA,3,3,88,0,0
+Mozambique,Mozambique,2019,MZM,541,MOZ,508,ssa,2,3,3,0,0,0
+Mozambique,Mozambique,2020,MZM,541,MOZ,508,ssa,4,4,4,0,0,0
+Mozambique,Mozambique,2021,MZM,541,MOZ,508,ssa,4,4,4,0,0,0
+Mozambique,Mozambique,2022,MZM,541,MOZ,508,ssa,4,4,4,0,0,0
+Mozambique,Mozambique,2023,MZM,541,MOZ,508,ssa,4,4,4,0,0,0
+Myanmar,Myanmar,2013,MYA,775,MMR,104,eap,NA,4,4,88,0,0
+Myanmar,Myanmar,2014,MYA,775,MMR,104,eap,4,4,4,0,0,0
+Myanmar,Myanmar,2015,MYA,775,MMR,104,eap,4,4,4,0,0,0
+Myanmar,Myanmar,2016,MYA,775,MMR,104,eap,5,5,5,0,0,0
+Myanmar,Myanmar,2017,MYA,775,MMR,104,eap,5,5,5,0,0,0
+Myanmar,Myanmar,2018,MYA,775,MMR,104,eap,NA,4,5,88,0,0
+Myanmar,Myanmar,2019,MYA,775,MMR,104,eap,5,5,5,0,0,0
+Myanmar,Myanmar,2020,MYA,775,MMR,104,eap,5,5,5,0,0,0
+Myanmar,Myanmar,2021,MYA,775,MMR,104,eap,5,5,5,0,0,0
+Myanmar,Myanmar,2022,MYA,775,MMR,104,eap,5,5,5,0,0,0
+Myanmar,Myanmar,2023,MYA,775,MMR,104,eap,5,5,5,0,0,0
+Namibia,Namibia,2013,NAM,565,NAM,516,ssa,NA,NA,2,88,88,0
+Namibia,Namibia,2014,NAM,565,NAM,516,ssa,2,NA,2,0,88,0
+Namibia,Namibia,2015,NAM,565,NAM,516,ssa,2,NA,1,0,88,0
+Namibia,Namibia,2016,NAM,565,NAM,516,ssa,2,NA,1,0,88,0
+Namibia,Namibia,2017,NAM,565,NAM,516,ssa,2,NA,1,0,88,0
+Namibia,Namibia,2018,NAM,565,NAM,516,ssa,NA,NA,1,88,88,0
+Namibia,Namibia,2019,NAM,565,NAM,516,ssa,NA,NA,1,88,88,0
+Namibia,Namibia,2020,NAM,565,NAM,516,ssa,NA,NA,2,88,88,0
+Namibia,Namibia,2021,NAM,565,NAM,516,ssa,2,NA,2,0,88,0
+Namibia,Namibia,2022,NAM,565,NAM,516,ssa,2,NA,2,0,88,0
+Namibia,Namibia,2023,NAM,565,NAM,516,ssa,2,NA,1,0,88,0
+Nauru,Nauru,2013,NAU,970,NRU,520,eap,NA,NA,1,88,88,0
+Nauru,Nauru,2014,NAU,970,NRU,520,eap,2,NA,1,0,88,0
+Nauru,Nauru,2015,NAU,970,NRU,520,eap,2,NA,1,0,88,0
+Nauru,Nauru,2016,NAU,970,NRU,520,eap,2,NA,1,0,88,0
+Nauru,Nauru,2017,NAU,970,NRU,520,eap,2,NA,1,0,88,0
+Nauru,Nauru,2018,NAU,970,NRU,520,eap,NA,NA,1,88,88,0
+Nauru,Nauru,2019,NAU,970,NRU,520,eap,NA,NA,1,88,88,0
+Nauru,Nauru,2020,NAU,970,NRU,520,eap,NA,NA,1,88,88,0
+Nauru,Nauru,2021,NAU,970,NRU,520,eap,NA,NA,1,88,88,0
+Nauru,Nauru,2022,NAU,970,NRU,520,eap,NA,NA,1,88,88,0
+Nauru,Nauru,2023,NAU,970,NRU,520,eap,NA,NA,1,88,88,0
+Nepal,Nepal,2013,NEP,790,NPL,524,sa,NA,2,2,88,0,0
+Nepal,Nepal,2014,NEP,790,NPL,524,sa,3,2,2,0,0,0
+Nepal,Nepal,2015,NEP,790,NPL,524,sa,3,2,3,0,0,0
+Nepal,Nepal,2016,NEP,790,NPL,524,sa,3,1,3,0,0,0
+Nepal,Nepal,2017,NEP,790,NPL,524,sa,3,1,3,0,0,0
+Nepal,Nepal,2018,NEP,790,NPL,524,sa,NA,1,3,88,0,0
+Nepal,Nepal,2019,NEP,790,NPL,524,sa,3,2,3,0,0,0
+Nepal,Nepal,2020,NEP,790,NPL,524,sa,3,2,3,0,0,0
+Nepal,Nepal,2021,NEP,790,NPL,524,sa,3,3,3,0,0,0
+Nepal,Nepal,2022,NEP,790,NPL,524,sa,3,3,3,0,0,0
+Nepal,Nepal,2023,NEP,790,NPL,524,sa,3,2,3,0,0,0
+Netherlands,Netherlands,2013,NTH,210,NLD,528,eca,NA,1,1,88,0,0
+Netherlands,Netherlands,2014,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+Netherlands,Netherlands,2015,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+Netherlands,Netherlands,2016,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+Netherlands,Netherlands,2017,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+Netherlands,Netherlands,2018,NTH,210,NLD,528,eca,NA,NA,1,88,88,0
+Netherlands,Netherlands,2019,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+Netherlands,Netherlands,2020,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+Netherlands,Netherlands,2021,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+Netherlands,Netherlands,2022,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+Netherlands,Netherlands,2023,NTH,210,NLD,528,eca,1,NA,1,0,88,0
+New Zealand,New Zealand,2013,NEW,920,NZL,554,eap,NA,NA,1,88,88,0
+New Zealand,New Zealand,2014,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+New Zealand,New Zealand,2015,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+New Zealand,New Zealand,2016,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+New Zealand,New Zealand,2017,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+New Zealand,New Zealand,2018,NEW,920,NZL,554,eap,NA,NA,1,88,88,0
+New Zealand,New Zealand,2019,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+New Zealand,New Zealand,2020,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+New Zealand,New Zealand,2021,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+New Zealand,New Zealand,2022,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+New Zealand,New Zealand,2023,NEW,920,NZL,554,eap,1,NA,1,0,88,0
+Nicaragua,Nicaragua,2013,NIC,93,NIC,558,lac,NA,NA,3,88,88,0
+Nicaragua,Nicaragua,2014,NIC,93,NIC,558,lac,2,NA,3,0,88,0
+Nicaragua,Nicaragua,2015,NIC,93,NIC,558,lac,3,NA,3,0,88,0
+Nicaragua,Nicaragua,2016,NIC,93,NIC,558,lac,2,NA,3,0,88,0
+Nicaragua,Nicaragua,2017,NIC,93,NIC,558,lac,2,NA,3,0,88,0
+Nicaragua,Nicaragua,2018,NIC,93,NIC,558,lac,NA,4,4,88,0,0
+Nicaragua,Nicaragua,2019,NIC,93,NIC,558,lac,4,3,4,0,0,0
+Nicaragua,Nicaragua,2020,NIC,93,NIC,558,lac,3,3,4,0,0,0
+Nicaragua,Nicaragua,2021,NIC,93,NIC,558,lac,3,3,4,0,0,0
+Nicaragua,Nicaragua,2022,NIC,93,NIC,558,lac,3,3,4,0,0,0
+Nicaragua,Nicaragua,2023,NIC,93,NIC,558,lac,3,3,4,0,0,0
+Niger,Niger,2013,NIR,436,NER,562,ssa,NA,NA,3,88,88,0
+Niger,Niger,2014,NIR,436,NER,562,ssa,2,NA,3,0,88,0
+Niger,Niger,2015,NIR,436,NER,562,ssa,4,NA,3,0,88,0
+Niger,Niger,2016,NIR,436,NER,562,ssa,4,NA,3,0,88,0
+Niger,Niger,2017,NIR,436,NER,562,ssa,3,NA,3,0,88,0
+Niger,Niger,2018,NIR,436,NER,562,ssa,NA,NA,4,88,88,0
+Niger,Niger,2019,NIR,436,NER,562,ssa,NA,NA,4,88,88,0
+Niger,Niger,2020,NIR,436,NER,562,ssa,3,NA,4,0,88,0
+Niger,Niger,2021,NIR,436,NER,562,ssa,3,NA,3,0,88,0
+Niger,Niger,2022,NIR,436,NER,562,ssa,3,NA,3,0,88,0
+Niger,Niger,2023,NIR,436,NER,562,ssa,3,4,4,0,0,0
+Nigeria,Nigeria,2013,NIG,475,NGA,566,ssa,NA,4,4,88,0,0
+Nigeria,Nigeria,2014,NIG,475,NGA,566,ssa,4,4,5,0,0,0
+Nigeria,Nigeria,2015,NIG,475,NGA,566,ssa,5,3,4,0,0,0
+Nigeria,Nigeria,2016,NIG,475,NGA,566,ssa,5,3,4,0,0,0
+Nigeria,Nigeria,2017,NIG,475,NGA,566,ssa,5,4,5,0,0,0
+Nigeria,Nigeria,2018,NIG,475,NGA,566,ssa,NA,3,4,88,0,0
+Nigeria,Nigeria,2019,NIG,475,NGA,566,ssa,3,3,4,0,0,0
+Nigeria,Nigeria,2020,NIG,475,NGA,566,ssa,4,3,4,0,0,0
+Nigeria,Nigeria,2021,NIG,475,NGA,566,ssa,4,3,4,0,0,0
+Nigeria,Nigeria,2022,NIG,475,NGA,566,ssa,4,3,4,0,0,0
+Nigeria,Nigeria,2023,NIG,475,NGA,566,ssa,4,3,4,0,0,0
+North Macedonia,Macedonia,2013,MAC,343,MKD,807,eca,NA,NA,2,88,88,0
+North Macedonia,Macedonia,2014,MAC,343,MKD,807,eca,2,NA,2,0,88,0
+North Macedonia,Macedonia,2015,MAC,343,MKD,807,eca,3,NA,2,0,88,0
+North Macedonia,Macedonia,2016,MAC,343,MKD,807,eca,2,NA,2,0,88,0
+North Macedonia,Macedonia,2017,MAC,343,MKD,807,eca,2,NA,2,0,88,0
+North Macedonia,Macedonia,2018,MAC,343,MKD,807,eca,NA,NA,2,88,88,0
+North Macedonia,Macedonia,2019,MAC,343,MKD,807,eca,2,NA,1,0,88,0
+North Macedonia,Macedonia,2020,MAC,343,MKD,807,eca,1,NA,2,0,88,0
+North Macedonia,Macedonia,2021,MAC,343,MKD,807,eca,2,NA,2,0,88,0
+North Macedonia,Macedonia,2022,MAC,343,MKD,807,eca,1,NA,2,0,88,0
+North Macedonia,Macedonia,2023,MAC,343,MKD,807,eca,2,NA,2,0,88,0
+Norway,Norway,2013,NOR,385,NOR,578,eca,NA,NA,1,88,88,0
+Norway,Norway,2014,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Norway,Norway,2015,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Norway,Norway,2016,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Norway,Norway,2017,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Norway,Norway,2018,NOR,385,NOR,578,eca,NA,NA,1,88,88,0
+Norway,Norway,2019,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Norway,Norway,2020,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Norway,Norway,2021,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Norway,Norway,2022,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Norway,Norway,2023,NOR,385,NOR,578,eca,1,NA,1,0,88,0
+Oman,Oman,2013,OMA,698,OMN,512,mena,NA,3,3,88,0,0
+Oman,Oman,2014,OMA,698,OMN,512,mena,2,2,2,0,0,0
+Oman,Oman,2015,OMA,698,OMN,512,mena,2,2,1,0,0,0
+Oman,Oman,2016,OMA,698,OMN,512,mena,2,3,2,0,0,0
+Oman,Oman,2017,OMA,698,OMN,512,mena,2,2,2,0,0,0
+Oman,Oman,2018,OMA,698,OMN,512,mena,2,2,2,0,0,0
+Oman,Oman,2019,OMA,698,OMN,512,mena,2,NA,2,0,88,0
+Oman,Oman,2020,OMA,698,OMN,512,mena,2,2,1,0,0,0
+Oman,Oman,2021,OMA,698,OMN,512,mena,2,NA,2,0,88,0
+Oman,Oman,2022,OMA,698,OMN,512,mena,2,NA,2,0,88,0
+Oman,Oman,2023,OMA,698,OMN,512,mena,2,NA,2,0,88,0
+Pakistan,Pakistan,2013,PAK,770,PAK,586,sa,NA,5,5,88,0,0
+Pakistan,Pakistan,2014,PAK,770,PAK,586,sa,4,5,5,0,0,0
+Pakistan,Pakistan,2015,PAK,770,PAK,586,sa,4,4,4,0,0,0
+Pakistan,Pakistan,2016,PAK,770,PAK,586,sa,4,3,4,0,0,0
+Pakistan,Pakistan,2017,PAK,770,PAK,586,sa,4,3,4,0,0,0
+Pakistan,Pakistan,2018,PAK,770,PAK,586,sa,NA,3,4,88,0,0
+Pakistan,Pakistan,2019,PAK,770,PAK,586,sa,4,3,4,0,0,0
+Pakistan,Pakistan,2020,PAK,770,PAK,586,sa,3,3,4,0,0,0
+Pakistan,Pakistan,2021,PAK,770,PAK,586,sa,3,3,5,0,0,0
+Pakistan,Pakistan,2022,PAK,770,PAK,586,sa,3,3,4,0,0,0
+Pakistan,Pakistan,2023,PAK,770,PAK,586,sa,4,3,4,0,0,0
+Palau,Palau,2013,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2014,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2015,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2016,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2017,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2018,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2019,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2020,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2021,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2022,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+Palau,Palau,2023,PAL,986,PLW,585,eap,NA,NA,1,88,88,0
+"Palestine, State of",Palestinian Authority,2013,NA,NA,WBG,275,mena,NA,NA,3,66,66,0
+"Palestine, State of",Palestinian Authority,2014,NA,NA,WBG,275,mena,3,NA,3,0,66,0
+"Palestine, State of",Palestinian Authority,2015,NA,NA,WBG,275,mena,4,NA,4,0,66,0
+"Palestine, State of",Palestinian Authority,2016,NA,NA,WBG,275,mena,3,NA,3,0,66,0
+"Palestine, State of",Palestinian Authority,2017,NA,NA,WBG,275,mena,3,3,3,0,0,0
+"Palestine, State of",Palestinian Authority,2018,NA,NA,WBG,275,mena,4,3,4,0,0,0
+"Palestine, State of",Palestinian Authority,2019,NA,NA,WBG,275,mena,4,3,3,0,0,0
+"Palestine, State of",Palestinian Authority,2020,NA,NA,WBG,275,mena,4,3,3,0,0,0
+"Palestine, State of",Palestinian Authority,2021,NA,NA,WBG,275,mena,3,3,4,0,0,0
+"Palestine, State of",Palestinian Authority,2022,NA,NA,WBG,275,mena,3,2,3,0,0,0
+"Palestine, State of",Palestinian Authority,2023,NA,NA,WBG,275,mena,NA,NA,NA,99,99,99
+Panama,Panama,2013,PAN,95,PAN,591,lac,NA,NA,2,88,88,0
+Panama,Panama,2014,PAN,95,PAN,591,lac,1,NA,1,0,88,0
+Panama,Panama,2015,PAN,95,PAN,591,lac,1,NA,1,0,88,0
+Panama,Panama,2016,PAN,95,PAN,591,lac,NA,NA,1,88,88,0
+Panama,Panama,2017,PAN,95,PAN,591,lac,NA,NA,1,88,88,0
+Panama,Panama,2018,PAN,95,PAN,591,lac,NA,NA,1,88,88,0
+Panama,Panama,2019,PAN,95,PAN,591,lac,NA,NA,1,88,88,0
+Panama,Panama,2020,PAN,95,PAN,591,lac,NA,NA,1,88,88,0
+Panama,Panama,2021,PAN,95,PAN,591,lac,NA,NA,1,88,88,0
+Panama,Panama,2022,PAN,95,PAN,591,lac,NA,NA,1,88,88,0
+Panama,Panama,2023,PAN,95,PAN,591,lac,NA,NA,1,88,88,0
+Papua New Guinea,Papua New Guinea,2013,PNG,910,PNG,598,eap,NA,3,2,88,0,0
+Papua New Guinea,Papua New Guinea,2014,PNG,910,PNG,598,eap,3,3,3,0,0,0
+Papua New Guinea,Papua New Guinea,2015,PNG,910,PNG,598,eap,2,2,2,0,0,0
+Papua New Guinea,Papua New Guinea,2016,PNG,910,PNG,598,eap,2,2,2,0,0,0
+Papua New Guinea,Papua New Guinea,2017,PNG,910,PNG,598,eap,2,3,3,0,0,0
+Papua New Guinea,Papua New Guinea,2018,PNG,910,PNG,598,eap,NA,3,3,88,0,0
+Papua New Guinea,Papua New Guinea,2019,PNG,910,PNG,598,eap,3,2,4,0,0,0
+Papua New Guinea,Papua New Guinea,2020,PNG,910,PNG,598,eap,2,3,3,0,0,0
+Papua New Guinea,Papua New Guinea,2021,PNG,910,PNG,598,eap,2,3,3,0,0,0
+Papua New Guinea,Papua New Guinea,2022,PNG,910,PNG,598,eap,3,3,3,0,0,0
+Papua New Guinea,Papua New Guinea,2023,PNG,910,PNG,598,eap,3,3,3,0,0,0
+Paraguay,Paraguay,2013,PAR,150,PRY,600,lac,NA,NA,3,88,88,0
+Paraguay,Paraguay,2014,PAR,150,PRY,600,lac,2,NA,2,0,88,0
+Paraguay,Paraguay,2015,PAR,150,PRY,600,lac,1,NA,2,0,88,0
+Paraguay,Paraguay,2016,PAR,150,PRY,600,lac,1,NA,2,0,88,0
+Paraguay,Paraguay,2017,PAR,150,PRY,600,lac,2,NA,3,0,88,0
+Paraguay,Paraguay,2018,PAR,150,PRY,600,lac,NA,NA,2,88,88,0
+Paraguay,Paraguay,2019,PAR,150,PRY,600,lac,2,NA,2,0,88,0
+Paraguay,Paraguay,2020,PAR,150,PRY,600,lac,2,NA,2,0,88,0
+Paraguay,Paraguay,2021,PAR,150,PRY,600,lac,2,NA,2,0,88,0
+Paraguay,Paraguay,2022,PAR,150,PRY,600,lac,2,NA,2,0,88,0
+Paraguay,Paraguay,2023,PAR,150,PRY,600,lac,3,NA,2,0,88,0
+Peru,Peru,2013,PER,135,PER,604,lac,NA,3,3,88,0,0
+Peru,Peru,2014,PER,135,PER,604,lac,3,3,3,0,0,0
+Peru,Peru,2015,PER,135,PER,604,lac,2,2,2,0,0,0
+Peru,Peru,2016,PER,135,PER,604,lac,2,2,2,0,0,0
+Peru,Peru,2017,PER,135,PER,604,lac,2,2,2,0,0,0
+Peru,Peru,2018,PER,135,PER,604,lac,NA,2,2,88,0,0
+Peru,Peru,2019,PER,135,PER,604,lac,1,3,2,0,0,0
+Peru,Peru,2020,PER,135,PER,604,lac,2,3,3,0,0,0
+Peru,Peru,2021,PER,135,PER,604,lac,2,3,2,0,0,0
+Peru,Peru,2022,PER,135,PER,604,lac,2,3,3,0,0,0
+Peru,Peru,2023,PER,135,PER,604,lac,3,3,3,0,0,0
+Philippines,Philippines,2013,PHI,840,PHL,608,eap,NA,4,4,88,0,0
+Philippines,Philippines,2014,PHI,840,PHL,608,eap,3,4,4,0,0,0
+Philippines,Philippines,2015,PHI,840,PHL,608,eap,3,5,4,0,0,0
+Philippines,Philippines,2016,PHI,840,PHL,608,eap,5,5,5,0,0,0
+Philippines,Philippines,2017,PHI,840,PHL,608,eap,5,5,4,0,0,0
+Philippines,Philippines,2018,PHI,840,PHL,608,eap,NA,5,4,88,0,0
+Philippines,Philippines,2019,PHI,840,PHL,608,eap,5,5,4,0,0,0
+Philippines,Philippines,2020,PHI,840,PHL,608,eap,4,5,4,0,0,0
+Philippines,Philippines,2021,PHI,840,PHL,608,eap,4,5,4,0,0,0
+Philippines,Philippines,2022,PHI,840,PHL,608,eap,4,4,4,0,0,0
+Philippines,Philippines,2023,PHI,840,PHL,608,eap,4,4,4,0,0,0
+Poland,Poland,2013,POL,290,POL,616,eca,NA,1,1,88,0,0
+Poland,Poland,2014,POL,290,POL,616,eca,1,NA,1,0,88,0
+Poland,Poland,2015,POL,290,POL,616,eca,1,NA,1,0,88,0
+Poland,Poland,2016,POL,290,POL,616,eca,2,NA,1,0,88,0
+Poland,Poland,2017,POL,290,POL,616,eca,2,NA,1,0,88,0
+Poland,Poland,2018,POL,290,POL,616,eca,NA,NA,2,88,88,0
+Poland,Poland,2019,POL,290,POL,616,eca,2,NA,1,0,88,0
+Poland,Poland,2020,POL,290,POL,616,eca,2,2,2,0,0,0
+Poland,Poland,2021,POL,290,POL,616,eca,2,2,2,0,0,0
+Poland,Poland,2022,POL,290,POL,616,eca,2,2,2,0,0,0
+Poland,Poland,2023,POL,290,POL,616,eca,2,2,2,0,0,0
+Portugal,Portugal,2013,POR,235,PRT,620,eca,NA,NA,2,88,88,0
+Portugal,Portugal,2014,POR,235,PRT,620,eca,1,NA,2,0,88,0
+Portugal,Portugal,2015,POR,235,PRT,620,eca,1,NA,1,0,88,0
+Portugal,Portugal,2016,POR,235,PRT,620,eca,2,NA,1,0,88,0
+Portugal,Portugal,2017,POR,235,PRT,620,eca,1,NA,1,0,88,0
+Portugal,Portugal,2018,POR,235,PRT,620,eca,NA,NA,1,88,88,0
+Portugal,Portugal,2019,POR,235,PRT,620,eca,2,NA,1,0,88,0
+Portugal,Portugal,2020,POR,235,PRT,620,eca,1,NA,2,0,88,0
+Portugal,Portugal,2021,POR,235,PRT,620,eca,1,NA,2,0,88,0
+Portugal,Portugal,2022,POR,235,PRT,620,eca,2,NA,2,0,88,0
+Portugal,Portugal,2023,POR,235,PRT,620,eca,2,NA,2,0,88,0
+Puerto Rico,Puerto Rico,2013,NA,NA,PRI,630,lac,NA,NA,NA,66,66,66
+Puerto Rico,Puerto Rico,2014,NA,NA,PRI,630,lac,1,NA,NA,0,66,66
+Puerto Rico,Puerto Rico,2015,NA,NA,PRI,630,lac,1,NA,NA,0,66,66
+Puerto Rico,Puerto Rico,2016,NA,NA,PRI,630,lac,2,NA,NA,0,66,66
+Puerto Rico,Puerto Rico,2017,NA,NA,PRI,630,lac,1,NA,NA,0,66,66
+Puerto Rico,Puerto Rico,2018,NA,NA,PRI,630,lac,NA,NA,NA,66,66,66
+Puerto Rico,Puerto Rico,2019,NA,NA,PRI,630,lac,2,NA,NA,0,66,66
+Puerto Rico,Puerto Rico,2020,NA,NA,PRI,630,lac,2,NA,NA,0,66,66
+Puerto Rico,Puerto Rico,2021,NA,NA,PRI,630,lac,2,NA,NA,0,66,66
+Puerto Rico,Puerto Rico,2022,NA,NA,PRI,630,lac,2,NA,NA,0,66,66
+Puerto Rico,Puerto Rico,2023,NA,NA,PRI,630,lac,2,NA,NA,0,66,66
+Qatar,Qatar,2013,QAT,694,QAT,634,mena,NA,2,2,88,0,0
+Qatar,Qatar,2014,QAT,694,QAT,634,mena,1,2,2,0,0,0
+Qatar,Qatar,2015,QAT,694,QAT,634,mena,2,1,2,0,0,0
+Qatar,Qatar,2016,QAT,694,QAT,634,mena,2,2,2,0,0,0
+Qatar,Qatar,2017,QAT,694,QAT,634,mena,1,1,1,0,0,0
+Qatar,Qatar,2018,QAT,694,QAT,634,mena,1,1,1,0,0,0
+Qatar,Qatar,2019,QAT,694,QAT,634,mena,1,1,1,0,0,0
+Qatar,Qatar,2020,QAT,694,QAT,634,mena,1,1,1,0,0,0
+Qatar,Qatar,2021,QAT,694,QAT,634,mena,2,2,1,0,0,0
+Qatar,Qatar,2022,QAT,694,QAT,634,mena,2,2,1,0,0,0
+Qatar,Qatar,2023,QAT,694,QAT,634,mena,2,2,1,0,0,0
+Romania,Romania,2013,ROM,360,ROM,642,eca,NA,1,2,88,0,0
+Romania,Romania,2014,ROM,360,ROM,642,eca,2,NA,2,0,88,0
+Romania,Romania,2015,ROM,360,ROM,642,eca,2,NA,2,0,88,0
+Romania,Romania,2016,ROM,360,ROM,642,eca,2,NA,2,0,88,0
+Romania,Romania,2017,ROM,360,ROM,642,eca,2,NA,2,0,88,0
+Romania,Romania,2018,ROM,360,ROM,642,eca,NA,NA,2,88,88,0
+Romania,Romania,2019,ROM,360,ROM,642,eca,1,NA,2,0,88,0
+Romania,Romania,2020,ROM,360,ROM,642,eca,2,NA,2,0,88,0
+Romania,Romania,2021,ROM,360,ROM,642,eca,1,NA,2,0,88,0
+Romania,Romania,2022,ROM,360,ROM,642,eca,2,NA,2,0,88,0
+Romania,Romania,2023,ROM,360,ROM,642,eca,2,NA,2,0,88,0
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2013,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2014,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2015,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2016,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2017,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2018,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2019,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2020,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2021,NA,NA,NA,NA,eca,NA,NA,NA,66,66,66
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2022,NA,NA,NA,NA,eca,NA,NA,5,66,66,0
+Russia-Occupied Areas (Ukraine),Russia-Occupied Areas (Ukraine),2023,NA,NA,NA,NA,eca,5,5,5,66,66,0
+Russian Federation,Russia,2013,RUS,365,RUS,643,eca,NA,3,4,88,0,0
+Russian Federation,Russia,2014,RUS,365,RUS,643,eca,4,4,4,0,0,0
+Russian Federation,Russia,2015,RUS,365,RUS,643,eca,3,3,4,0,0,0
+Russian Federation,Russia,2016,RUS,365,RUS,643,eca,4,4,4,0,0,0
+Russian Federation,Russia,2017,RUS,365,RUS,643,eca,4,3,4,0,0,0
+Russian Federation,Russia,2018,RUS,365,RUS,643,eca,NA,4,4,88,0,0
+Russian Federation,Russia,2019,RUS,365,RUS,643,eca,4,4,4,0,0,0
+Russian Federation,Russia,2020,RUS,365,RUS,643,eca,4,3,4,0,0,0
+Russian Federation,Russia,2021,RUS,365,RUS,643,eca,4,4,4,0,0,0
+Russian Federation,Russia,2022,RUS,365,RUS,643,eca,5,4,5,0,0,0
+Russian Federation,Russia,2023,RUS,365,RUS,643,eca,4,4,5,0,0,0
+Rwanda,Rwanda,2013,RWA,517,RWA,646,ssa,NA,2,3,88,0,0
+Rwanda,Rwanda,2014,RWA,517,RWA,646,ssa,3,3,4,0,0,0
+Rwanda,Rwanda,2015,RWA,517,RWA,646,ssa,2,2,3,0,0,0
+Rwanda,Rwanda,2016,RWA,517,RWA,646,ssa,3,3,4,0,0,0
+Rwanda,Rwanda,2017,RWA,517,RWA,646,ssa,2,3,4,0,0,0
+Rwanda,Rwanda,2018,RWA,517,RWA,646,ssa,NA,3,3,88,0,0
+Rwanda,Rwanda,2019,RWA,517,RWA,646,ssa,3,3,4,0,0,0
+Rwanda,Rwanda,2020,RWA,517,RWA,646,ssa,3,3,3,0,0,0
+Rwanda,Rwanda,2021,RWA,517,RWA,646,ssa,3,3,4,0,0,0
+Rwanda,Rwanda,2022,RWA,517,RWA,646,ssa,3,3,3,0,0,0
+Rwanda,Rwanda,2023,RWA,517,RWA,646,ssa,2,4,3,0,0,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2013,SKN,60,KNA,659,lac,NA,NA,2,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2014,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2015,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2016,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2017,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2018,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2019,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2020,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2021,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2022,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Kitts and Nevis,St. Kitts and Nevis,2023,SKN,60,KNA,659,lac,NA,NA,1,88,88,0
+Saint Lucia,St. Lucia,2013,SLU,56,LCA,662,lac,NA,NA,2,88,88,0
+Saint Lucia,St. Lucia,2014,SLU,56,LCA,662,lac,NA,NA,2,88,88,0
+Saint Lucia,St. Lucia,2015,SLU,56,LCA,662,lac,NA,NA,2,88,88,0
+Saint Lucia,St. Lucia,2016,SLU,56,LCA,662,lac,NA,NA,1,88,88,0
+Saint Lucia,St. Lucia,2017,SLU,56,LCA,662,lac,NA,NA,2,88,88,0
+Saint Lucia,St. Lucia,2018,SLU,56,LCA,662,lac,NA,NA,2,88,88,0
+Saint Lucia,St. Lucia,2019,SLU,56,LCA,662,lac,NA,NA,2,88,88,0
+Saint Lucia,St. Lucia,2020,SLU,56,LCA,662,lac,NA,NA,2,88,88,0
+Saint Lucia,St. Lucia,2021,SLU,56,LCA,662,lac,NA,NA,2,88,88,0
+Saint Lucia,St. Lucia,2022,SLU,56,LCA,662,lac,NA,NA,1,88,88,0
+Saint Lucia,St. Lucia,2023,SLU,56,LCA,662,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2013,SVG,57,VCT,670,lac,NA,NA,2,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2014,SVG,57,VCT,670,lac,NA,NA,2,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2015,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2016,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2017,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2018,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2019,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2020,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2021,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2022,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Saint Vincent and the Grenadines,St. Vincent and the Grenadines,2023,SVG,57,VCT,670,lac,NA,NA,1,88,88,0
+Samoa,Samoa,2013,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2014,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2015,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2016,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2017,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2018,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2019,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2020,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2021,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2022,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+Samoa,Samoa,2023,WSM,990,WSM,882,eap,NA,NA,1,88,88,0
+San Marino,San Marino,2013,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2014,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2015,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2016,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2017,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2018,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2019,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2020,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2021,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2022,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+San Marino,San Marino,2023,SNM,331,SMR,674,eca,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2013,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2014,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2015,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2016,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2017,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2018,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2019,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2020,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2021,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2022,STP,403,STP,678,ssa,NA,NA,2,88,88,0
+Sao Tome and Principe,Sao Tome and Principe,2023,STP,403,STP,678,ssa,NA,NA,1,88,88,0
+Saudi Arabia,Saudi Arabia,2013,SAU,670,SAU,682,mena,NA,3,3,88,0,0
+Saudi Arabia,Saudi Arabia,2014,SAU,670,SAU,682,mena,3,3,3,0,0,0
+Saudi Arabia,Saudi Arabia,2015,SAU,670,SAU,682,mena,4,3,3,0,0,0
+Saudi Arabia,Saudi Arabia,2016,SAU,670,SAU,682,mena,4,4,3,0,0,0
+Saudi Arabia,Saudi Arabia,2017,SAU,670,SAU,682,mena,4,4,3,0,0,0
+Saudi Arabia,Saudi Arabia,2018,SAU,670,SAU,682,mena,4,4,4,0,0,0
+Saudi Arabia,Saudi Arabia,2019,SAU,670,SAU,682,mena,4,4,4,0,0,0
+Saudi Arabia,Saudi Arabia,2020,SAU,670,SAU,682,mena,4,3,4,0,0,0
+Saudi Arabia,Saudi Arabia,2021,SAU,670,SAU,682,mena,3,4,4,0,0,0
+Saudi Arabia,Saudi Arabia,2022,SAU,670,SAU,682,mena,3,4,4,0,0,0
+Saudi Arabia,Saudi Arabia,2023,SAU,670,SAU,682,mena,3,4,4,0,0,0
+Senegal,Senegal,2013,SEN,433,SEN,686,ssa,NA,NA,2,88,88,0
+Senegal,Senegal,2014,SEN,433,SEN,686,ssa,2,NA,3,0,88,0
+Senegal,Senegal,2015,SEN,433,SEN,686,ssa,2,NA,2,0,88,0
+Senegal,Senegal,2016,SEN,433,SEN,686,ssa,2,NA,2,0,88,0
+Senegal,Senegal,2017,SEN,433,SEN,686,ssa,2,NA,2,0,88,0
+Senegal,Senegal,2018,SEN,433,SEN,686,ssa,NA,NA,2,88,88,0
+Senegal,Senegal,2019,SEN,433,SEN,686,ssa,2,NA,2,0,88,0
+Senegal,Senegal,2020,SEN,433,SEN,686,ssa,3,NA,3,0,88,0
+Senegal,Senegal,2021,SEN,433,SEN,686,ssa,3,3,3,0,0,0
+Senegal,Senegal,2022,SEN,433,SEN,686,ssa,3,NA,3,0,88,0
+Senegal,Senegal,2023,SEN,433,SEN,686,ssa,3,3,3,0,0,0
+Serbia,Serbia,2013,NA,NA,SRB,688,eca,NA,1,2,88,0,0
+Serbia,Serbia,2014,NA,NA,SRB,688,eca,1,2,2,0,0,0
+Serbia,Serbia,2015,NA,NA,SRB,688,eca,1,2,2,0,0,0
+Serbia,Serbia,2016,NA,NA,SRB,688,eca,1,1,2,0,0,0
+Serbia,Serbia,2017,NA,NA,SRB,688,eca,1,1,2,0,0,0
+Serbia,Serbia,2018,NA,NA,SRB,688,eca,NA,2,2,88,0,0
+Serbia,Serbia,2019,NA,NA,SRB,688,eca,1,2,2,0,0,0
+Serbia,Serbia,2020,NA,NA,SRB,688,eca,3,2,2,0,0,0
+Serbia,Serbia,2021,NA,NA,SRB,688,eca,2,2,2,0,0,0
+Serbia,Serbia,2022,NA,NA,SRB,688,eca,2,2,2,0,0,0
+Serbia,Serbia,2023,NA,NA,SRB,688,eca,2,1,2,0,0,0
+Seychelles,Seychelles,2013,SEY,591,SYC,690,ssa,NA,NA,2,88,88,0
+Seychelles,Seychelles,2014,SEY,591,SYC,690,ssa,NA,NA,2,88,88,0
+Seychelles,Seychelles,2015,SEY,591,SYC,690,ssa,NA,NA,2,88,88,0
+Seychelles,Seychelles,2016,SEY,591,SYC,690,ssa,NA,NA,2,88,88,0
+Seychelles,Seychelles,2017,SEY,591,SYC,690,ssa,NA,NA,1,88,88,0
+Seychelles,Seychelles,2018,SEY,591,SYC,690,ssa,NA,NA,1,88,88,0
+Seychelles,Seychelles,2019,SEY,591,SYC,690,ssa,NA,NA,1,88,88,0
+Seychelles,Seychelles,2020,SEY,591,SYC,690,ssa,NA,NA,1,88,88,0
+Seychelles,Seychelles,2021,SEY,591,SYC,690,ssa,NA,NA,1,88,88,0
+Seychelles,Seychelles,2022,SEY,591,SYC,690,ssa,NA,NA,1,88,88,0
+Seychelles,Seychelles,2023,SEY,591,SYC,690,ssa,NA,NA,1,88,88,0
+Sierra Leone,Sierra Leone,2013,SIE,451,SLE,694,ssa,NA,NA,3,88,88,0
+Sierra Leone,Sierra Leone,2014,SIE,451,SLE,694,ssa,2,NA,2,0,88,0
+Sierra Leone,Sierra Leone,2015,SIE,451,SLE,694,ssa,2,NA,2,0,88,0
+Sierra Leone,Sierra Leone,2016,SIE,451,SLE,694,ssa,2,NA,2,0,88,0
+Sierra Leone,Sierra Leone,2017,SIE,451,SLE,694,ssa,2,NA,3,0,88,0
+Sierra Leone,Sierra Leone,2018,SIE,451,SLE,694,ssa,NA,NA,3,88,88,0
+Sierra Leone,Sierra Leone,2019,SIE,451,SLE,694,ssa,3,NA,2,0,88,0
+Sierra Leone,Sierra Leone,2020,SIE,451,SLE,694,ssa,3,NA,3,0,88,0
+Sierra Leone,Sierra Leone,2021,SIE,451,SLE,694,ssa,2,NA,3,0,88,0
+Sierra Leone,Sierra Leone,2022,SIE,451,SLE,694,ssa,2,NA,3,0,88,0
+Sierra Leone,Sierra Leone,2023,SIE,451,SLE,694,ssa,2,NA,3,0,88,0
+Singapore,Singapore,2013,SIN,830,SGP,702,eap,NA,1,1,88,0,0
+Singapore,Singapore,2014,SIN,830,SGP,702,eap,1,2,1,0,0,0
+Singapore,Singapore,2015,SIN,830,SGP,702,eap,1,1,1,0,0,0
+Singapore,Singapore,2016,SIN,830,SGP,702,eap,2,2,1,0,0,0
+Singapore,Singapore,2017,SIN,830,SGP,702,eap,1,2,1,0,0,0
+Singapore,Singapore,2018,SIN,830,SGP,702,eap,NA,2,1,88,0,0
+Singapore,Singapore,2019,SIN,830,SGP,702,eap,2,2,1,0,0,0
+Singapore,Singapore,2020,SIN,830,SGP,702,eap,2,2,1,0,0,0
+Singapore,Singapore,2021,SIN,830,SGP,702,eap,2,2,1,0,0,0
+Singapore,Singapore,2022,SIN,830,SGP,702,eap,1,2,1,0,0,0
+Singapore,Singapore,2023,SIN,830,SGP,702,eap,2,1,1,0,0,0
+Slovakia,Slovakia,2013,SLO,317,SVK,703,eca,NA,NA,1,88,88,0
+Slovakia,Slovakia,2014,SLO,317,SVK,703,eca,1,NA,1,0,88,0
+Slovakia,Slovakia,2015,SLO,317,SVK,703,eca,2,NA,2,0,88,0
+Slovakia,Slovakia,2016,SLO,317,SVK,703,eca,1,NA,2,0,88,0
+Slovakia,Slovakia,2017,SLO,317,SVK,703,eca,1,NA,1,0,88,0
+Slovakia,Slovakia,2018,SLO,317,SVK,703,eca,NA,NA,1,88,88,0
+Slovakia,Slovakia,2019,SLO,317,SVK,703,eca,2,NA,2,0,88,0
+Slovakia,Slovakia,2020,SLO,317,SVK,703,eca,2,NA,2,0,88,0
+Slovakia,Slovakia,2021,SLO,317,SVK,703,eca,1,NA,2,0,88,0
+Slovakia,Slovakia,2022,SLO,317,SVK,703,eca,1,NA,2,0,88,0
+Slovakia,Slovakia,2023,SLO,317,SVK,703,eca,2,NA,1,0,88,0
+Slovenia,Slovenia,2013,SLV,349,SVN,705,eca,NA,NA,1,88,88,0
+Slovenia,Slovenia,2014,SLV,349,SVN,705,eca,1,NA,1,0,88,0
+Slovenia,Slovenia,2015,SLV,349,SVN,705,eca,1,NA,1,0,88,0
+Slovenia,Slovenia,2016,SLV,349,SVN,705,eca,1,NA,1,0,88,0
+Slovenia,Slovenia,2017,SLV,349,SVN,705,eca,1,NA,1,0,88,0
+Slovenia,Slovenia,2018,SLV,349,SVN,705,eca,NA,NA,1,88,88,0
+Slovenia,Slovenia,2019,SLV,349,SVN,705,eca,1,NA,1,0,88,0
+Slovenia,Slovenia,2020,SLV,349,SVN,705,eca,1,NA,1,0,88,0
+Slovenia,Slovenia,2021,SLV,349,SVN,705,eca,1,NA,1,0,88,0
+Slovenia,Slovenia,2022,SLV,349,SVN,705,eca,1,NA,1,0,88,0
+Slovenia,Slovenia,2023,SLV,349,SVN,705,eca,2,NA,1,0,88,0
+Solomon Islands,Solomon Islands,2013,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2014,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2015,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2016,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2017,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2018,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2019,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2020,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2021,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2022,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Solomon Islands,Solomon Islands,2023,SOL,940,SLB,90,eap,NA,NA,1,88,88,0
+Somalia,Somalia,2013,SOM,520,SOM,706,ssa,NA,5,4,88,0,0
+Somalia,Somalia,2014,SOM,520,SOM,706,ssa,5,5,5,0,0,0
+Somalia,Somalia,2015,SOM,520,SOM,706,ssa,4,5,4,0,0,0
+Somalia,Somalia,2016,SOM,520,SOM,706,ssa,5,4,4,0,0,0
+Somalia,Somalia,2017,SOM,520,SOM,706,ssa,3,4,4,0,0,0
+Somalia,Somalia,2018,SOM,520,SOM,706,ssa,NA,4,4,88,0,0
+Somalia,Somalia,2019,SOM,520,SOM,706,ssa,4,4,4,0,0,0
+Somalia,Somalia,2020,SOM,520,SOM,706,ssa,4,5,5,0,0,0
+Somalia,Somalia,2021,SOM,520,SOM,706,ssa,5,5,5,0,0,0
+Somalia,Somalia,2022,SOM,520,SOM,706,ssa,5,4,5,0,0,0
+Somalia,Somalia,2023,SOM,520,SOM,706,ssa,5,5,4,0,0,0
+Somaliland,Somaliland,2013,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2014,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2015,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2016,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2017,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2018,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2019,NA,NA,NA,NA,ssa,NA,3,NA,66,0,66
+Somaliland,Somaliland,2020,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2021,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2022,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+Somaliland,Somaliland,2023,NA,NA,NA,NA,ssa,NA,NA,NA,66,66,66
+South Africa,South Africa,2013,SAF,560,ZAF,710,ssa,NA,2,4,88,0,0
+South Africa,South Africa,2014,SAF,560,ZAF,710,ssa,3,3,3,0,0,0
+South Africa,South Africa,2015,SAF,560,ZAF,710,ssa,3,3,4,0,0,0
+South Africa,South Africa,2016,SAF,560,ZAF,710,ssa,3,NA,4,0,99,0
+South Africa,South Africa,2017,SAF,560,ZAF,710,ssa,4,3,4,0,0,0
+South Africa,South Africa,2018,SAF,560,ZAF,710,ssa,NA,3,3,88,0,0
+South Africa,South Africa,2019,SAF,560,ZAF,710,ssa,4,3,3,0,0,0
+South Africa,South Africa,2020,SAF,560,ZAF,710,ssa,4,3,3,0,0,0
+South Africa,South Africa,2021,SAF,560,ZAF,710,ssa,4,3,4,0,0,0
+South Africa,South Africa,2022,SAF,560,ZAF,710,ssa,4,3,3,0,0,0
+South Africa,South Africa,2023,SAF,560,ZAF,710,ssa,3,3,3,0,0,0
+South Sudan,South Sudan,2013,SSD,626,SSD,728,ssa,NA,4,5,88,0,0
+South Sudan,South Sudan,2014,SSD,626,SSD,728,ssa,5,5,5,0,0,0
+South Sudan,South Sudan,2015,SSD,626,SSD,728,ssa,5,5,5,0,0,0
+South Sudan,South Sudan,2016,SSD,626,SSD,728,ssa,5,5,5,0,0,0
+South Sudan,South Sudan,2017,SSD,626,SSD,728,ssa,5,5,5,0,0,0
+South Sudan,South Sudan,2018,SSD,626,SSD,728,ssa,NA,5,5,88,0,0
+South Sudan,South Sudan,2019,SSD,626,SSD,728,ssa,4,5,5,0,0,0
+South Sudan,South Sudan,2020,SSD,626,SSD,728,ssa,5,5,5,0,0,0
+South Sudan,South Sudan,2021,SSD,626,SSD,728,ssa,5,5,5,0,0,0
+South Sudan,South Sudan,2022,SSD,626,SSD,728,ssa,5,5,5,0,0,0
+South Sudan,South Sudan,2023,SSD,626,SSD,728,ssa,5,5,5,0,0,0
+Soviet Union,Soviet Union,2013,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2014,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2015,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2016,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2017,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2018,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2019,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2020,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2021,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2022,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Soviet Union,Soviet Union,2023,NA,NA,NA,NA,eca,NA,NA,NA,77,77,77
+Spain,Spain,2013,SPN,230,ESP,724,eca,NA,1,1,88,0,0
+Spain,Spain,2014,SPN,230,ESP,724,eca,2,NA,1,0,88,0
+Spain,Spain,2015,SPN,230,ESP,724,eca,2,NA,1,0,88,0
+Spain,Spain,2016,SPN,230,ESP,724,eca,2,NA,2,0,88,0
+Spain,Spain,2017,SPN,230,ESP,724,eca,2,NA,2,0,88,0
+Spain,Spain,2018,SPN,230,ESP,724,eca,NA,NA,2,88,88,0
+Spain,Spain,2019,SPN,230,ESP,724,eca,2,NA,2,0,88,0
+Spain,Spain,2020,SPN,230,ESP,724,eca,2,1,2,0,0,0
+Spain,Spain,2021,SPN,230,ESP,724,eca,2,2,2,0,0,0
+Spain,Spain,2022,SPN,230,ESP,724,eca,2,2,1,0,0,0
+Spain,Spain,2023,SPN,230,ESP,724,eca,2,1,1,0,0,0
+Sri Lanka,Sri Lanka,2013,SRI,780,LKA,144,sa,NA,3,4,88,0,0
+Sri Lanka,Sri Lanka,2014,SRI,780,LKA,144,sa,4,3,4,0,0,0
+Sri Lanka,Sri Lanka,2015,SRI,780,LKA,144,sa,3,3,3,0,0,0
+Sri Lanka,Sri Lanka,2016,SRI,780,LKA,144,sa,3,3,3,0,0,0
+Sri Lanka,Sri Lanka,2017,SRI,780,LKA,144,sa,3,3,3,0,0,0
+Sri Lanka,Sri Lanka,2018,SRI,780,LKA,144,sa,NA,2,3,88,0,0
+Sri Lanka,Sri Lanka,2019,SRI,780,LKA,144,sa,2,2,3,0,0,0
+Sri Lanka,Sri Lanka,2020,SRI,780,LKA,144,sa,3,2,3,0,0,0
+Sri Lanka,Sri Lanka,2021,SRI,780,LKA,144,sa,3,3,3,0,0,0
+Sri Lanka,Sri Lanka,2022,SRI,780,LKA,144,sa,3,3,3,0,0,0
+Sri Lanka,Sri Lanka,2023,SRI,780,LKA,144,sa,3,3,3,0,0,0
+Sudan,Sudan,2013,SUD,625,SDN,729,ssa,NA,5,5,88,0,0
+Sudan,Sudan,2014,SUD,625,SDN,729,ssa,5,5,5,0,0,0
+Sudan,Sudan,2015,SUD,625,SDN,729,ssa,5,5,5,0,0,0
+Sudan,Sudan,2016,SUD,625,SDN,729,ssa,5,5,5,0,0,0
+Sudan,Sudan,2017,SUD,625,SDN,729,ssa,4,5,5,0,0,0
+Sudan,Sudan,2018,SUD,625,SDN,729,ssa,NA,4,5,88,0,0
+Sudan,Sudan,2019,SUD,625,SDN,729,ssa,4,5,5,0,0,0
+Sudan,Sudan,2020,SUD,625,SDN,729,ssa,4,4,4,0,0,0
+Sudan,Sudan,2021,SUD,625,SDN,729,ssa,4,4,5,0,0,0
+Sudan,Sudan,2022,SUD,625,SDN,729,ssa,5,5,5,0,0,0
+Sudan,Sudan,2023,SUD,625,SDN,729,ssa,5,5,5,0,0,0
+Suriname,Suriname,2013,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Suriname,Suriname,2014,SUR,115,SUR,740,lac,1,NA,2,0,88,0
+Suriname,Suriname,2015,SUR,115,SUR,740,lac,NA,NA,1,88,88,0
+Suriname,Suriname,2016,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Suriname,Suriname,2017,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Suriname,Suriname,2018,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Suriname,Suriname,2019,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Suriname,Suriname,2020,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Suriname,Suriname,2021,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Suriname,Suriname,2022,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Suriname,Suriname,2023,SUR,115,SUR,740,lac,NA,NA,2,88,88,0
+Sweden,Sweden,2013,SWD,380,SWE,752,eca,NA,NA,1,88,88,0
+Sweden,Sweden,2014,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Sweden,Sweden,2015,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Sweden,Sweden,2016,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Sweden,Sweden,2017,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Sweden,Sweden,2018,SWD,380,SWE,752,eca,NA,NA,1,88,88,0
+Sweden,Sweden,2019,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Sweden,Sweden,2020,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Sweden,Sweden,2021,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Sweden,Sweden,2022,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Sweden,Sweden,2023,SWD,380,SWE,752,eca,1,NA,1,0,88,0
+Switzerland,Switzerland,2013,SWZ,225,CHE,756,eca,NA,NA,1,88,88,0
+Switzerland,Switzerland,2014,SWZ,225,CHE,756,eca,1,NA,1,0,88,0
+Switzerland,Switzerland,2015,SWZ,225,CHE,756,eca,1,NA,1,0,88,0
+Switzerland,Switzerland,2016,SWZ,225,CHE,756,eca,1,NA,2,0,88,0
+Switzerland,Switzerland,2017,SWZ,225,CHE,756,eca,1,NA,1,0,88,0
+Switzerland,Switzerland,2018,SWZ,225,CHE,756,eca,NA,NA,1,88,88,0
+Switzerland,Switzerland,2019,SWZ,225,CHE,756,eca,1,NA,1,0,88,0
+Switzerland,Switzerland,2020,SWZ,225,CHE,756,eca,1,NA,1,0,88,0
+Switzerland,Switzerland,2021,SWZ,225,CHE,756,eca,1,NA,1,0,88,0
+Switzerland,Switzerland,2022,SWZ,225,CHE,756,eca,1,NA,1,0,88,0
+Switzerland,Switzerland,2023,SWZ,225,CHE,756,eca,1,NA,1,0,88,0
+Syrian Arab Republic,Syria,2013,SYR,652,SYR,760,mena,NA,5,5,88,0,0
+Syrian Arab Republic,Syria,2014,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2015,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2016,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2017,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2018,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2019,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2020,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2021,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2022,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Syrian Arab Republic,Syria,2023,SYR,652,SYR,760,mena,5,5,5,0,0,0
+Türkiye,Turkey,2013,TUR,640,TUR,792,eca,NA,3,4,88,0,0
+Türkiye,Turkey,2014,TUR,640,TUR,792,eca,3,3,4,0,0,0
+Türkiye,Turkey,2015,TUR,640,TUR,792,eca,4,4,4,0,0,0
+Türkiye,Turkey,2016,TUR,640,TUR,792,eca,4,4,5,0,0,0
+Türkiye,Turkey,2017,TUR,640,TUR,792,eca,4,4,5,0,0,0
+Türkiye,Turkey,2018,TUR,640,TUR,792,eca,NA,4,5,88,0,0
+Türkiye,Turkey,2019,TUR,640,TUR,792,eca,4,5,5,0,0,0
+Türkiye,Turkey,2020,TUR,640,TUR,792,eca,4,4,5,0,0,0
+Türkiye,Turkey,2021,TUR,640,TUR,792,eca,4,4,5,0,0,0
+Türkiye,Turkey,2022,TUR,640,TUR,792,eca,4,4,5,0,0,0
+Türkiye,Turkey,2023,TUR,640,TUR,792,eca,4,4,4,0,0,0
+"Taiwan, Province of China",Taiwan,2013,TAW,713,TWN,NA,eap,NA,NA,1,66,66,0
+"Taiwan, Province of China",Taiwan,2014,TAW,713,TWN,NA,eap,2,NA,1,0,66,0
+"Taiwan, Province of China",Taiwan,2015,TAW,713,TWN,NA,eap,1,NA,1,0,66,0
+"Taiwan, Province of China",Taiwan,2016,TAW,713,TWN,NA,eap,1,NA,1,0,66,0
+"Taiwan, Province of China",Taiwan,2017,TAW,713,TWN,NA,eap,1,NA,1,0,66,0
+"Taiwan, Province of China",Taiwan,2018,TAW,713,TWN,NA,eap,NA,NA,1,66,66,0
+"Taiwan, Province of China",Taiwan,2019,TAW,713,TWN,NA,eap,1,NA,1,0,88,0
+"Taiwan, Province of China",Taiwan,2020,TAW,713,TWN,NA,eap,1,NA,1,0,88,0
+"Taiwan, Province of China",Taiwan,2021,TAW,713,TWN,NA,eap,1,NA,1,0,88,0
+"Taiwan, Province of China",Taiwan,2022,TAW,713,TWN,NA,eap,1,NA,1,0,88,0
+"Taiwan, Province of China",Taiwan,2023,TAW,713,TWN,NA,eap,1,NA,1,0,88,0
+Tajikistan,Tajikistan,2013,TAJ,702,TJK,762,eca,NA,3,3,88,0,0
+Tajikistan,Tajikistan,2014,TAJ,702,TJK,762,eca,3,3,3,0,0,0
+Tajikistan,Tajikistan,2015,TAJ,702,TJK,762,eca,3,3,3,0,0,0
+Tajikistan,Tajikistan,2016,TAJ,702,TJK,762,eca,3,4,3,0,0,0
+Tajikistan,Tajikistan,2017,TAJ,702,TJK,762,eca,3,4,3,0,0,0
+Tajikistan,Tajikistan,2018,TAJ,702,TJK,762,eca,NA,4,3,88,0,0
+Tajikistan,Tajikistan,2019,TAJ,702,TJK,762,eca,3,3,3,0,0,0
+Tajikistan,Tajikistan,2020,TAJ,702,TJK,762,eca,3,3,3,0,0,0
+Tajikistan,Tajikistan,2021,TAJ,702,TJK,762,eca,3,4,3,0,0,0
+Tajikistan,Tajikistan,2022,TAJ,702,TJK,762,eca,4,4,3,0,0,0
+Tajikistan,Tajikistan,2023,TAJ,702,TJK,762,eca,3,4,3,0,0,0
+"Tanzania, United Republic of",Tanzania,2013,TAZ,510,TZA,834,ssa,NA,NA,3,88,88,0
+"Tanzania, United Republic of",Tanzania,2014,TAZ,510,TZA,834,ssa,3,NA,3,0,88,0
+"Tanzania, United Republic of",Tanzania,2015,TAZ,510,TZA,834,ssa,2,NA,3,0,88,0
+"Tanzania, United Republic of",Tanzania,2016,TAZ,510,TZA,834,ssa,3,NA,3,0,88,0
+"Tanzania, United Republic of",Tanzania,2017,TAZ,510,TZA,834,ssa,3,3,3,0,0,0
+"Tanzania, United Republic of",Tanzania,2018,TAZ,510,TZA,834,ssa,NA,3,3,88,0,0
+"Tanzania, United Republic of",Tanzania,2019,TAZ,510,TZA,834,ssa,3,3,3,0,0,0
+"Tanzania, United Republic of",Tanzania,2020,TAZ,510,TZA,834,ssa,3,NA,4,0,88,0
+"Tanzania, United Republic of",Tanzania,2021,TAZ,510,TZA,834,ssa,3,2,3,0,0,0
+"Tanzania, United Republic of",Tanzania,2022,TAZ,510,TZA,834,ssa,3,2,3,0,0,0
+"Tanzania, United Republic of",Tanzania,2023,TAZ,510,TZA,834,ssa,2,2,3,0,0,0
+Thailand,Thailand,2013,THI,800,THA,764,eap,NA,3,3,88,0,0
+Thailand,Thailand,2014,THI,800,THA,764,eap,3,3,3,0,0,0
+Thailand,Thailand,2015,THI,800,THA,764,eap,4,3,3,0,0,0
+Thailand,Thailand,2016,THI,800,THA,764,eap,3,4,3,0,0,0
+Thailand,Thailand,2017,THI,800,THA,764,eap,3,3,4,0,0,0
+Thailand,Thailand,2018,THI,800,THA,764,eap,NA,4,4,88,0,0
+Thailand,Thailand,2019,THI,800,THA,764,eap,3,3,4,0,0,0
+Thailand,Thailand,2020,THI,800,THA,764,eap,3,3,3,0,0,0
+Thailand,Thailand,2021,THI,800,THA,764,eap,3,3,3,0,0,0
+Thailand,Thailand,2022,THI,800,THA,764,eap,3,4,3,0,0,0
+Thailand,Thailand,2023,THI,800,THA,764,eap,3,3,3,0,0,0
+Timor-Leste,East Timor (Timor L'este),2013,ETM,860,TMP,626,eap,NA,NA,2,88,88,0
+Timor-Leste,East Timor (Timor L'este),2014,ETM,860,TMP,626,eap,2,NA,2,0,88,0
+Timor-Leste,East Timor (Timor L'este),2015,ETM,860,TMP,626,eap,3,NA,2,0,88,0
+Timor-Leste,East Timor (Timor L'este),2016,ETM,860,TMP,626,eap,2,NA,2,0,88,0
+Timor-Leste,East Timor (Timor L'este),2017,ETM,860,TMP,626,eap,1,NA,2,0,88,0
+Timor-Leste,East Timor (Timor L'este),2018,ETM,860,TMP,626,eap,NA,NA,2,88,88,0
+Timor-Leste,East Timor (Timor L'este),2019,ETM,860,TMP,626,eap,NA,NA,2,88,88,0
+Timor-Leste,East Timor (Timor L'este),2020,ETM,860,TMP,626,eap,NA,NA,2,88,88,0
+Timor-Leste,East Timor (Timor L'este),2021,ETM,860,TMP,626,eap,NA,NA,2,88,88,0
+Timor-Leste,East Timor (Timor L'este),2022,ETM,860,TMP,626,eap,NA,NA,2,88,88,0
+Timor-Leste,East Timor (Timor L'este),2023,ETM,860,TMP,626,eap,NA,NA,2,88,88,0
+Togo,Togo,2013,TOG,461,TGO,768,ssa,NA,NA,1,88,88,0
+Togo,Togo,2014,TOG,461,TGO,768,ssa,2,NA,1,0,88,0
+Togo,Togo,2015,TOG,461,TGO,768,ssa,3,NA,1,0,88,0
+Togo,Togo,2016,TOG,461,TGO,768,ssa,3,NA,1,0,88,0
+Togo,Togo,2017,TOG,461,TGO,768,ssa,3,NA,3,0,88,0
+Togo,Togo,2018,TOG,461,TGO,768,ssa,NA,NA,2,88,88,0
+Togo,Togo,2019,TOG,461,TGO,768,ssa,3,NA,3,0,88,0
+Togo,Togo,2020,TOG,461,TGO,768,ssa,3,NA,3,0,88,0
+Togo,Togo,2021,TOG,461,TGO,768,ssa,2,NA,3,0,88,0
+Togo,Togo,2022,TOG,461,TGO,768,ssa,3,NA,3,0,88,0
+Togo,Togo,2023,TOG,461,TGO,768,ssa,3,NA,3,0,88,0
+Tonga,Tonga,2013,TON,955,TON,776,eap,NA,NA,2,88,88,0
+Tonga,Tonga,2014,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2015,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2016,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2017,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2018,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2019,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2020,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2021,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2022,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Tonga,Tonga,2023,TON,955,TON,776,eap,NA,NA,1,88,88,0
+Trinidad and Tobago,Trinidad and Tobago,2013,TRI,52,TTO,780,lac,NA,NA,2,88,88,0
+Trinidad and Tobago,Trinidad and Tobago,2014,TRI,52,TTO,780,lac,2,NA,2,0,88,0
+Trinidad and Tobago,Trinidad and Tobago,2015,TRI,52,TTO,780,lac,2,NA,2,0,88,0
+Trinidad and Tobago,Trinidad and Tobago,2016,TRI,52,TTO,780,lac,NA,NA,2,88,88,0
+Trinidad and Tobago,Trinidad and Tobago,2017,TRI,52,TTO,780,lac,NA,NA,2,88,88,0
+Trinidad and Tobago,Trinidad and Tobago,2018,TRI,52,TTO,780,lac,NA,NA,2,88,88,0
+Trinidad and Tobago,Trinidad and Tobago,2019,TRI,52,TTO,780,lac,1,NA,2,0,88,0
+Trinidad and Tobago,Trinidad and Tobago,2020,TRI,52,TTO,780,lac,2,NA,2,0,88,0
+Trinidad and Tobago,Trinidad and Tobago,2021,TRI,52,TTO,780,lac,1,NA,2,0,88,0
+Trinidad and Tobago,Trinidad and Tobago,2022,TRI,52,TTO,780,lac,1,NA,2,0,88,0
+Trinidad and Tobago,Trinidad and Tobago,2023,TRI,52,TTO,780,lac,NA,NA,2,88,88,0
+Tunisia,Tunisia,2013,TUN,616,TUN,788,mena,NA,3,3,88,0,0
+Tunisia,Tunisia,2014,TUN,616,TUN,788,mena,2,2,3,0,0,0
+Tunisia,Tunisia,2015,TUN,616,TUN,788,mena,3,2,2,0,0,0
+Tunisia,Tunisia,2016,TUN,616,TUN,788,mena,3,3,3,0,0,0
+Tunisia,Tunisia,2017,TUN,616,TUN,788,mena,3,3,2,0,0,0
+Tunisia,Tunisia,2018,TUN,616,TUN,788,mena,3,3,2,0,0,0
+Tunisia,Tunisia,2019,TUN,616,TUN,788,mena,3,3,3,0,0,0
+Tunisia,Tunisia,2020,TUN,616,TUN,788,mena,3,2,3,0,0,0
+Tunisia,Tunisia,2021,TUN,616,TUN,788,mena,3,3,3,0,0,0
+Tunisia,Tunisia,2022,TUN,616,TUN,788,mena,3,3,3,0,0,0
+Tunisia,Tunisia,2023,TUN,616,TUN,788,mena,3,4,3,0,0,0
+Turkmenistan,Turkmenistan,2013,TKM,701,TKM,795,eca,NA,3,3,88,0,0
+Turkmenistan,Turkmenistan,2014,TKM,701,TKM,795,eca,3,3,3,0,0,0
+Turkmenistan,Turkmenistan,2015,TKM,701,TKM,795,eca,3,4,3,0,0,0
+Turkmenistan,Turkmenistan,2016,TKM,701,TKM,795,eca,3,4,3,0,0,0
+Turkmenistan,Turkmenistan,2017,TKM,701,TKM,795,eca,3,3,3,0,0,0
+Turkmenistan,Turkmenistan,2018,TKM,701,TKM,795,eca,NA,3,3,88,0,0
+Turkmenistan,Turkmenistan,2019,TKM,701,TKM,795,eca,4,4,3,0,0,0
+Turkmenistan,Turkmenistan,2020,TKM,701,TKM,795,eca,3,3,3,0,0,0
+Turkmenistan,Turkmenistan,2021,TKM,701,TKM,795,eca,3,3,3,0,0,0
+Turkmenistan,Turkmenistan,2022,TKM,701,TKM,795,eca,3,3,3,0,0,0
+Turkmenistan,Turkmenistan,2023,TKM,701,TKM,795,eca,3,3,3,0,0,0
+Tuvalu,Tuvalu,2013,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2014,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2015,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2016,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2017,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2018,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2019,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2020,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2021,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2022,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Tuvalu,Tuvalu,2023,TUV,947,TUV,798,eap,NA,NA,1,88,88,0
+Uganda,Uganda,2013,UGA,500,UGA,800,ssa,NA,3,3,88,0,0
+Uganda,Uganda,2014,UGA,500,UGA,800,ssa,3,3,3,0,0,0
+Uganda,Uganda,2015,UGA,500,UGA,800,ssa,3,2,3,0,0,0
+Uganda,Uganda,2016,UGA,500,UGA,800,ssa,3,3,3,0,0,0
+Uganda,Uganda,2017,UGA,500,UGA,800,ssa,3,3,3,0,0,0
+Uganda,Uganda,2018,UGA,500,UGA,800,ssa,NA,3,3,88,0,0
+Uganda,Uganda,2019,UGA,500,UGA,800,ssa,3,3,4,0,0,0
+Uganda,Uganda,2020,UGA,500,UGA,800,ssa,4,3,4,0,0,0
+Uganda,Uganda,2021,UGA,500,UGA,800,ssa,4,4,4,0,0,0
+Uganda,Uganda,2022,UGA,500,UGA,800,ssa,3,3,4,0,0,0
+Uganda,Uganda,2023,UGA,500,UGA,800,ssa,3,3,4,0,0,0
+Ukraine,Ukraine,2013,UKR,369,UKR,804,eca,NA,3,3,88,0,0
+Ukraine,Ukraine,2014,UKR,369,UKR,804,eca,4,3,4,0,0,0
+Ukraine,Ukraine,2015,UKR,369,UKR,804,eca,4,5,4,0,0,0
+Ukraine,Ukraine,2016,UKR,369,UKR,804,eca,4,3,4,0,0,0
+Ukraine,Ukraine,2017,UKR,369,UKR,804,eca,3,4,4,0,0,0
+Ukraine,Ukraine,2018,UKR,369,UKR,804,eca,NA,4,4,88,0,0
+Ukraine,Ukraine,2019,UKR,369,UKR,804,eca,2,3,4,0,0,0
+Ukraine,Ukraine,2020,UKR,369,UKR,804,eca,3,2,4,0,0,0
+Ukraine,Ukraine,2021,UKR,369,UKR,804,eca,3,3,3,0,0,0
+Ukraine,Ukraine,2022,UKR,369,UKR,804,eca,2,3,3,0,0,0
+Ukraine,Ukraine,2023,UKR,369,UKR,804,eca,3,4,3,0,0,0
+United Arab Emirates,United Arab Emirates,2013,UAE,696,ARE,784,mena,NA,3,3,88,0,0
+United Arab Emirates,United Arab Emirates,2014,UAE,696,ARE,784,mena,2,3,3,0,0,0
+United Arab Emirates,United Arab Emirates,2015,UAE,696,ARE,784,mena,3,3,3,0,0,0
+United Arab Emirates,United Arab Emirates,2016,UAE,696,ARE,784,mena,3,2,2,0,0,0
+United Arab Emirates,United Arab Emirates,2017,UAE,696,ARE,784,mena,3,3,2,0,0,0
+United Arab Emirates,United Arab Emirates,2018,UAE,696,ARE,784,mena,3,3,3,0,0,0
+United Arab Emirates,United Arab Emirates,2019,UAE,696,ARE,784,mena,3,3,3,0,0,0
+United Arab Emirates,United Arab Emirates,2020,UAE,696,ARE,784,mena,3,3,3,0,0,0
+United Arab Emirates,United Arab Emirates,2021,UAE,696,ARE,784,mena,3,3,3,0,0,0
+United Arab Emirates,United Arab Emirates,2022,UAE,696,ARE,784,mena,3,3,2,0,0,0
+United Arab Emirates,United Arab Emirates,2023,UAE,696,ARE,784,mena,3,3,2,0,0,0
+United Kingdom,United Kingdom,2013,UKG,200,GBR,826,eca,NA,1,1,88,0,0
+United Kingdom,United Kingdom,2014,UKG,200,GBR,826,eca,1,NA,1,0,88,0
+United Kingdom,United Kingdom,2015,UKG,200,GBR,826,eca,1,NA,1,0,88,0
+United Kingdom,United Kingdom,2016,UKG,200,GBR,826,eca,2,NA,1,0,88,0
+United Kingdom,United Kingdom,2017,UKG,200,GBR,826,eca,1,NA,1,0,88,0
+United Kingdom,United Kingdom,2018,UKG,200,GBR,826,eca,NA,NA,1,88,88,0
+United Kingdom,United Kingdom,2019,UKG,200,GBR,826,eca,1,NA,1,0,88,0
+United Kingdom,United Kingdom,2020,UKG,200,GBR,826,eca,1,1,1,0,0,0
+United Kingdom,United Kingdom,2021,UKG,200,GBR,826,eca,1,1,1,0,0,0
+United Kingdom,United Kingdom,2022,UKG,200,GBR,826,eca,1,1,1,0,0,0
+United Kingdom,United Kingdom,2023,UKG,200,GBR,826,eca,1,1,1,0,0,0
+United States,United States,2013,USA,2,USA,840,na,NA,2,NA,88,0,88
+United States,United States,2014,USA,2,USA,840,na,2,2,NA,0,0,88
+United States,United States,2015,USA,2,USA,840,na,2,3,NA,0,0,88
+United States,United States,2016,USA,2,USA,840,na,2,3,NA,0,0,88
+United States,United States,2017,USA,2,USA,840,na,2,3,NA,0,0,88
+United States,United States,2018,USA,2,USA,840,na,NA,3,NA,88,0,88
+United States,United States,2019,USA,2,USA,840,na,4,3,NA,0,0,88
+United States,United States,2020,USA,2,USA,840,na,3,3,NA,0,0,88
+United States,United States,2021,USA,2,USA,840,na,3,3,NA,0,0,88
+United States,United States,2022,USA,2,USA,840,na,3,2,NA,0,0,88
+United States,United States,2023,USA,2,USA,840,na,3,3,NA,0,0,88
+Uruguay,Uruguay,2013,URU,165,URY,858,lac,NA,NA,1,88,88,0
+Uruguay,Uruguay,2014,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uruguay,Uruguay,2015,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uruguay,Uruguay,2016,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uruguay,Uruguay,2017,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uruguay,Uruguay,2018,URU,165,URY,858,lac,NA,NA,1,88,88,0
+Uruguay,Uruguay,2019,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uruguay,Uruguay,2020,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uruguay,Uruguay,2021,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uruguay,Uruguay,2022,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uruguay,Uruguay,2023,URU,165,URY,858,lac,1,NA,1,0,88,0
+Uzbekistan,Uzbekistan,2013,UZB,704,UZB,860,eca,NA,3,3,88,0,0
+Uzbekistan,Uzbekistan,2014,UZB,704,UZB,860,eca,3,4,3,0,0,0
+Uzbekistan,Uzbekistan,2015,UZB,704,UZB,860,eca,3,4,3,0,0,0
+Uzbekistan,Uzbekistan,2016,UZB,704,UZB,860,eca,3,4,3,0,0,0
+Uzbekistan,Uzbekistan,2017,UZB,704,UZB,860,eca,3,3,3,0,0,0
+Uzbekistan,Uzbekistan,2018,UZB,704,UZB,860,eca,NA,3,3,88,0,0
+Uzbekistan,Uzbekistan,2019,UZB,704,UZB,860,eca,3,3,3,0,0,0
+Uzbekistan,Uzbekistan,2020,UZB,704,UZB,860,eca,3,3,3,0,0,0
+Uzbekistan,Uzbekistan,2021,UZB,704,UZB,860,eca,3,3,3,0,0,0
+Uzbekistan,Uzbekistan,2022,UZB,704,UZB,860,eca,3,3,3,0,0,0
+Uzbekistan,Uzbekistan,2023,UZB,704,UZB,860,eca,3,3,3,0,0,0
+Vanuatu,Vanuatu,2013,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2014,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2015,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2016,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2017,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2018,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2019,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2020,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2021,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2022,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+Vanuatu,Vanuatu,2023,VAN,935,VUT,548,eap,NA,NA,1,88,88,0
+"Venezuela, Bolivarian Republic of",Venezuela,2013,VEN,101,VEN,862,lac,NA,3,3,88,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2014,VEN,101,VEN,862,lac,3,3,4,0,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2015,VEN,101,VEN,862,lac,3,3,4,0,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2016,VEN,101,VEN,862,lac,3,4,4,0,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2017,VEN,101,VEN,862,lac,4,4,5,0,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2018,VEN,101,VEN,862,lac,NA,4,4,88,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2019,VEN,101,VEN,862,lac,5,4,5,0,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2020,VEN,101,VEN,862,lac,5,5,5,0,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2021,VEN,101,VEN,862,lac,4,5,5,0,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2022,VEN,101,VEN,862,lac,5,4,4,0,0,0
+"Venezuela, Bolivarian Republic of",Venezuela,2023,VEN,101,VEN,862,lac,5,4,4,0,0,0
+Viet Nam,Vietnam,2013,DRV,816,VNM,704,eap,NA,3,3,88,0,0
+Viet Nam,Vietnam,2014,DRV,816,VNM,704,eap,3,3,3,0,0,0
+Viet Nam,Vietnam,2015,DRV,816,VNM,704,eap,3,3,3,0,0,0
+Viet Nam,Vietnam,2016,DRV,816,VNM,704,eap,3,3,3,0,0,0
+Viet Nam,Vietnam,2017,DRV,816,VNM,704,eap,3,3,3,0,0,0
+Viet Nam,Vietnam,2018,DRV,816,VNM,704,eap,NA,4,4,88,0,0
+Viet Nam,Vietnam,2019,DRV,816,VNM,704,eap,3,4,3,0,0,0
+Viet Nam,Vietnam,2020,DRV,816,VNM,704,eap,3,4,3,0,0,0
+Viet Nam,Vietnam,2021,DRV,816,VNM,704,eap,3,3,3,0,0,0
+Viet Nam,Vietnam,2022,DRV,816,VNM,704,eap,3,3,3,0,0,0
+Viet Nam,Vietnam,2023,DRV,816,VNM,704,eap,3,3,3,0,0,0
+Western Sahara,Western Sahara,2013,NA,NA,ESH,732,mena,NA,NA,3,66,66,0
+Western Sahara,Western Sahara,2014,NA,NA,ESH,732,mena,NA,NA,3,66,66,0
+Western Sahara,Western Sahara,2015,NA,NA,ESH,732,mena,NA,NA,3,66,66,0
+Western Sahara,Western Sahara,2016,NA,NA,ESH,732,mena,NA,NA,2,66,66,0
+Western Sahara,Western Sahara,2017,NA,NA,ESH,732,mena,NA,NA,2,66,66,0
+Western Sahara,Western Sahara,2018,NA,NA,ESH,732,mena,NA,NA,2,66,66,0
+Western Sahara,Western Sahara,2019,NA,NA,ESH,732,mena,NA,NA,2,66,66,0
+Western Sahara,Western Sahara,2020,NA,NA,ESH,732,mena,NA,NA,NA,66,66,66
+Western Sahara,Western Sahara,2021,NA,NA,ESH,732,mena,2,3,NA,0,0,66
+Western Sahara,Western Sahara,2022,NA,NA,ESH,732,mena,2,3,NA,0,0,66
+Western Sahara,Western Sahara,2023,NA,NA,ESH,732,mena,NA,NA,NA,66,66,66
+Yemen,Yemen,2013,YEM,679,YEM,887,mena,NA,3,4,88,0,0
+Yemen,Yemen,2014,YEM,679,YEM,887,mena,5,4,5,0,0,0
+Yemen,Yemen,2015,YEM,679,YEM,887,mena,5,5,5,0,0,0
+Yemen,Yemen,2016,YEM,679,YEM,887,mena,5,5,5,0,0,0
+Yemen,Yemen,2017,YEM,679,YEM,887,mena,5,5,5,0,0,0
+Yemen,Yemen,2018,YEM,679,YEM,887,mena,5,5,5,0,0,0
+Yemen,Yemen,2019,YEM,679,YEM,887,mena,5,5,5,0,0,0
+Yemen,Yemen,2020,YEM,679,YEM,887,mena,5,5,5,0,0,0
+Yemen,Yemen,2021,YEM,679,YEM,887,mena,5,NA,5,0,88,0
+Yemen,Yemen,2022,YEM,679,YEM,887,mena,5,5,5,0,0,0
+Yemen,Yemen,2023,YEM,679,YEM,887,mena,5,5,5,0,0,0
+Yemen Arab Republic,North Yemen,2013,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2014,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2015,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2016,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2017,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2018,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2019,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2020,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2021,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2022,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen Arab Republic,North Yemen,2023,YAR,678,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2013,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2014,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2015,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2016,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2017,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2018,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2019,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2020,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2021,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2022,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+Yemen People's Republic,South Yemen,2023,YPR,680,NA,NA,mena,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2013,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2014,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2015,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2016,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2017,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2018,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2019,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2020,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2021,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2022,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Federal Republic of",Yugoslavia/Serbia and Montenegro,2023,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2013,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2014,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2015,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2016,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2017,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2018,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2019,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2020,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2021,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2022,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+"Yugoslavia, Socialist Federal Republic of",Yugoslavia,2023,YUG,345,YUG,NA,eca,NA,NA,NA,77,77,77
+Zambia,Zambia,2013,ZAM,551,ZMB,894,ssa,NA,NA,3,88,88,0
+Zambia,Zambia,2014,ZAM,551,ZMB,894,ssa,3,NA,3,0,88,0
+Zambia,Zambia,2015,ZAM,551,ZMB,894,ssa,2,NA,3,0,88,0
+Zambia,Zambia,2016,ZAM,551,ZMB,894,ssa,3,NA,3,0,88,0
+Zambia,Zambia,2017,ZAM,551,ZMB,894,ssa,2,NA,3,0,88,0
+Zambia,Zambia,2018,ZAM,551,ZMB,894,ssa,NA,NA,3,88,88,0
+Zambia,Zambia,2019,ZAM,551,ZMB,894,ssa,3,NA,3,0,88,0
+Zambia,Zambia,2020,ZAM,551,ZMB,894,ssa,3,NA,3,0,88,0
+Zambia,Zambia,2021,ZAM,551,ZMB,894,ssa,3,NA,3,0,88,0
+Zambia,Zambia,2022,ZAM,551,ZMB,894,ssa,2,NA,3,0,88,0
+Zambia,Zambia,2023,ZAM,551,ZMB,894,ssa,3,3,3,0,0,0
+Zimbabwe,Zimbabwe,2013,ZIM,552,ZWE,716,ssa,NA,3,3,88,0,0
+Zimbabwe,Zimbabwe,2014,ZIM,552,ZWE,716,ssa,3,3,3,0,0,0
+Zimbabwe,Zimbabwe,2015,ZIM,552,ZWE,716,ssa,3,3,4,0,0,0
+Zimbabwe,Zimbabwe,2016,ZIM,552,ZWE,716,ssa,3,4,4,0,0,0
+Zimbabwe,Zimbabwe,2017,ZIM,552,ZWE,716,ssa,3,3,3,0,0,0
+Zimbabwe,Zimbabwe,2018,ZIM,552,ZWE,716,ssa,NA,3,3,88,0,0
+Zimbabwe,Zimbabwe,2019,ZIM,552,ZWE,716,ssa,3,4,3,0,0,0
+Zimbabwe,Zimbabwe,2020,ZIM,552,ZWE,716,ssa,3,4,3,0,0,0
+Zimbabwe,Zimbabwe,2021,ZIM,552,ZWE,716,ssa,3,3,3,0,0,0
+Zimbabwe,Zimbabwe,2022,ZIM,552,ZWE,716,ssa,3,3,3,0,0,0
+Zimbabwe,Zimbabwe,2023,ZIM,552,ZWE,716,ssa,3,3,3,0,0,0

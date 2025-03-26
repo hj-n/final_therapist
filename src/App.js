@@ -29,6 +29,13 @@ function App() {
 
 	const { dataid, pid, apiKey } = useParams();
 
+	let columns = null;
+	let dataLength = null;
+	if (data !== null)
+		columns = Object.keys(data[0]);
+	if (data !== null)
+		dataLength = data.length;
+
 	useEffect(() => {
 
 		setPid(pid);
@@ -67,14 +74,22 @@ function App() {
 				: 
 				<div>
 					<div className={styles.upper}>
-						<Questions />
+						<Questions 
+							columns={columns}
+							data={data}
+							dataLength={dataLength}
+						/>
 						<div className={styles.right}>
 							<Table data={data} dataid={dataid}/>
 							<Annotation />
 						</div>
 					</div>
 					<div>
-						<AnnotationList />
+						<AnnotationList 
+							columns={columns}
+							data={data}
+							dataLength={dataLength}
+						/>
 					</div>
 				</div>
 			}

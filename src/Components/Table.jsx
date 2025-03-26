@@ -8,19 +8,13 @@ function Table({ data: propData, dataid }) {
 	// ---------------------------------------------
 	// 0) rowIds, selectedRowIds 추가
 	// ---------------------------------------------
-	// data: 실제 화면에 뿌리는 2차원 배열 (정렬에 따라 순서 바뀜)
-	// rowIds: data의 각 행이 "원본에서 어떤 row ID"인가를 기록하는 배열
-	// selectedRowIds: 원본 row ID들 중 현재 선택된 것들
 	const [data, setData] = useState([]);
 	const [rowIds, setRowIds] = useState([]);
 	const [selectedRowIds, setSelectedRowIds] = useState([]);
 
-	// originalData: Reset 시점을 위해 보관 (2차원 배열)
-	// originalRowIds: Reset 시 원본 행 순서 복구
 	const [originalData, setOriginalData] = useState([]);
 	const [originalRowIds, setOriginalRowIds] = useState([]);
 
-	// 기타 기존 상태들
 	const [columns, setColumns] = useState([]);
 	const [sortStates, setSortStates] = useState([]);
 	const [originalSort, setOriginalSort] = useState([]);
@@ -28,7 +22,6 @@ function Table({ data: propData, dataid }) {
 
 	const [triggerVis, setTriggerVis] = useState(false);
 
-	// 셀 편집, 드래그 등등
 	const [editingCell, setEditingCell] = useState({ row: null, col: null });
 	const [dragState, setDragState] = useState({
 		mode: null,
@@ -47,13 +40,14 @@ function Table({ data: propData, dataid }) {
 			return;
 		}
 		setAnnotatedData({
-			"cols": JSON.parse(JSON.stringify(selectedCols)),
-			"rows": JSON.parse(JSON.stringify(selectedRowIds))
+			cols: JSON.parse(JSON.stringify(selectedCols)),
+			rows: JSON.parse(JSON.stringify(selectedRowIds))
 		});
 	}, [selectedCols, selectedRowIds]);
 
-
-	// 아주 아주 중요한 코드 250317
+	// ---------------------------------------------
+	// clearSelections 함수
+	// ---------------------------------------------
 	const clearSelections = () => {
 		setSelectedRowIds([]);
 		setSelectedCols([]);
@@ -68,12 +62,7 @@ function Table({ data: propData, dataid }) {
 			baseSelectedCols: [],
 		});
 		setEditingCell({ row: null, col: null });
-		// 필요한 경우 visInfo 등도 초기화할 수 있음
 	};
-	// useEffect(() => {
-	// 	const newVisInfo = JSON.parse(JSON.stringify(visInfo));
-	// 	setVisInfo(newVisInfo);
-	// }, [selectedCols, selectedRowIds]);
 
 	// ---------------------------------------------
 	// 1) propData 로부터 초기 세팅
@@ -91,31 +80,24 @@ function Table({ data: propData, dataid }) {
 			return;
 		}
 
-		// 컬럼 키 추출
 		const keys = Object.keys(propData[0]);
 		setColumns(keys);
 
-		// 2차원 배열 변환
 		const tableData = propData.map((obj) =>
 			keys.map((key) => (obj[key] !== undefined ? obj[key] : ''))
 		);
 		setData(tableData);
 
-		// rowIds = [0, 1, 2, 3, ... propData.length-1]
-		// (여기서는 index를 ID로 삼았지만, 실제론 uuid등도 가능)
 		const initialRowIds = propData.map((_, i) => i);
 		setRowIds(initialRowIds);
 
-		// originalData, originalRowIds 백업
 		setOriginalData(JSON.parse(JSON.stringify(tableData)));
 		setOriginalRowIds([...initialRowIds]);
 
-		// sort 상태
 		const initialSort = Array(keys.length).fill(null);
 		setSortStates(initialSort);
 		setOriginalSort([...initialSort]);
 
-		// 선택 해제
 		setSelectedRowIds([]);
 		setSelectedCols([]);
 		setTriggerVis(!triggerVis);
@@ -152,24 +134,18 @@ function Table({ data: propData, dataid }) {
 	// ---------------------------------------------
 	const handleRowMouseDown = (rowIndex, e) => {
 		const shiftDown = e.shiftKey;
-
-		// 현재 rowIds[rowIndex]가 원본 ID
 		const thisId = rowIds[rowIndex];
-
-		// shift키면 기존 선택과 합집합
 		let baseSelected = [...selectedRowIds];
 		if (!shiftDown) {
-			// shift 아니면 새로 선택
 			baseSelected = [thisId];
 		} else {
-			// shiftKey: 클릭한 행 id가 아직 없으면 추가
 			if (!baseSelected.includes(thisId)) {
 				baseSelected.push(thisId);
 			}
 		}
 
 		setSelectedRowIds(baseSelected);
-		setSelectedCols([]); // 행 선택이므로 열 선택 해제
+		setSelectedCols([]);
 		setTriggerVis(!triggerVis);
 
 		setDragState({
@@ -191,15 +167,12 @@ function Table({ data: propData, dataid }) {
 		const start = Math.min(startIndex, rowIndex);
 		const end = Math.max(startIndex, rowIndex);
 
-		// 현재 표시 순서에서 start~end 범위에 해당하는 rowIds 추출
 		const rangeIds = rowIds.slice(start, end + 1);
 
 		if (!shiftKey) {
-			// shift가 아니면 단순히 범위만
 			setSelectedRowIds(rangeIds);
 			setTriggerVis(!triggerVis);
 		} else {
-			// shiftKey면 기존과 합집합
 			const setUnion = new Set([...baseSelectedRows, ...rangeIds]);
 			setSelectedRowIds(Array.from(setUnion));
 			setTriggerVis(!triggerVis);
@@ -207,22 +180,18 @@ function Table({ data: propData, dataid }) {
 	};
 
 	// ---------------------------------------------
-	// 3) 열 드래그 선택은 기존과 동일(열은 원본 ID를 따로 두지 않았다고 가정)
+	// 3) 열 드래그 선택
 	// ---------------------------------------------
-	// const [selectedCols, setSelectedCols] = useState([]);
-
 	const handleColMouseDown = (colIndex, e) => {
 		const shiftDown = e.shiftKey;
 		let baseSelected = [...selectedCols];
 
 		if (!shiftDown) {
-			// 새 선택
 			baseSelected = [colIndex];
 			setSelectedCols(baseSelected);
-			setSelectedRowIds([]); // 열 선택이므로 행 선택 해제
+			setSelectedRowIds([]);
 			setTriggerVis(!triggerVis);
 		} else {
-			// shift면 합집합
 			if (!baseSelected.includes(colIndex)) {
 				baseSelected.push(colIndex);
 			}
@@ -261,12 +230,10 @@ function Table({ data: propData, dataid }) {
 	};
 
 	// ---------------------------------------------
-	// 4) 셀 드래그 선택 → rowIds/colIndex로 변환
-	//    (이 예제에서는 '셀 단위' 선택도 rowIds 사용)
+	// 4) 셀 드래그 선택
 	// ---------------------------------------------
 	const handleCellMouseDown = (rowIndex, colIndex, e) => {
 		dragMovedRef.current = false;
-
 		const rowId = rowIds[rowIndex];
 		setSelectedRowIds([rowId]);
 		setSelectedCols([colIndex]);
@@ -294,9 +261,7 @@ function Table({ data: propData, dataid }) {
 		const minCol = Math.min(startCol, colIndex);
 		const maxCol = Math.max(startCol, colIndex);
 
-		// 행 범위 IDs
 		const rowRangeIds = rowIds.slice(minRow, maxRow + 1);
-		// 열 범위
 		const colRange = [];
 		for (let c = minCol; c <= maxCol; c++) {
 			colRange.push(c);
@@ -307,7 +272,6 @@ function Table({ data: propData, dataid }) {
 	};
 
 	const handleCellClick = () => {
-		// 드래그 없이 클릭만 했다면 선택 해제 (기존 로직)
 		if (!dragMovedRef.current) {
 			setSelectedRowIds([]);
 			setSelectedCols([]);
@@ -316,10 +280,8 @@ function Table({ data: propData, dataid }) {
 	};
 
 	// ---------------------------------------------
-	// 5) 셀 편집 로직은 기존과 동일
+	// 5) 셀 편집 로직
 	// ---------------------------------------------
-	// const [editingCell, setEditingCell] = useState({ row: null, col: null });
-
 	const handleCellDoubleClick = (r, c) => {
 		setEditingCell({ row: r, col: c });
 	};
@@ -340,7 +302,7 @@ function Table({ data: propData, dataid }) {
 	};
 
 	// ---------------------------------------------
-	// 6) 정렬 → data, rowIds를 같은 기준으로 재배열
+	// 6) 정렬 로직
 	// ---------------------------------------------
 	function parseValue(v) {
 		if (v === '' || isNaN(Number(v))) return v;
@@ -349,8 +311,6 @@ function Table({ data: propData, dataid }) {
 
 	const handleSortClick = (colIndex, e) => {
 		e.stopPropagation();
-
-		// 정렬 방향 업데이트
 		const current = sortStates[colIndex];
 		let newDirection;
 		if (current === 'asc') newDirection = 'desc';
@@ -363,11 +323,9 @@ function Table({ data: propData, dataid }) {
 
 		const isAsc = newDirection === 'asc';
 
-		// data와 rowIds를 함께 sort
 		const newData = [...data];
 		const newRowIds = [...rowIds];
 
-		// sort를 위한 comparator
 		const comparator = (i, j) => {
 			const valA = parseValue(newData[i][colIndex]);
 			const valB = parseValue(newData[j][colIndex]);
@@ -376,9 +334,6 @@ function Table({ data: propData, dataid }) {
 			return 0;
 		};
 
-		// custom sort: i, j는 인덱스가 아니라 rowIds에서의 index
-		// → 간단하게 newRowIds 자체를 sort하고, 그 결과를 기준으로 newData를 재매핑
-		// 혹은 그냥 둘을 zip해서 정렬해도 됨
 		const zipped = newRowIds.map((id, idx) => ({ id, row: newData[idx] }));
 		zipped.sort((a, b) => {
 			const valA = parseValue(a.row[colIndex]);
@@ -388,14 +343,12 @@ function Table({ data: propData, dataid }) {
 			return 0;
 		});
 
-		// 재할당
 		const sortedRowIds = zipped.map((z) => z.id);
 		const sortedData = zipped.map((z) => z.row);
 
 		setRowIds(sortedRowIds);
 		setData(sortedData);
 
-		// 정렬 시 기존 선택(드래그) 해제할 경우
 		setSelectedRowIds([]);
 		setSelectedCols([]);
 		setTriggerVis(!triggerVis);
@@ -417,13 +370,10 @@ function Table({ data: propData, dataid }) {
 
 	// ---------------------------------------------
 	// 7) 행/열 삭제, Reset
-	//    - 행 삭제: rowIndex -> rowIds[rowIndex] 추출 → 실제 data/rowIds에서 제거
 	// ---------------------------------------------
 	const handleDeleteRow = (rowIndex, e) => {
 		e.stopPropagation();
 		const thisId = rowIds[rowIndex];
-
-		// data/rowIds에서 rowIndex 위치 제거
 		const newData = [...data];
 		newData.splice(rowIndex, 1);
 
@@ -433,7 +383,6 @@ function Table({ data: propData, dataid }) {
 		setData(newData);
 		setRowIds(newRowIds);
 
-		// 선택 목록에서도 해당 ID 제거
 		setSelectedRowIds((prev) => prev.filter((id) => id !== thisId));
 		setTriggerVis(!triggerVis);
 	};
@@ -463,7 +412,6 @@ function Table({ data: propData, dataid }) {
 	};
 
 	const handleReset = () => {
-		// 원본으로 복원
 		const copy = JSON.parse(JSON.stringify(originalData));
 		setData(copy);
 		setRowIds([...originalRowIds]);
@@ -476,16 +424,13 @@ function Table({ data: propData, dataid }) {
 	};
 
 	// ---------------------------------------------
-	// 8) 연산(예: sum, diff, avg)도, 행에 대해선 rowIds가 있지만
-	//    실제 수치 연산은 data 쪽 값을 사용하므로 기존 방식 그대로 유지 가능
+	// 8) 연산 (sum, diff, avg)
 	// ---------------------------------------------
 	function canUseOperation() {
-		// 예시 그대로
 		if (selectedRowIds.length > 0 && selectedCols.length > 0) return false;
 		if (selectedCols.length !== 2) return false;
 		if (rowCount === 0) return false;
 
-		// 열 2개 모두 숫자인지 검사
 		for (let r = 0; r < rowCount; r++) {
 			for (const c of selectedCols) {
 				const val = data[r][c];
@@ -521,7 +466,7 @@ function Table({ data: propData, dataid }) {
 	}
 
 	// ---------------------------------------------
-	// 9) 시각화 (Histogram, Scatter) → 기존 로직
+	// 9) 시각화 (Histogram, Scatter)
 	// ---------------------------------------------
 	const [visInfo, setVisInfo] = useState([]);
 
@@ -546,10 +491,8 @@ function Table({ data: propData, dataid }) {
 		const existing = curr.filter((x) => x.type === 'scatter');
 		const filled = existing.filter((x) => x.x !== null && x.y !== null);
 		if (existing.length === filled.length) {
-			// 새로운 scatter
 			curr.push({ type: 'scatter', x: colIndex, y: null });
 		} else {
-			// 아직 x나 y 하나가 비어있는 scatter 찾기
 			const idx = curr.findIndex((x) => x.type === 'scatter' && (x.x === null || x.y === null));
 			if (idx >= 0) {
 				if (curr[idx].y === colIndex) {
@@ -583,7 +526,7 @@ function Table({ data: propData, dataid }) {
 	};
 
 	// ---------------------------------------------
-	// 10) CSS 클래스 (하이라이팅) → rowIndex→rowIds[rowIndex] 가 selectedRowIds에 있나?
+	// 10) CSS 클래스 (하이라이팅)
 	// ---------------------------------------------
 	function getRowHeaderClass(rowIndex) {
 		const rowId = rowIds[rowIndex];
@@ -593,7 +536,6 @@ function Table({ data: propData, dataid }) {
 		return selectedCols.includes(c) ? styles.selectedHeader : '';
 	}
 	function getCornerClass() {
-		// 임의로 “행 또는 열이 선택되었을 때” 강조
 		if (selectedRowIds.length > 0 || selectedCols.length > 0) {
 			return styles.selectedHeader;
 		}
@@ -606,7 +548,6 @@ function Table({ data: propData, dataid }) {
 		const haveRowSel = selectedRowIds.length > 0;
 		const haveColSel = selectedCols.length > 0;
 
-		// “행·열 교차 선택” 시 교차 부분만 빨간색, 등등 기존 로직
 		if (haveRowSel && haveColSel) {
 			return rowSel && colSel ? styles.selected : '';
 		} else if (haveRowSel && rowSel) {
@@ -655,14 +596,15 @@ function Table({ data: propData, dataid }) {
 					)}
 				</div>
 
-				<div className={dataid === "accounting" ? styles.accountTableContainer :  styles.tableContainer}>
+				<div className={dataid === "accounting" ? styles.accountTableContainer : styles.tableContainer}>
 					<table className={styles.table}>
 						<thead>
 							<tr>
 								{/* 왼쪽 상단 corner */}
-								<th className={`${styles.header} ${getCornerClass()}`} />
+								<th id="cell-corner" className={`${styles.header} ${getCornerClass()}`} />
 								{columns.map((col, colIndex) => (
 									<th
+										id={`cell-colheader-${colIndex + 1}`}
 										key={`col-header-${colIndex}`}
 										className={`${styles.header} ${getColHeaderClass(colIndex)}`}
 										onMouseDown={(e) => handleColMouseDown(colIndex, e)}
@@ -671,15 +613,15 @@ function Table({ data: propData, dataid }) {
 										<div className={styles.headerContent}>
 											<span>{col}</span>
 											<div className={styles.iconContainer}>
-												{dataid !== "accounting" && 
-												<button
-													type="button"
-													onMouseDown={(e) => e.stopPropagation()}
-													onClick={(e) => handleSortClick(colIndex, e)}
-													style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
-												>
-													{sortIndicator(colIndex)}
-												</button>
+												{dataid !== "accounting" &&
+													<button
+														type="button"
+														onMouseDown={(e) => e.stopPropagation()}
+														onClick={(e) => handleSortClick(colIndex, e)}
+														style={{ background: 'none', border: 'none', padding: '0', cursor: 'pointer' }}
+													>
+														{sortIndicator(colIndex)}
+													</button>
 												}
 												<button
 													type="button"
@@ -739,13 +681,12 @@ function Table({ data: propData, dataid }) {
 							{data.map((row, rowIndex) => (
 								<tr key={`row-${rowIndex}`}>
 									<th
+										id={`cell-rowheader-${rowIndex + 1}`}
 										className={`${dataid === "accounting" ? styles.accountHeader : styles.header} ${getRowHeaderClass(rowIndex)}`}
 										onMouseDown={(e) => handleRowMouseDown(rowIndex, e)}
 										onMouseEnter={() => handleRowMouseEnter(rowIndex)}
 									>
 										<div className={styles.rowHeaderContent}>
-											{/* 화면상 '행 번호'는 rowIndex+1 로 표시하되,
-                          실제 선택은 rowIds[rowIndex]를 통해 원본 ID를 추적 */}
 											<span>{rowIndex + 1}</span>
 											<div className={styles.iconContainer}>
 												<button
@@ -768,8 +709,9 @@ function Table({ data: propData, dataid }) {
 										const cellClass = getCellClass(rowIndex, colIndex);
 										return (
 											<td
+												id={`cell-${colIndex + 1}-${rowIndex + 1}`}
 												key={`cell-${rowIndex}-${colIndex}`}
-												className={`${dataid === "accounting" ? styles.accountCell :styles.cell} ${cellClass}`}
+												className={`${dataid === "accounting" ? styles.accountCell : styles.cell} ${cellClass}`}
 												onMouseDown={(e) => handleCellMouseDown(rowIndex, colIndex, e)}
 												onMouseEnter={() => handleCellMouseEnter(rowIndex, colIndex)}
 												onClick={handleCellClick}
@@ -797,17 +739,16 @@ function Table({ data: propData, dataid }) {
 				</div>
 			</div>
 
-			{/* 시각화 */}
 			{dataid !== "accounting" &&
-				<Visualization 
-					data={data} 
-					visInfo={visInfo} 
-					columns={columns} 
-					setVisInfo={setVisInfo} 
+				<Visualization
+					data={data}
+					visInfo={visInfo}
+					columns={columns}
+					setVisInfo={setVisInfo}
 					clearSelections={clearSelections}
 					triggerVis={triggerVis}
 				/>
-			}	
+			}
 		</div>
 	);
 }

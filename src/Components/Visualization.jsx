@@ -428,8 +428,8 @@ const Visualization = (props) => {
 								attribute: [columns[xIndex], columns[yIndex]],
 								// 2차원 영역
 								range: [
-									[sx0, sy0],
-									[sx1, sy1],
+									[sx0, sx1],
+									[sy0, sy1],
 								],
 								// 각 축의 전체 도메인
 								domain: [
