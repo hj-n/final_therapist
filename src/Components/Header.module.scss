@@ -3,11 +3,31 @@
 .header {
 	background-color: #01153e;
 	color: white;
-	margin: 0px;
+	margin: 0;
+	padding: 13px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 	h1 {
-		margin: 0px;
-		padding: 13px;
+		margin: 0;
 		font-weight: 500;
+	}
+
+	.exportButtons {
+		button {
+			background: transparent;
+			border: 1px solid white;
+			color: white;
+			padding: 10px 10px;
+			cursor: pointer;
+			margin-left: 10px;
+			margin-bottom: 10px;
+
+			&:hover {
+				background: white;
+				color: #01153e;
+			}
+		}
 	}
 }
